@@ -14,6 +14,7 @@ CSE291P project with Juliet Test Suite
 - created `scripts/static_analyzer.py` file that runs the static analyzer on the test cases
 - called static analyzer from `main.py`
 - attempting to implement a basic LLM 
+- fix the cppcheck call to display only relevant info 
 
 ## Steps for Set Up:
 
@@ -21,3 +22,7 @@ CSE291P project with Juliet Test Suite
 - update Makefile with more test cases, if needed
 - install cppcheck and other dependencies
 - run `python3 main.py`
+
+## Notes: 
+- not sure if i need the Makefile? 
+- the OMITGOOD and OMITBAD flags are confusing -> bad implementation still produces warnings so need to figure out how to handle that 

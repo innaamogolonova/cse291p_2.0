@@ -4,38 +4,26 @@ import subprocess
 import sys
 from pathlib import Path
 
-
 REPO_ROOT = Path(__file__).resolve().parents[1]
-JULIET_DIR = REPO_ROOT / "data" / "juliet" / "test_cases"
-SUPPORT_DIR = REPO_ROOT / "third_party" / "juliet" / "testcasesupport"
+SUPPORT_DIR = REPO_ROOT / "data" / "juliet" / "testcasesupport"
 
 
-def find_c_files():
-    """Yield all .c files in data/juliet/test_cases."""
-    if not JULIET_DIR.exists():
-        print(f"[ERROR] Juliet directory not found: {JULIET_DIR}", file=sys.stderr)
-        return []
-
-    return sorted(JULIET_DIR.glob("*.c"))
-
-
-def run_cppcheck_on_file(c_file: Path) -> int:
+def run_cppcheck(c_file: Path) -> str:
     """
-    Run cppcheck on a single C file.
-    Returns the cppcheck exit code.
+    Run cppcheck on a single C file with OMITGOOD defined.
+    Returns the diagnostics output as a string.
     """
-    print(f"\n=== Analyzing {c_file.relative_to(REPO_ROOT)} ===")
-
     cmd = [
-    "cppcheck",
-    "--enable=all",
-    "--std=c11",
-    f"-I{SUPPORT_DIR}",
-    "--suppress=missingIncludeSystem",  
-    str(c_file),
+        "cppcheck",
+        "--enable=warning",  # Focus on actual bugs, not style/portability
+        "--std=c11",
+        f"-I{SUPPORT_DIR}",
+        "-DOMITGOOD",  # Only analyze the bad implementation
+        "--suppress=missingIncludeSystem",  # Suppress missing system includes like <stdio.h>
+        "--suppress=missingInclude",  # Suppress missing user includes like "std_testcase.h"
+        "--inline-suppr",  # Respect inline suppressions in Juliet test cases
+        str(c_file),
     ]
-
-    print(f"[CMD] {' '.join(cmd)}")
 
     try:
         result = subprocess.run(cmd, capture_output=True, text=True)
@@ -44,38 +32,27 @@ def run_cppcheck_on_file(c_file: Path) -> int:
             "[ERROR] cppcheck not found. Please install it (e.g. 'brew install cppcheck').",
             file=sys.stderr,
         )
-        return 1
+        sys.exit(1)
 
-    if result.stdout:
-        print("[STDOUT]")
-        print(result.stdout)
+    diagnostics = result.stderr + result.stdout
 
-    if result.stderr:
-        # cppcheck prints warnings to stderr
-        print("[STDERR]")
-        print(result.stderr, file=sys.stderr)
-
-    return result.returncode
-
-
-def run_cppcheck_all() -> int:
-    """
-    Run cppcheck over all Juliet C files we know about.
-    Returns 0 if all runs succeeded (no tool failures).
-    """
-    c_files = find_c_files()
-    if not c_files:
-        print("[WARN] No C files found under data/juliet/test_cases.")
-        return 0
-
-    overall_rc = 0
-    for c_file in c_files:
-        rc = run_cppcheck_on_file(c_file)
-        if rc != 0:
-            overall_rc = rc  # track the last non-zero exit code
-
-    return overall_rc
+    return diagnostics
 
 
 if __name__ == "__main__":
-    sys.exit(run_cppcheck_all())
+    if len(sys.argv) < 2:
+        print("Usage: python3 scripts/static_analyzer.py <path_to_c_file>", file=sys.stderr)
+        print("\nExample:", file=sys.stderr)
+        print("  python3 scripts/static_analyzer.py data/juliet/test_cases/CWE476_NULL_Pointer_Dereference__null_check_after_deref_01.c", file=sys.stderr)
+        sys.exit(1)
+
+    c_file_path = Path(sys.argv[1])
+
+    if not c_file_path.exists():
+        print(f"[ERROR] File not found: {c_file_path}", file=sys.stderr)
+        sys.exit(1)
+
+    print(f"Running cppcheck on: {c_file_path}")
+    diagnostics = run_cppcheck(c_file_path)
+    print("\n=== DIAGNOSTICS ===")
+    print(diagnostics)

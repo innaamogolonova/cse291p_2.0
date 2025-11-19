@@ -1,4 +1,4 @@
-JULIET_SUPPORT_DIR = third_party/juliet/testcasesupport
+JULIET_SUPPORT_DIR = data/juliet/testcasesupport
 JULIET_CFLAGS = -I$(JULIET_SUPPORT_DIR) -Wall -Wextra -g
 
 # Default: compile all 5 Juliet examples to .o files (no linking)
