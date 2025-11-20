@@ -5,7 +5,7 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent
 JULIET_DIR = REPO_ROOT / "data" / "juliet" / "test_cases"
-OUTPUT_DIR = REPO_ROOT / "build" / "llm_fixes"
+OUTPUT_DIR = REPO_ROOT / "data" / "results" / "test_cases_fixes"
 
 
 def process_test_case_with_llm(test_file: Path):

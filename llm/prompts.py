@@ -14,11 +14,15 @@ DEFAULT_SYSTEM_PROMPT = dedent(
 
     Your task:
     - Identify the root cause of the reported issue.
-    - Rewrite ONLY the necessary parts of the code to fix the problem.
-    - Do not change function signatures unless required.
-    - Preserve the original program intent and behavior.
-    - Avoid introducing new warnings or memory issues.
-    - Return ONLY the full fixed source file, nothing else.
+    - Rewrite ONLY the necessary parts of the code to fix the problem under #ifndef OMITBAD.
+    - Do NOT modify any code outside of '#ifndef OMITBAD' ... matching '#endif' blocks.
+    - Do not modify any code under '#ifndef OMITGOOD' or any other preprocessor regions.
+    - Do not change any comments or add new comments; preserve comment text and formatting exactly.
+    - Pay attention to existing comments and follow suggestions contained in them when determining the correct fix inside '#ifndef OMITBAD' blocks.
+    - Preserve the original program intent and behavior and avoid introducing new warnings or memory issues.
+    - If no changes are required within '#ifndef OMITBAD' blocks, return the original source file verbatim.
+    - If you cannot comply exactly with these constraints, respond with the single token: REFUSE_TO_MODIFY_OUTSIDE_OMITBAD
+    - Return ONLY the full fixed source file (or the single token above), nothing else.
     """
 ).strip()
 
@@ -50,8 +54,15 @@ def build_fix_user_prompt(
             {source}
             --- END SOURCE.C ---
 
-            Please return the FULL fixed source file, with the bug corrected.
-            Do not include explanations, comments, or markdown. Only valid C/C++ code.
+            IMPORTANT INSTRUCTIONS (read carefully):
+            1) Only edit text located inside '#ifndef OMITBAD' ... its matching '#endif' blocks.
+               Do NOT modify any other lines, including includes, macros, blank lines, indentation, or comments.
+            2) Preserve all comments exactly (do not change wording, punctuation, or whitespace inside comments).
+               Pay attention to existing comments and follow any suggestions contained in them when making edits inside '#ifndef OMITBAD' blocks.
+            3) If no change is necessary inside the '#ifndef OMITBAD' blocks, return the original file verbatim.
+            4) If you cannot follow these rules exactly, return only the single token: REFUSE_TO_MODIFY_OUTSIDE_OMITBAD
+
+            Please return the FULL fixed source file (or the single token above). Do not include explanations, markdown, or any extra text.
             """
         ).format(diagnostics=diagnostics.strip() or "(no diagnostics given)",
                  source=source_code)
