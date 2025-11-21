@@ -55,7 +55,7 @@ def process_test_case_with_llm(test_file: Path):
         print(f"[ERROR] Failed to initialize LLM client: {e}", file=sys.stderr)
         import traceback
         traceback.print_exc()
-        sys.exit(1)
+        raise  # Re-raise to be caught by main loop
 
     # Iterative fix loop
     current_code = source_code
@@ -81,7 +81,7 @@ def process_test_case_with_llm(test_file: Path):
             print(f"[ERROR] Failed to process with LLM: {e}", file=sys.stderr)
             import traceback
             traceback.print_exc()
-            sys.exit(1)
+            raise  # Re-raise to be caught by main loop
 
         # Update iteration count in the result
         fix_result.iteration_count = iteration
@@ -129,21 +129,37 @@ def process_test_case_with_llm(test_file: Path):
         print(f"Metadata saved to: {saved_paths['metadata']}")
     else:
         print(f"[ERROR] No fix was generated", file=sys.stderr)
-        sys.exit(1)
+        raise RuntimeError("No fix was generated")
 
 
 def main():
-    # For now, process just one test case
-    test_case = JULIET_DIR / "CWE121_Stack_Based_Buffer_Overflow__CWE805_char_alloca_loop_12.c"
-
-    if not test_case.exists():
-        print(f"[ERROR] Test case not found: {test_case}", file=sys.stderr)
+    # Get all C test case files in the test_cases directory
+    test_cases = sorted(JULIET_DIR.glob("*.c"))
+    
+    if not test_cases:
+        print(f"[ERROR] No test cases found in: {JULIET_DIR}", file=sys.stderr)
         sys.exit(1)
-
-    process_test_case_with_llm(test_case)
-
+    
     print(f"\n{'='*60}")
-    print("Done!")
+    print(f"Found {len(test_cases)} test case(s) to process")
+    print(f"{'='*60}")
+    
+    for idx, test_case in enumerate(test_cases, 1):
+        print(f"\n\n{'#'*60}")
+        print(f"# Processing test case {idx}/{len(test_cases)}")
+        print(f"{'#'*60}")
+        
+        try:
+            process_test_case_with_llm(test_case)
+        except Exception as e:
+            print(f"\n[ERROR] Failed to process {test_case.name}: {e}", file=sys.stderr)
+            import traceback
+            traceback.print_exc()
+            print(f"[INFO] Continuing to next test case...\n")
+            continue
+
+    print(f"\n\n{'='*60}")
+    print(f"All done! Processed {len(test_cases)} test case(s)")
     print(f"{'='*60}")
 
 
