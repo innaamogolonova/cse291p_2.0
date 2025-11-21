@@ -32,6 +32,7 @@ class LLMFixResult:
     prompt_user: str
     diagnostics: str
     raw_response: dict[str, Any]
+    iteration_count: int = 1
 
     def save(self, source_path: Path, output_root: Path) -> dict[str, Path]:
         """
@@ -72,6 +73,7 @@ class LLMFixResult:
             "source_path": str(source_path),
             "fixed_path": str(fixed_path),
             "model": self.model,
+            "iteration_count": self.iteration_count,
             "diagnostics": self.diagnostics,
             "prompt_system": self.prompt_system,
             "prompt_user": self.prompt_user,

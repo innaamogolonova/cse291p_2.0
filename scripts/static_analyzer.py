@@ -9,7 +9,40 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 SUPPORT_DIR = REPO_ROOT / "data" / "juliet" / "testcasesupport"
 
 
-def run_cppcheck(c_file: Path, define_name: str) -> str:
+def has_warnings(diagnostics: str) -> bool:
+    """
+    Check if the diagnostics string contains any warnings or errors.
+    Returns True if warnings/errors are present, False otherwise.
+    
+    cppcheck outputs warnings in format:
+    file.c:line:col: warning: message [warningId]
+    file.c:line:col: error: message [errorId]
+    """
+    if not diagnostics.strip():
+        return False
+    
+    # Check for both the text markers and the bracketed IDs
+    # cppcheck uses "warning:", "error:", "style:", etc.
+    warning_markers = [": warning:", ": error:", ": style:", ": performance:", ": portability:"]
+    
+    # Also check for bracketed warning IDs which are always present
+    has_marker = any(marker in diagnostics for marker in warning_markers)
+    has_bracketed_id = "[" in diagnostics and "]" in diagnostics
+    
+    # Filter out lines that are just "Checking..." status messages
+    lines = diagnostics.strip().split('\n')
+    warning_lines = [
+        line for line in lines 
+        if not line.startswith("Checking ") and (
+            any(marker in line for marker in warning_markers) or
+            ("[" in line and "]" in line and ":" in line)
+        )
+    ]
+    
+    return len(warning_lines) > 0
+
+
+def run_cppcheck(c_file: Path, define_name: str = "OMITGOOD") -> str:
     """
     Run cppcheck on a single C file with the provided preprocessor define name.
     `define_name` must be either 'OMITGOOD' or 'OMITBAD'.
@@ -25,6 +58,7 @@ def run_cppcheck(c_file: Path, define_name: str) -> str:
         define_flag,
         "--suppress=missingIncludeSystem",  # Suppress missing system includes like <stdio.h>
         "--suppress=missingInclude",  # Suppress missing user includes like "std_testcase.h"
+        "--suppress=*:*/testcasesupport/*",  # Suppress all warnings from support files
         "--inline-suppr",  # Respect inline suppressions in Juliet test cases
         str(c_file),
     ]
