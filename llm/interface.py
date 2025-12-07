@@ -7,7 +7,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Protocol, Any
 
-from .prompts import DEFAULT_SYSTEM_PROMPT, build_fix_user_prompt, build_omitbad_fix_user_prompt
+from .prompts import *
 
 
 # -----------------------------
@@ -83,6 +83,14 @@ class LLMFixResult:
 
         return {"fixed": fixed_path, "metadata": meta_path}
 
+@dataclass 
+class LLMJudgeResult:
+    """Container for Judge LLM's response"""
+    verdict: str
+    model: str
+    prompt_system: str
+    prompt_user: str
+    raw_response: dict[str, Any]
 
 # -----------------------------
 # Abstract interface
@@ -114,7 +122,10 @@ class OpenAILLMClient:
     Requires the environment variable OPENAI_API_KEY to be set.
     """
 
-    def __init__(self, config: LLMConfig | None = None) -> None:
+    def __init__(self,
+                 config: LLMConfig | None = None,
+                 judgeconfig: LLMConfig | None = None
+                 ) -> None:
         from openai import OpenAI  # type: ignore[import-untyped]
 
         api_key = os.environ.get("OPENAI_API_KEY")
@@ -123,6 +134,7 @@ class OpenAILLMClient:
 
         self._client = OpenAI(api_key=api_key)
         self._config = config or LLMConfig()
+        self._judgeconfig = judgeconfig or LLMConfig()
 
     def suggest_fix(
         self,
@@ -166,5 +178,63 @@ class OpenAILLMClient:
             prompt_system=system_prompt,
             prompt_user=user_prompt,
             diagnostics=diagnostics,
+            raw_response=response.to_dict() if hasattr(response, "to_dict") else {},  # type: ignore[arg-type]
+        )
+
+    def judge_func_eq(
+        self,
+        omitbad_code: str,
+        fixed_code: str,
+        *,
+        extra_context: str | None = None,
+    ) -> LLMJudgeResult:
+        
+        # Initialize prompts to provide to LLM
+        system_prompt = JUDGE_SYSTEM_PROMPT
+        user_prompt = judge_user_prompt(
+            omitbad_code=omitbad_code,
+            fixed_code=fixed_code,
+            extra_context=extra_context,
+        )
+
+        # You can swap this to .chat.completions.create if you prefer that API.
+        response = self._client.responses.create(
+            model=self._judgeconfig.model,
+            max_output_tokens=self._judgeconfig.max_output_tokens,
+            input=[
+                {
+                    "role": "system",
+                    "content": system_prompt,
+                },
+                {
+                    "role": "user",
+                    "content": user_prompt,
+                },
+            ],
+        )
+
+        # Extract text – adjust depending on which API version you use.
+
+        # print(response)
+        output_text = ""
+
+        if response.output:
+            for item in response.output:
+                # Skip items with no content
+                if not getattr(item, "content", None):
+                    continue
+                for block in item.content:
+                    if getattr(block, "type", None) == "output_text":
+                        output_text += getattr(block, "text", "")
+
+        # Clean up whitespace
+        output_text = output_text.strip()
+        # output_text = response.output[0].content[0].text  # type: ignore[index]
+
+        return LLMJudgeResult(
+            verdict=output_text,
+            model=self._config.model,
+            prompt_system=system_prompt,
+            prompt_user=user_prompt,
             raw_response=response.to_dict() if hasattr(response, "to_dict") else {},  # type: ignore[arg-type]
         )

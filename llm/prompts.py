@@ -33,7 +33,6 @@ DEFAULT_SYSTEM_PROMPT = dedent(
     """
 ).strip()
 
-
 def build_fix_user_prompt(
     source_code: str,
     diagnostics: str,
@@ -95,6 +94,24 @@ def load_shot_io(idx: int) -> str:
         out += "\n"
     return out
 
+# TODO: Modify this system prompt since we're only looking at an isolated OMITBAD case now.
+OMITBAD_SYSTEM_PROMPT = dedent(
+    """
+    You are a C/C++ security engineer and expert in memory safety.
+    You receive a single C/C++ source file that contains a memory-safety bug
+    (for example: null pointer dereference, use-after-free, double free,
+    buffer overflow, buffer under-read, or similar issues), together with
+    diagnostics from a static analyzer.
+
+    Your task:
+    - Identify the root cause of the reported issue.
+    - Rewrite ONLY the necessary parts of the code to fix the problem.
+    - Preserve the original program intent (functional equivalence) and behavior and avoid introducing new warnings or memory issues.
+    - If you cannot comply exactly with these constraints, respond with the single token: REFUSE_TO_MODIFY
+    - Return ONLY the full fixed source file (or the single token above), and nothing else.
+    """
+)
+
 def build_omitbad_fix_user_prompt(
     source_code: str,
     diagnostics: str,
@@ -137,6 +154,61 @@ def build_omitbad_fix_user_prompt(
         ).format(few_shot_part=few_shot_part,
                  diagnostics=diagnostics.strip() or "(no diagnostics given)",
                  source=source_code)
+    )
+
+    if extra_context:
+        parts.append(
+            "\nAdditional context from the experiment:\n" + extra_context.strip()
+        )
+
+    return "\n\n".join(parts).strip()
+
+JUDGE_SYSTEM_PROMPT = dedent(
+    """
+    You are a C/C++ security engineer and expert in memory safety.
+    You receive a two C/C++ source files.
+    The first contains a memory-safety bug
+    (for example: null pointer dereference, use-after-free, double free,
+    buffer overflow, buffer under-read, or similar issues).
+    The second is a fixed version of the first that has implemented
+    checks that avoid memory-safety violations detected by
+    the static analyzer.
+
+    Your task:
+    - Determine if the two C/C++ source files are functionally equivalent, or have the same intent preserved.
+    - Return a single token: EQUIVALENT if the two source files are functionally equivalent, otherwise NOT_EQUIVALENT 
+    """
+)
+
+def judge_user_prompt(
+    omitbad_code: str,
+    fixed_code: str,
+    extra_context: str | None = None,
+) -> str:
+    """
+    Build the user message for the functional equivalence checking "strong" LLM judge.
+    """
+    
+    parts: list[str] = []
+
+    parts.append(
+        dedent(
+            """
+            The following contains two C/C++ source files.
+
+            --- BEGIN FIRST.C ---
+            {first}
+            --- END FIRST.C ---
+
+            Here is the second fixed C/C++ source file:
+            --- BEGIN SECOND.C ---
+            {second}
+            --- END SECOND.C ---
+
+            Please return the single token indicating if the second, fixed C/C++ source code is functionally equivalent to the first. Do not include explanations, markdown, or any extra text.
+            """
+        ).format(first=omitbad_code,
+                 second=fixed_code)
     )
 
     if extra_context:

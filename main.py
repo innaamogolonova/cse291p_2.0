@@ -52,6 +52,7 @@ def process_test_case_with_llm(test_file: Path) -> int:
     # Step 2: Read source code
     print(f"\n=== Reading source code ===")
     source_code = test_file.read_text(encoding="utf-8")
+    omitbad_code = source_code
 
     # Step 3: Initialize LLM client
     print(f"\n=== Initializing LLM client ===")
@@ -59,6 +60,11 @@ def process_test_case_with_llm(test_file: Path) -> int:
         llm_client = OpenAILLMClient(
             config=LLMConfig(
                 model="gpt-4o-mini",
+                temperature=0.1,
+                max_output_tokens=4096,
+            ),
+            judgeconfig=LLMConfig(
+                model="gpt-5-nano",
                 temperature=0.1,
                 max_output_tokens=4096,
             )
@@ -110,20 +116,43 @@ def process_test_case_with_llm(test_file: Path) -> int:
             print("[DIAGNOSTICS AFTER FIX]")
             print(new_diagnostics)
 
-            # Check if warnings remain
+            # Check if SA warnings remain
             if not has_warnings(new_diagnostics):
-                print(f"[SUCCESS] No warnings remaining after {iteration} iteration(s)")
-                verdict = 0
-                break
+                print(f"[SUCCESS] No SA warnings remain")
+                verdict = 0 # tentatively set to SUCCESS
             else:
-                print(f"[INFO] Warnings still present, continuing to next iteration...")
+                print(f"[INFO] SA Warnings still present, continuing to next iteration...")
                 current_code = fix_result.fixed_code
                 current_diagnostics = new_diagnostics
-
         finally:
             # Clean up temporary file
             if temp_file.exists():
                 temp_file.unlink()
+
+        # Check if JUDGE warnings remain (if no SA warnings)
+        if verdict == 0:
+            # Call JUDGE LLM
+            print(f"\n=== Calling JUDGE LLM ===")
+            try:
+                judge_result = llm_client.judge_func_eq(
+                    # TODO: Check that source_code is in fact the OMITBAD code initialized outside the iteration loop.
+                    omitbad_code=omitbad_code, 
+                    fixed_code=current_code,
+                )
+                print(f"[SUCCESS] JUDGE LLM gave a response {judge_result.verdict[:min(14,len(judge_result.verdict))]}")
+            except Exception as e:
+                print(f"[ERROR] Failed to process with LLM: {e}", file=sys.stderr)
+                import traceback
+                traceback.print_exc()
+                raise  # Re-raise to be caught by main loop
+
+            # Check if JUDGE warnings remain
+            if "NOT" in judge_result.verdict:
+                verdict = 1
+                print(f"[INFO] JUDGE Warnings still present, continuing to next iteration...")
+            else:
+                print(f"[SUCCESS] No SA and JUDGE warnings remaining after {iteration} iteration(s)")
+                break
 
     else:
         # Loop exhausted without eliminating all warnings
