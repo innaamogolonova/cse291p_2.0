@@ -134,7 +134,8 @@ def build_omitbad_fix_user_prompt(
 
             Please return the FULL fixed source file without any memory-safety bugs. Do not include explanations, markdown, or any extra text.
             """
-        ).format(diagnostics=diagnostics.strip() or "(no diagnostics given)",
+        ).format(few_shot_part=few_shot_part,
+                 diagnostics=diagnostics.strip() or "(no diagnostics given)",
                  source=source_code)
     )
 

@@ -7,7 +7,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Protocol, Any
 
-from .prompts import DEFAULT_SYSTEM_PROMPT, build_fix_user_prompt
+from .prompts import DEFAULT_SYSTEM_PROMPT, build_fix_user_prompt, build_omitbad_fix_user_prompt
 
 
 # -----------------------------
@@ -132,10 +132,11 @@ class OpenAILLMClient:
         extra_context: str | None = None,
     ) -> LLMFixResult:
         system_prompt = DEFAULT_SYSTEM_PROMPT
-        user_prompt = build_fix_user_prompt(
+        user_prompt = build_omitbad_fix_user_prompt(
             source_code=source_code,
             diagnostics=diagnostics,
             extra_context=extra_context,
+            num_shots=5,
         )
 
         # You can swap this to .chat.completions.create if you prefer that API.
