@@ -1,0 +1,5 @@
+1) Buffer overflow via out-of-bounds index
+2) Use-after-free
+3) Double free
+4) NULL pointer dereference
+5) Stack buffer overflow via strcpy
