@@ -1,0 +1,32 @@
+#include "std_testcase.h"
+#include <wchar.h>
+void CWE121_Stack_Based_Buffer_Overflow__CWE805_char_alloca_loop_12_bad()
+{
+    char * data;
+#ifndef OMITBAD
+    char dataBadBuffer[50]; // Changed to a variable length array
+    char dataGoodBuffer[100]; // Changed to a variable length array
+    if(globalReturnsTrueOrFalse())
+    {
+        data = dataBadBuffer;
+        data[0] = '\0';
+    }
+    else
+    {
+        data = dataGoodBuffer;
+        data[0] = '\0';
+    }
+    {
+        size_t i;
+        char source[100];
+        memset(source, 'C', 100-1);
+        source[100-1] = '\0';
+        for (i = 0; i < 100; i++)
+        {
+            data[i] = source[i];
+        }
+        data[100-1] = '\0';
+        printLine(data);
+    }
+#endif
+}

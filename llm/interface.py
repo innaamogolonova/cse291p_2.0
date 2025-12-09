@@ -142,13 +142,14 @@ class OpenAILLMClient:
         diagnostics: str,
         *,
         extra_context: str | None = None,
+        num_shots: int = 5,
     ) -> LLMFixResult:
         system_prompt = DEFAULT_SYSTEM_PROMPT
         user_prompt = build_omitbad_fix_user_prompt(
             source_code=source_code,
             diagnostics=diagnostics,
             extra_context=extra_context,
-            num_shots=5,
+            num_shots=num_shots,
         )
 
         # You can swap this to .chat.completions.create if you prefer that API.
