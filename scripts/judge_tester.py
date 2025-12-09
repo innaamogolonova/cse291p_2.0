@@ -6,7 +6,7 @@ from main import *
 import sys
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parent
+REPO_ROOT = Path(__file__).resolve().parent.parent
 # JULIET_DIR = REPO_ROOT / "data" / "juliet" / "omitbad"
 # OUTPUT_DIR = REPO_ROOT / "data" / "results" / "omitbad_fixes"
 EXAMPLES_DIR = REPO_ROOT / "few_shot_examples"
