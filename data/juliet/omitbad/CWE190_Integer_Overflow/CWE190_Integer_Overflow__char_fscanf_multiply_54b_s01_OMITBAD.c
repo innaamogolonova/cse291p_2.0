@@ -1,0 +1,6 @@
+#include "std_testcase.h"
+void CWE190_Integer_Overflow__char_fscanf_multiply_54c_badSink(char data);
+void CWE190_Integer_Overflow__char_fscanf_multiply_54b_badSink(char data)
+{
+    CWE190_Integer_Overflow__char_fscanf_multiply_54c_badSink(data);
+}

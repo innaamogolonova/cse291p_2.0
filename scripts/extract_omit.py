@@ -29,17 +29,22 @@ OUT_OMITGOOD = ROOT / "data" / "juliet" / "omitgood"
 OUT_OMITBAD = ROOT / "data" / "juliet" / "omitbad"
 
 def remove_comments(path: Path) -> str:
+  """Remove comments from C/C++ source using the preprocessor."""
+  # Include path for Juliet testcase support headers
+  include_dir = ROOT / "data" / "juliet" / "testcasesupport"
+  
   cmd = [
-    "gcc",
+    "gcc-15",
     "-fpreprocessed",
     "-dD",
     "-E",
     "-P",
+    f"-I{include_dir}",
     str(path),
   ]
   proc = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
   if proc.returncode != 0:
-    raise RuntimeError(f"gcc failed for {path}: {proc.stderr}")
+    raise RuntimeError(f"gcc-15 failed for {path}: {proc.stderr}")
   return proc.stdout
 
 def find_blocks(lines: list[str]) -> list[list[str]]:

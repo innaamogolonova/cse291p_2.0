@@ -1,0 +1,11 @@
+#include "std_testcase.h"
+void CWE190_Integer_Overflow__unsigned_int_fscanf_postinc_54e_goodG2BSink(unsigned int data);
+void CWE190_Integer_Overflow__unsigned_int_fscanf_postinc_54d_goodG2BSink(unsigned int data)
+{
+    CWE190_Integer_Overflow__unsigned_int_fscanf_postinc_54e_goodG2BSink(data);
+}
+void CWE190_Integer_Overflow__unsigned_int_fscanf_postinc_54e_goodB2GSink(unsigned int data);
+void CWE190_Integer_Overflow__unsigned_int_fscanf_postinc_54d_goodB2GSink(unsigned int data)
+{
+    CWE190_Integer_Overflow__unsigned_int_fscanf_postinc_54e_goodB2GSink(data);
+}

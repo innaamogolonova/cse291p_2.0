@@ -1,0 +1,20 @@
+#include "std_testcase.h"
+#include <wchar.h>
+wchar_t * CWE121_Stack_Based_Buffer_Overflow__CWE806_wchar_t_alloca_ncat_61b_goodG2BSource(wchar_t * data);
+static void goodG2B()
+{
+    wchar_t * data;
+    wchar_t * dataBuffer = (wchar_t *)ALLOCA(100*sizeof(wchar_t));
+    data = dataBuffer;
+    data = CWE121_Stack_Based_Buffer_Overflow__CWE806_wchar_t_alloca_ncat_61b_goodG2BSource(data);
+    {
+        wchar_t dest[50] = L"";
+        wcsncat(dest, data, wcslen(data));
+        dest[50-1] = L'\0';
+        printWLine(data);
+    }
+}
+void CWE121_Stack_Based_Buffer_Overflow__CWE806_wchar_t_alloca_ncat_61_good()
+{
+    goodG2B();
+}

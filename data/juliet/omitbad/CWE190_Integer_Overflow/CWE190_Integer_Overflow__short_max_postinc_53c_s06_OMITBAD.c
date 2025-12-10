@@ -1,0 +1,6 @@
+#include "std_testcase.h"
+void CWE190_Integer_Overflow__short_max_postinc_53d_badSink(short data);
+void CWE190_Integer_Overflow__short_max_postinc_53c_badSink(short data)
+{
+    CWE190_Integer_Overflow__short_max_postinc_53d_badSink(data);
+}

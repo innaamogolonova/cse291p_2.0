@@ -1,0 +1,17 @@
+#include "std_testcase.h"
+void CWE190_Integer_Overflow__int64_t_rand_add_14_bad()
+{
+    int64_t data;
+    data = 0LL;
+    if(globalFive==5)
+    {
+        data = (int64_t)RAND64();
+    }
+    if(globalFive==5)
+    {
+        {
+            int64_t result = data + 1;
+            printLongLongLine(result);
+        }
+    }
+}

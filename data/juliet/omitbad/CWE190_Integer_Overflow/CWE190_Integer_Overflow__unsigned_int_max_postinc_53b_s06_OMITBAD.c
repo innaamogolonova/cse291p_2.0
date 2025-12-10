@@ -1,0 +1,6 @@
+#include "std_testcase.h"
+void CWE190_Integer_Overflow__unsigned_int_max_postinc_53c_badSink(unsigned int data);
+void CWE190_Integer_Overflow__unsigned_int_max_postinc_53b_badSink(unsigned int data)
+{
+    CWE190_Integer_Overflow__unsigned_int_max_postinc_53c_badSink(data);
+}

@@ -1,0 +1,6 @@
+#include "std_testcase.h"
+void CWE121_Stack_Based_Buffer_Overflow__CWE805_struct_alloca_memcpy_53c_goodG2BSink(twoIntsStruct * data);
+void CWE121_Stack_Based_Buffer_Overflow__CWE805_struct_alloca_memcpy_53b_goodG2BSink(twoIntsStruct * data)
+{
+    CWE121_Stack_Based_Buffer_Overflow__CWE805_struct_alloca_memcpy_53c_goodG2BSink(data);
+}

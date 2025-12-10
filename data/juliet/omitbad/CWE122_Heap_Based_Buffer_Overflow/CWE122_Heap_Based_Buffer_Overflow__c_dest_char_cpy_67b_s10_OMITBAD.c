@@ -1,0 +1,14 @@
+#include "std_testcase.h"
+#include <wchar.h>
+void CWE122_Heap_Based_Buffer_Overflow__c_dest_char_cpy_67b_badSink(CWE122_Heap_Based_Buffer_Overflow__c_dest_char_cpy_67_structType myStruct)
+{
+    char * data = myStruct.structFirst;
+    {
+        char source[100];
+        memset(source, 'C', 100-1);
+        source[100-1] = '\0';
+        strcpy(data, source);
+        printLine(data);
+        free(data);
+    }
+}
