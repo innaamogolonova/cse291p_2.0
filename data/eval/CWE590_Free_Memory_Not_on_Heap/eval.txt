@@ -1,10 +1,72 @@
 Evaluation Results for CWE590_Free_Memory_Not_on_Heap
-Generated: 2025-12-09T19:01:26.024442
+Generated: 2025-12-09T20:26:21.741344
 Total test cases: 14
 ============================================================
 
 
 Full (SA + LLM + Judge) Implementation Results:
+============================================================
+Total files: 14
+Successfully fixed: 5 (35.7%)
+Failed to fix: 5 (35.7%)
+Skipped: 4 (28.6%)
+Average iterations per file: 3.00
+
+Successful files:
+  - CWE590_Free_Memory_Not_on_Heap__free_char_declare_05_s04_OMITBAD.c
+  - CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.c
+  - CWE590_Free_Memory_Not_on_Heap__free_struct_static_08_s05_OMITBAD.c
+  - CWE590_Free_Memory_Not_on_Heap__free_wchar_t_alloca_32_s05_OMITBAD.c
+  - CWE590_Free_Memory_Not_on_Heap__free_wchar_t_declare_07_s05_OMITBAD.c
+
+Failed files:
+  - CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c
+  - CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.c
+  - CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.c
+  - CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.c
+  - CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.c
+
+Skipped files:
+  - CWE590_Free_Memory_Not_on_Heap__free_int_static_54d_s04_OMITBAD.c
+  - CWE590_Free_Memory_Not_on_Heap__free_long_declare_54e_s04_OMITBAD.c
+  - CWE590_Free_Memory_Not_on_Heap__free_struct_alloca_53c_s05_OMITBAD.c
+  - CWE590_Free_Memory_Not_on_Heap__free_wchar_t_static_17_s05_OMITBAD.c
+
+============================================================
+
+
+LLM Only (No SA) Implementation Results:
+============================================================
+Total files: 14
+Successfully fixed: 4 (28.6%)
+Failed to fix: 6 (42.9%)
+Skipped: 4 (28.6%)
+Average iterations per file: 3.40
+
+Successful files:
+  - CWE590_Free_Memory_Not_on_Heap__free_char_declare_05_s04_OMITBAD.c
+  - CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.c
+  - CWE590_Free_Memory_Not_on_Heap__free_struct_static_08_s05_OMITBAD.c
+  - CWE590_Free_Memory_Not_on_Heap__free_wchar_t_declare_07_s05_OMITBAD.c
+
+Failed files:
+  - CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.c
+  - CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c
+  - CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.c
+  - CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.c
+  - CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.c
+  - CWE590_Free_Memory_Not_on_Heap__free_wchar_t_alloca_32_s05_OMITBAD.c
+
+Skipped files:
+  - CWE590_Free_Memory_Not_on_Heap__free_int_static_54d_s04_OMITBAD.c
+  - CWE590_Free_Memory_Not_on_Heap__free_long_declare_54e_s04_OMITBAD.c
+  - CWE590_Free_Memory_Not_on_Heap__free_struct_alloca_53c_s05_OMITBAD.c
+  - CWE590_Free_Memory_Not_on_Heap__free_wchar_t_static_17_s05_OMITBAD.c
+
+============================================================
+
+
+No Few-Shot (SA + LLM + Judge, 0 examples) Implementation Results:
 ============================================================
 Total files: 14
 Successfully fixed: 3 (21.4%)
@@ -25,70 +87,6 @@ Failed files:
   - CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.c
   - CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.c
   - CWE590_Free_Memory_Not_on_Heap__free_wchar_t_alloca_32_s05_OMITBAD.c
-
-Skipped files:
-  - CWE590_Free_Memory_Not_on_Heap__free_int_static_54d_s04_OMITBAD.c
-  - CWE590_Free_Memory_Not_on_Heap__free_long_declare_54e_s04_OMITBAD.c
-  - CWE590_Free_Memory_Not_on_Heap__free_struct_alloca_53c_s05_OMITBAD.c
-  - CWE590_Free_Memory_Not_on_Heap__free_wchar_t_static_17_s05_OMITBAD.c
-
-============================================================
-
-
-LLM Only (No SA) Implementation Results:
-============================================================
-Total files: 14
-Successfully fixed: 0 (0.0%)
-Failed to fix: 14 (100.0%)
-Skipped: 0 (0.0%)
-Average iterations per file: 5.00
-
-Successful files:
-  (none)
-
-Failed files:
-  - CWE590_Free_Memory_Not_on_Heap__free_char_declare_05_s04_OMITBAD.c
-  - CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.c
-  - CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c
-  - CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.c
-  - CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.c
-  - CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.c
-  - CWE590_Free_Memory_Not_on_Heap__free_int_static_54d_s04_OMITBAD.c
-  - CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.c
-  - CWE590_Free_Memory_Not_on_Heap__free_long_declare_54e_s04_OMITBAD.c
-  - CWE590_Free_Memory_Not_on_Heap__free_struct_alloca_53c_s05_OMITBAD.c
-  - CWE590_Free_Memory_Not_on_Heap__free_struct_static_08_s05_OMITBAD.c
-  - CWE590_Free_Memory_Not_on_Heap__free_wchar_t_alloca_32_s05_OMITBAD.c
-  - CWE590_Free_Memory_Not_on_Heap__free_wchar_t_declare_07_s05_OMITBAD.c
-  - CWE590_Free_Memory_Not_on_Heap__free_wchar_t_static_17_s05_OMITBAD.c
-
-Skipped files:
-  (none)
-
-============================================================
-
-
-No Few-Shot (SA + LLM + Judge, 0 examples) Implementation Results:
-============================================================
-Total files: 14
-Successfully fixed: 4 (28.6%)
-Failed to fix: 6 (42.9%)
-Skipped: 4 (28.6%)
-Average iterations per file: 3.40
-
-Successful files:
-  - CWE590_Free_Memory_Not_on_Heap__free_char_declare_05_s04_OMITBAD.c
-  - CWE590_Free_Memory_Not_on_Heap__free_struct_static_08_s05_OMITBAD.c
-  - CWE590_Free_Memory_Not_on_Heap__free_wchar_t_alloca_32_s05_OMITBAD.c
-  - CWE590_Free_Memory_Not_on_Heap__free_wchar_t_declare_07_s05_OMITBAD.c
-
-Failed files:
-  - CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.c
-  - CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c
-  - CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.c
-  - CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.c
-  - CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.c
-  - CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.c
 
 Skipped files:
   - CWE590_Free_Memory_Not_on_Heap__free_int_static_54d_s04_OMITBAD.c

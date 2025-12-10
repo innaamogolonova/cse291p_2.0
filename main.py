@@ -134,6 +134,13 @@ def main(argv: list[str] | None = None) -> int:
         'no_few_shot': (process_no_few_shot, ImplementationStats("No Few-Shot (SA + LLM + Judge, 0 examples)")),
     }
     
+    # Initialize log file
+    log_file = eval_dir / "logs.txt"
+    with log_file.open("w", encoding="utf-8") as f:
+        f.write(f"Detailed Logs for {cwe_num}\n")
+        f.write(f"Generated: {datetime.now().isoformat()}\n")
+        f.write("="*60 + "\n\n")
+    
     # Process each file with each implementation
     for idx, test_case in enumerate(test_cases, 1):
         print(f"\n{'#'*60}")
@@ -159,6 +166,15 @@ def main(argv: list[str] | None = None) -> int:
             
             # Record results
             stats.add_result(test_case.name, verdict, iteration_count, log_output)
+            
+            # Write log entry in real-time
+            with log_file.open("a", encoding="utf-8") as f:
+                f.write(f"\n{'='*60}\n")
+                f.write(f"Implementation: {stats.name}\n")
+                f.write(f"File: {test_case.name}\n")
+                f.write(f"{'='*60}\n")
+                f.write(log_output)
+                f.write("\n")
             
             # Print brief result to console
             if verdict == 0:
@@ -187,23 +203,11 @@ def main(argv: list[str] | None = None) -> int:
             f.write(stats.summary())
             f.write("\n" + "="*60 + "\n\n")
     
-    # Write log.txt
-    log_file = eval_dir / "log.txt"
-    with log_file.open("w", encoding="utf-8") as f:
-        f.write(f"Detailed Logs for {cwe_num}\n")
-        f.write(f"Generated: {datetime.now().isoformat()}\n")
-        f.write("="*60 + "\n\n")
-        
-        for impl_name, (_, stats) in implementations.items():
-            f.write(f"\n{'#'*60}\n")
-            f.write(f"# Logs for {stats.name}\n")
-            f.write(f"{'#'*60}\n")
-            f.write("".join(stats.log_entries))
-            f.write("\n\n")
+
     
     print(f"\n{'='*60}")
     print(f"Evaluation results saved to: {eval_file}")
-    print(f"Detailed logs saved to: {log_file}")
+    print(f"Detailed logs saved to: {eval_dir / 'logs.txt'}")
     print(f"{'='*60}\n")
     
     # Print summary to console
