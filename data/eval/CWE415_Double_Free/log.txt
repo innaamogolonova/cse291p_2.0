@@ -1,0 +1,1023 @@
+Detailed Logs for CWE415_Double_Free
+Generated: 2025-12-09T18:23:04.668336
+============================================================
+
+
+############################################################
+# Logs for Full (SA + LLM + Judge)
+############################################################
+
+============================================================
+File: CWE415_Double_Free__malloc_free_char_10_s01_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE415_Double_Free__malloc_free_char_10_s01_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_char_10_s01_OMITBAD.c:15:9: error: Memory pointed to by 'data' is freed twice. [doubleFree]
+        free(data);
+        ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_char_10_s01_OMITBAD.c:11:9: note: Memory pointed to by 'data' is freed twice.
+        free(data);
+        ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_char_10_s01_OMITBAD.c:15:9: note: Memory pointed to by 'data' is freed twice.
+        free(data);
+        ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_char_10_s01_OMITBAD.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_char_10_s01_OMITBAD.c: OMITGOOD=1...
+
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_char_10_s01_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_char_10_s01_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response EQUIVALENT
+[SUCCESS] No SA and JUDGE warnings remaining after 1 iteration(s)
+
+=== Saving fixed code ===
+Total iterations: 1
+Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/omitbad_fixes/CWE415_Double_Free__malloc_free_char_10_s01_OMITBAD.c.fixed.c
+Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/omitbad_fixes/CWE415_Double_Free__malloc_free_char_10_s01_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+============================================================
+File: CWE415_Double_Free__malloc_free_int64_t_54b_s01_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE415_Double_Free__malloc_free_int64_t_54b_s01_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_int64_t_54b_s01_OMITBAD.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_int64_t_54b_s01_OMITBAD.c: OMITGOOD=1...
+
+[INFO] No warnings found in original file. Nothing to fix.
+
+[STDERR]
+
+============================================================
+File: CWE415_Double_Free__malloc_free_int_52a_s01_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE415_Double_Free__malloc_free_int_52a_s01_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_int_52a_s01_OMITBAD.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_int_52a_s01_OMITBAD.c: OMITGOOD=1...
+
+[INFO] No warnings found in original file. Nothing to fix.
+
+[STDERR]
+
+============================================================
+File: CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.c:20:9: error: Memory pointed to by 'data' is freed twice. [doubleFree]
+        free(data);
+        ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.c:11:9: note: Memory pointed to by 'data' is freed twice.
+        free(data);
+        ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.c:20:9: note: Memory pointed to by 'data' is freed twice.
+        free(data);
+        ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.c: OMITGOOD=1...
+
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:21:13: error: Memory pointed to by 'data' is freed twice. [doubleFree]
+            free(data);
+            ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:11:9: note: Memory pointed to by 'data' is freed twice.
+        free(data);
+        ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:21:13: note: Memory pointed to by 'data' is freed twice.
+            free(data);
+            ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c: OMITGOOD=1...
+
+[INFO] SA Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 2/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:21:13: error: Memory pointed to by 'data' is freed twice. [doubleFree]
+            free(data);
+            ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:11:9: note: Memory pointed to by 'data' is freed twice.
+        free(data);
+        ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:21:13: note: Memory pointed to by 'data' is freed twice.
+            free(data);
+            ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:28:13: error: Memory pointed to by 'data' is freed twice. [doubleFree]
+            free(data);
+            ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:11:9: note: Memory pointed to by 'data' is freed twice.
+        free(data);
+        ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:28:13: note: Memory pointed to by 'data' is freed twice.
+            free(data);
+            ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c: OMITGOOD=1...
+
+[INFO] SA Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 3/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:21:13: error: Memory pointed to by 'data' is freed twice. [doubleFree]
+            free(data);
+            ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:11:9: note: Memory pointed to by 'data' is freed twice.
+        free(data);
+        ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:21:13: note: Memory pointed to by 'data' is freed twice.
+            free(data);
+            ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c: OMITGOOD=1...
+
+[INFO] SA Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 4/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:21:13: error: Memory pointed to by 'data' is freed twice. [doubleFree]
+            free(data);
+            ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:11:9: note: Memory pointed to by 'data' is freed twice.
+        free(data);
+        ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:21:13: note: Memory pointed to by 'data' is freed twice.
+            free(data);
+            ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c: OMITGOOD=1...
+
+[INFO] SA Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 5/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:21:13: error: Memory pointed to by 'data' is freed twice. [doubleFree]
+            free(data);
+            ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:11:9: note: Memory pointed to by 'data' is freed twice.
+        free(data);
+        ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:21:13: note: Memory pointed to by 'data' is freed twice.
+            free(data);
+            ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c: OMITGOOD=1...
+
+[INFO] SA Warnings still present, continuing to next iteration...
+
+[WARNING] Max iterations (5) reached. Some warnings may remain.
+
+=== Saving fixed code ===
+Total iterations: 5
+Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/omitbad_fixes/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.c.fixed.c
+Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/omitbad_fixes/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+============================================================
+File: CWE415_Double_Free__malloc_free_struct_54d_s01_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE415_Double_Free__malloc_free_struct_54d_s01_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_struct_54d_s01_OMITBAD.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_struct_54d_s01_OMITBAD.c: OMITGOOD=1...
+
+[INFO] No warnings found in original file. Nothing to fix.
+
+[STDERR]
+
+============================================================
+File: CWE415_Double_Free__malloc_free_wchar_t_53c_s01_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE415_Double_Free__malloc_free_wchar_t_53c_s01_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_wchar_t_53c_s01_OMITBAD.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_wchar_t_53c_s01_OMITBAD.c: OMITGOOD=1...
+
+[INFO] No warnings found in original file. Nothing to fix.
+
+[STDERR]
+
+
+
+############################################################
+# Logs for LLM Only (No SA)
+############################################################
+
+============================================================
+File: CWE415_Double_Free__malloc_free_char_10_s01_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE415_Double_Free__malloc_free_char_10_s01_OMITBAD.c
+============================================================
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 2/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 3/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 4/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 5/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+[WARNING] Max iterations (5) reached.
+
+=== Saving fixed code ===
+Total iterations: 5
+Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE415_Double_Free__malloc_free_char_10_s01_OMITBAD.c.fixed.c
+Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE415_Double_Free__malloc_free_char_10_s01_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+============================================================
+File: CWE415_Double_Free__malloc_free_int64_t_54b_s01_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE415_Double_Free__malloc_free_int64_t_54b_s01_OMITBAD.c
+============================================================
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 2/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 3/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 4/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 5/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+[WARNING] Max iterations (5) reached.
+
+=== Saving fixed code ===
+Total iterations: 5
+Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE415_Double_Free__malloc_free_int64_t_54b_s01_OMITBAD.c.fixed.c
+Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE415_Double_Free__malloc_free_int64_t_54b_s01_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+============================================================
+File: CWE415_Double_Free__malloc_free_int_52a_s01_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE415_Double_Free__malloc_free_int_52a_s01_OMITBAD.c
+============================================================
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 2/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 3/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 4/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response EQUIVALENT
+[SUCCESS] JUDGE says equivalent after 4 iteration(s)
+
+=== Saving fixed code ===
+Total iterations: 4
+Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE415_Double_Free__malloc_free_int_52a_s01_OMITBAD.c.fixed.c
+Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE415_Double_Free__malloc_free_int_52a_s01_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+============================================================
+File: CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.c
+============================================================
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 2/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 3/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 4/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 5/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response 
+[SUCCESS] JUDGE says equivalent after 5 iteration(s)
+
+=== Saving fixed code ===
+Total iterations: 5
+Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.c.fixed.c
+Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+============================================================
+File: CWE415_Double_Free__malloc_free_struct_54d_s01_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE415_Double_Free__malloc_free_struct_54d_s01_OMITBAD.c
+============================================================
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 2/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 3/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 4/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 5/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+[WARNING] Max iterations (5) reached.
+
+=== Saving fixed code ===
+Total iterations: 5
+Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE415_Double_Free__malloc_free_struct_54d_s01_OMITBAD.c.fixed.c
+Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE415_Double_Free__malloc_free_struct_54d_s01_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+============================================================
+File: CWE415_Double_Free__malloc_free_wchar_t_53c_s01_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE415_Double_Free__malloc_free_wchar_t_53c_s01_OMITBAD.c
+============================================================
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 2/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 3/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 4/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 5/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+[WARNING] Max iterations (5) reached.
+
+=== Saving fixed code ===
+Total iterations: 5
+Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE415_Double_Free__malloc_free_wchar_t_53c_s01_OMITBAD.c.fixed.c
+Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE415_Double_Free__malloc_free_wchar_t_53c_s01_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+
+
+############################################################
+# Logs for No Few-Shot (SA + LLM + Judge, 0 examples)
+############################################################
+
+============================================================
+File: CWE415_Double_Free__malloc_free_char_10_s01_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE415_Double_Free__malloc_free_char_10_s01_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_char_10_s01_OMITBAD.c:15:9: error: Memory pointed to by 'data' is freed twice. [doubleFree]
+        free(data);
+        ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_char_10_s01_OMITBAD.c:11:9: note: Memory pointed to by 'data' is freed twice.
+        free(data);
+        ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_char_10_s01_OMITBAD.c:15:9: note: Memory pointed to by 'data' is freed twice.
+        free(data);
+        ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_char_10_s01_OMITBAD.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_char_10_s01_OMITBAD.c: OMITGOOD=1...
+
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_char_10_s01_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_char_10_s01_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response EQUIVALENT
+[SUCCESS] No SA and JUDGE warnings remaining after 1 iteration(s)
+
+=== Saving fixed code ===
+Total iterations: 1
+Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/no_few_shot_fixes/CWE415_Double_Free__malloc_free_char_10_s01_OMITBAD.c.fixed.c
+Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/no_few_shot_fixes/CWE415_Double_Free__malloc_free_char_10_s01_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+============================================================
+File: CWE415_Double_Free__malloc_free_int64_t_54b_s01_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE415_Double_Free__malloc_free_int64_t_54b_s01_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_int64_t_54b_s01_OMITBAD.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_int64_t_54b_s01_OMITBAD.c: OMITGOOD=1...
+
+[INFO] No warnings found in original file. Nothing to fix.
+
+[STDERR]
+
+============================================================
+File: CWE415_Double_Free__malloc_free_int_52a_s01_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE415_Double_Free__malloc_free_int_52a_s01_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_int_52a_s01_OMITBAD.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_int_52a_s01_OMITBAD.c: OMITGOOD=1...
+
+[INFO] No warnings found in original file. Nothing to fix.
+
+[STDERR]
+
+============================================================
+File: CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.c:20:9: error: Memory pointed to by 'data' is freed twice. [doubleFree]
+        free(data);
+        ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.c:11:9: note: Memory pointed to by 'data' is freed twice.
+        free(data);
+        ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.c:20:9: note: Memory pointed to by 'data' is freed twice.
+        free(data);
+        ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.c: OMITGOOD=1...
+
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:22:13: error: Memory pointed to by 'data' is freed twice. [doubleFree]
+            free(data);
+            ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:11:9: note: Memory pointed to by 'data' is freed twice.
+        free(data);
+        ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:22:13: note: Memory pointed to by 'data' is freed twice.
+            free(data);
+            ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c: OMITGOOD=1...
+
+[INFO] SA Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 2/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:22:13: error: Memory pointed to by 'data' is freed twice. [doubleFree]
+            free(data);
+            ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:11:9: note: Memory pointed to by 'data' is freed twice.
+        free(data);
+        ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:22:13: note: Memory pointed to by 'data' is freed twice.
+            free(data);
+            ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:30:13: error: Memory pointed to by 'data' is freed twice. [doubleFree]
+            free(data);
+            ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:11:9: note: Memory pointed to by 'data' is freed twice.
+        free(data);
+        ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:30:13: note: Memory pointed to by 'data' is freed twice.
+            free(data);
+            ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c: OMITGOOD=1...
+
+[INFO] SA Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 3/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:22:13: error: Memory pointed to by 'data' is freed twice. [doubleFree]
+            free(data);
+            ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:11:9: note: Memory pointed to by 'data' is freed twice.
+        free(data);
+        ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:22:13: note: Memory pointed to by 'data' is freed twice.
+            free(data);
+            ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c: OMITGOOD=1...
+
+[INFO] SA Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 4/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:22:13: error: Memory pointed to by 'data' is freed twice. [doubleFree]
+            free(data);
+            ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:11:9: note: Memory pointed to by 'data' is freed twice.
+        free(data);
+        ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:22:13: note: Memory pointed to by 'data' is freed twice.
+            free(data);
+            ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c: OMITGOOD=1...
+
+[INFO] SA Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 5/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:22:13: error: Memory pointed to by 'data' is freed twice. [doubleFree]
+            free(data);
+            ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:11:9: note: Memory pointed to by 'data' is freed twice.
+        free(data);
+        ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:22:13: note: Memory pointed to by 'data' is freed twice.
+            free(data);
+            ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c: OMITGOOD=1...
+
+[INFO] SA Warnings still present, continuing to next iteration...
+
+[WARNING] Max iterations (5) reached. Some warnings may remain.
+
+=== Saving fixed code ===
+Total iterations: 5
+Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/no_few_shot_fixes/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.c.fixed.c
+Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/no_few_shot_fixes/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+============================================================
+File: CWE415_Double_Free__malloc_free_struct_54d_s01_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE415_Double_Free__malloc_free_struct_54d_s01_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_struct_54d_s01_OMITBAD.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_struct_54d_s01_OMITBAD.c: OMITGOOD=1...
+
+[INFO] No warnings found in original file. Nothing to fix.
+
+[STDERR]
+
+============================================================
+File: CWE415_Double_Free__malloc_free_wchar_t_53c_s01_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE415_Double_Free__malloc_free_wchar_t_53c_s01_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_wchar_t_53c_s01_OMITBAD.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_wchar_t_53c_s01_OMITBAD.c: OMITGOOD=1...
+
+[INFO] No warnings found in original file. Nothing to fix.
+
+[STDERR]
+
+

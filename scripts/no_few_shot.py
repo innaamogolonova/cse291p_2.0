@@ -1,27 +1,38 @@
 #!/usr/bin/env python3
-# same thing as main.py but with no few-shot examples provided to LLM
+# same thing as full_implementation.py but with no few-shot examples provided to LLM
 
 import sys
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO_ROOT))
-JULIET_DIR = REPO_ROOT / "data" / "juliet" / "omitbad"
 OUTPUT_DIR = REPO_ROOT / "data" / "results" / "no_few_shot_fixes"
 
 MAX_ITERATIONS = 5  # Maximum number of fix iterations
 
 def unwrap_markdown(text: str) -> str:
-    """Remove ```c or ```cpp fences if present, otherwise return text unchanged."""
+    """Remove markdown fences and source tags if present, otherwise return text unchanged."""
+    lines = text.splitlines()
+    
+    # Remove markdown code fences (```c, ```cpp, etc.)
     if text.startswith("```"):
-        # Remove the first line and last line
-        lines = text.splitlines()
         if len(lines) >= 2:
-            return "\n".join(lines[1:-1])
-    return text
+            lines = lines[1:-1]  # Remove first and last line
+    
+    # Remove --- BEGIN SOURCE.C --- and --- END SOURCE.C --- tags
+    if lines:
+        # Check and remove BEGIN tag (case-insensitive)
+        if lines[0].strip().upper().startswith("--- BEGIN"):
+            lines = lines[1:]
+        
+        # Check and remove END tag (case-insensitive)
+        if lines and lines[-1].strip().upper().startswith("--- END"):
+            lines = lines[:-1]
+    
+    return "\n".join(lines)
 
-# Returns 0 when successful fix, otherwise 1
-def process_test_case_with_llm(test_file: Path) -> int:
+# Returns (verdict, iteration_count) tuple: verdict is 0 when successful fix, -1 when skipped, 1 when failed
+def process_test_case_with_llm(test_file: Path) -> tuple[int, int]:
     """
     Process a single test case with iterative fixing:
     1. Run cppcheck to get diagnostics
@@ -49,7 +60,7 @@ def process_test_case_with_llm(test_file: Path) -> int:
 
     if not has_warnings(diagnostics):
         print("[INFO] No warnings found in original file. Nothing to fix.")
-        return -1
+        return (-1, 0)
 
     # Step 2: Read source code
     print(f"\n=== Reading source code ===")
@@ -75,7 +86,7 @@ def process_test_case_with_llm(test_file: Path) -> int:
         print(f"[ERROR] Failed to initialize LLM client: {e}", file=sys.stderr)
         import traceback
         traceback.print_exc()
-        raise  # Re-raise to be caught by main loop
+        raise  # Re-raise to be caught by caller
 
     # Iterative fix loop
     current_code = source_code
@@ -102,7 +113,7 @@ def process_test_case_with_llm(test_file: Path) -> int:
             print(f"[ERROR] Failed to process with LLM: {e}", file=sys.stderr)
             import traceback
             traceback.print_exc()
-            raise  # Re-raise to be caught by main loop
+            raise  # Re-raise to be caught by caller
 
         # Update iteration count in the result
         fix_result.iteration_count = iteration
@@ -138,7 +149,6 @@ def process_test_case_with_llm(test_file: Path) -> int:
             print(f"\n=== Calling JUDGE LLM ===")
             try:
                 judge_result = llm_client.judge_func_eq(
-                    # TODO: Check that source_code is in fact the OMITBAD code initialized outside the iteration loop.
                     omitbad_code=omitbad_code, 
                     fixed_code=current_code,
                 )
@@ -147,7 +157,7 @@ def process_test_case_with_llm(test_file: Path) -> int:
                 print(f"[ERROR] Failed to process with LLM: {e}", file=sys.stderr)
                 import traceback
                 traceback.print_exc()
-                raise  # Re-raise to be caught by main loop
+                raise  # Re-raise to be caught by caller
 
             # Check if JUDGE warnings remain
             if "NOT" in judge_result.verdict:
@@ -176,59 +186,37 @@ def process_test_case_with_llm(test_file: Path) -> int:
     else:
         print(f"[ERROR] No fix was generated", file=sys.stderr)
         raise RuntimeError("No fix was generated")
-    return verdict
+    return (verdict, fix_result.iteration_count if fix_result else 0)
 
 
-def main():
-    # Get all C test case files in the test_cases directory
-    test_cases = sorted(JULIET_DIR.glob("*.c"))
-
-    # Accumulate results and print at end ["success", "failure", "skipped"]
-    stats = [0, 0, 0]
-    success_wb = []
-    failure_wb = []
-
-    if not test_cases:
-        print(f"[ERROR] No test cases found in: {JULIET_DIR}", file=sys.stderr)
-        sys.exit(1)
+def main(argv: list[str] | None = None) -> int:
+    """
+    Process a single test case file.
     
-    print(f"\n{'='*60}")
-    print(f"Found {len(test_cases)} test case(s) to process")
-    print(f"{'='*60}")
+    Usage: python3 no_few_shot.py <path_to_test_case.c>
+    """
+    argv = argv if argv is not None else sys.argv[1:]
     
-    for idx, test_case in enumerate(test_cases, 1):
-        print(f"\n\n{'#'*60}")
-        print(f"# Processing test case {idx}/{len(test_cases)}")
-        print(f"{'#'*60}")
-        
-        try:
-            res = process_test_case_with_llm(test_case)
-        except Exception as e:
-            print(f"\n[ERROR] Failed to process {test_case.name}: {e}", file=sys.stderr)
-            import traceback
-            traceback.print_exc()
-            print(f"[INFO] Continuing to next test case...\n")
-            continue
-
-        # Maintain files holding files succeeded/failed, and skipped on
-        if res == -1: # skip
-            stats[2] += 1
-        elif res == 0: # success
-            stats[0] += 1
-            success_wb.append(test_case.name)
-        else: # fail
-            stats[1] += 1
-            failure_wb.append(test_case.name)
-
-    print(f"\n\n{'='*60}")
-    print(f"All done! Processed {len(test_cases)} test case(s)")
-    print(f"{'='*60}")
-
-    # Printing back results
-    print(f"{stats[0]}/{sum(stats)} successfully fixed!")
-    print(f"{stats[1]}/{sum(stats)} failed to be fixed...")
-    print(f"{stats[2]} cases skipped.")
+    if len(argv) != 1:
+        print("Usage: python3 no_few_shot.py <path_to_test_case.c>", file=sys.stderr)
+        return 1
+    
+    test_file = Path(argv[0])
+    
+    if not test_file.exists():
+        print(f"[ERROR] Test file does not exist: {test_file}", file=sys.stderr)
+        return 1
+    
+    try:
+        verdict, iteration_count = process_test_case_with_llm(test_file)
+        print(f"\n[RESULT] Verdict: {verdict}, Iterations: {iteration_count}")
+        return 0
+    except Exception as e:
+        print(f"\n[ERROR] Failed to process {test_file.name}: {e}", file=sys.stderr)
+        import traceback
+        traceback.print_exc()
+        return 1
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

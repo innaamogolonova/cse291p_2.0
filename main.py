@@ -1,235 +1,224 @@
 #!/usr/bin/env python3
+"""
+Main orchestration script that runs all three implementations on a given CWE directory.
+
+Usage: python3 main.py <CWE#>
+Example: python3 main.py CWE121_Stack_Based_Buffer_Overflow
+"""
 
 import sys
+import io
+import contextlib
 from pathlib import Path
+from datetime import datetime
 
 REPO_ROOT = Path(__file__).resolve().parent
-JULIET_DIR = REPO_ROOT / "data" / "juliet" / "omitbad"
-OUTPUT_DIR = REPO_ROOT / "data" / "results" / "omitbad_fixes"
+sys.path.insert(0, str(REPO_ROOT))
 
-MAX_ITERATIONS = 5  # Maximum number of fix iterations
+from scripts.full_implementation import process_test_case_with_llm as process_full
+from scripts.llm_only import process_test_case_with_llm as process_llm_only
+from scripts.no_few_shot import process_test_case_with_llm as process_no_few_shot
 
-def unwrap_markdown(text: str) -> str:
-    """Remove ```c or ```cpp fences if present, otherwise return text unchanged."""
-    if text.startswith("```"):
-        # Remove the first line and last line
-        lines = text.splitlines()
-        if len(lines) >= 2:
-            return "\n".join(lines[1:-1])
-    return text
 
-# Returns 0 when successful fix, otherwise 1
-def process_test_case_with_llm(test_file: Path) -> int:
-    """
-    Process a single test case with iterative fixing:
-    1. Run cppcheck to get diagnostics
-    2. Read the source code
-    3. Call LLM to generate a fix
-    4. Run cppcheck on the fixed code
-    5. If warnings remain, repeat steps 3-4 (up to MAX_ITERATIONS)
-    6. Save the final fixed code and metadata with iteration count
-    """
-    from llm.interface import OpenAILLMClient, LLMConfig
-    from scripts.static_analyzer import run_cppcheck, has_warnings
-
-    # Final verdict on LLM code after MAX_ITERATIONS
-    verdict = 1
-
-    print(f"\n{'='*60}")
-    print(f"Processing: {test_file.name}")
-    print(f"{'='*60}")
-
-    # Step 1: Run static analyzer on original file
-    print(f"\n=== Running cppcheck on original file ===")
-    diagnostics = run_cppcheck(test_file)
-    print("[DIAGNOSTICS]")
-    print(diagnostics)
-
-    if not has_warnings(diagnostics):
-        print("[INFO] No warnings found in original file. Nothing to fix.")
-        return -1
-
-    # Step 2: Read source code
-    print(f"\n=== Reading source code ===")
-    source_code = test_file.read_text(encoding="utf-8")
-    omitbad_code = source_code
-
-    # Step 3: Initialize LLM client
-    print(f"\n=== Initializing LLM client ===")
+@contextlib.contextmanager
+def capture_output():
+    """Capture stdout and stderr."""
+    old_stdout = sys.stdout
+    old_stderr = sys.stderr
+    stdout_capture = io.StringIO()
+    stderr_capture = io.StringIO()
+    
     try:
-        llm_client = OpenAILLMClient(
-            config=LLMConfig(
-                model="gpt-4o-mini",
-                temperature=0.1,
-                max_output_tokens=4096,
-            ),
-            judgeconfig=LLMConfig(
-                model="gpt-5-nano",
-                temperature=0.1,
-                max_output_tokens=4096,
-            )
-        )
-    except Exception as e:
-        print(f"[ERROR] Failed to initialize LLM client: {e}", file=sys.stderr)
-        import traceback
-        traceback.print_exc()
-        raise  # Re-raise to be caught by main loop
+        sys.stdout = stdout_capture
+        sys.stderr = stderr_capture
+        yield stdout_capture, stderr_capture
+    finally:
+        sys.stdout = old_stdout
+        sys.stderr = old_stderr
 
-    # Iterative fix loop
-    current_code = source_code
-    current_diagnostics = diagnostics
-    iteration = 0
-    fix_result = None
 
-    while iteration < MAX_ITERATIONS:
-        iteration += 1
-        print(f"\n{'='*60}")
-        print(f"=== Iteration {iteration}/{MAX_ITERATIONS} ===")
-        print(f"{'='*60}")
-
-        # Call LLM to generate fix
-        print(f"\n=== Calling LLM to generate fix ===")
-        try:
-            fix_result = llm_client.suggest_fix(
-                source_code=current_code,
-                diagnostics=current_diagnostics,
-            )
-            print(f"[SUCCESS] LLM generated a fix")
-        except Exception as e:
-            print(f"[ERROR] Failed to process with LLM: {e}", file=sys.stderr)
-            import traceback
-            traceback.print_exc()
-            raise  # Re-raise to be caught by main loop
-
-        # Update iteration count in the result
-        fix_result.iteration_count = iteration
-
-        # Write fixed code to a temporary location for analysis
-        print(f"\n=== Running cppcheck on fixed code ===")
-        temp_file = test_file.with_suffix(".tmp.c")
-        fix_result.fixed_code = unwrap_markdown(fix_result.fixed_code)
-        temp_file.write_text(fix_result.fixed_code, encoding="utf-8")
-
-        try:
-            # Run static analyzer on fixed code
-            new_diagnostics = run_cppcheck(temp_file)
-            print("[DIAGNOSTICS AFTER FIX]")
-            print(new_diagnostics)
-
-            # Check if SA warnings remain
-            if not has_warnings(new_diagnostics):
-                print(f"[SUCCESS] No SA warnings remain")
-                verdict = 0 # tentatively set to SUCCESS
-            else:
-                print(f"[INFO] SA Warnings still present, continuing to next iteration...")
-                current_code = fix_result.fixed_code
-                current_diagnostics = new_diagnostics
-        finally:
-            # Clean up temporary file
-            if temp_file.exists():
-                temp_file.unlink()
-
-        # Check if JUDGE warnings remain (if no SA warnings)
-        if verdict == 0:
-            # Call JUDGE LLM
-            print(f"\n=== Calling JUDGE LLM ===")
-            try:
-                judge_result = llm_client.judge_func_eq(
-                    # TODO: Check that source_code is in fact the OMITBAD code initialized outside the iteration loop.
-                    omitbad_code=omitbad_code, 
-                    fixed_code=current_code,
-                )
-                print(f"[SUCCESS] JUDGE LLM gave a response {judge_result.verdict[:min(14,len(judge_result.verdict))]}")
-            except Exception as e:
-                print(f"[ERROR] Failed to process with LLM: {e}", file=sys.stderr)
-                import traceback
-                traceback.print_exc()
-                raise  # Re-raise to be caught by main loop
-
-            # Check if JUDGE warnings remain
-            if "NOT" in judge_result.verdict:
-                verdict = 1
-                print(f"[INFO] JUDGE Warnings still present, continuing to next iteration...")
-            else:
-                print(f"[SUCCESS] No SA and JUDGE warnings remaining after {iteration} iteration(s)")
-                break
-
-    else:
-        # Loop exhausted without eliminating all warnings
-        print(f"\n[WARNING] Max iterations ({MAX_ITERATIONS}) reached. Some warnings may remain.")
-
-    # Step 4: Save the final result
-    if fix_result is not None:
-        print(f"\n=== Saving fixed code ===")
-        print(f"Total iterations: {fix_result.iteration_count}")
+class ImplementationStats:
+    """Track statistics for a single implementation."""
+    
+    def __init__(self, name: str):
+        self.name = name
+        self.total_files = 0
+        self.successful = []
+        self.failed = []
+        self.skipped = []
+        self.iterations = []  # Store iteration counts for all processed files
+        self.log_entries = []  # Store log output for each file
+    
+    def add_result(self, filename: str, verdict: int, iteration_count: int, log_output: str):
+        """Add a result for a single file."""
+        self.total_files += 1
+        self.log_entries.append(f"\n{'='*60}\nFile: {filename}\n{'='*60}\n{log_output}")
         
-        saved_paths = fix_result.save(
-            source_path=test_file,
-            output_root=OUTPUT_DIR,
-        )
+        if verdict == -1:  # skipped
+            self.skipped.append(filename)
+        elif verdict == 0:  # success
+            self.successful.append(filename)
+            self.iterations.append(iteration_count)
+        else:  # failure
+            self.failed.append(filename)
+            self.iterations.append(iteration_count)
+    
+    def average_iterations(self) -> float:
+        """Calculate average iterations across all processed files."""
+        return sum(self.iterations) / len(self.iterations) if self.iterations else 0.0
+    
+    def summary(self) -> str:
+        """Generate summary statistics text."""
+        total = self.total_files
+        success_pct = (len(self.successful) / total * 100) if total > 0 else 0
+        failed_pct = (len(self.failed) / total * 100) if total > 0 else 0
+        skipped_pct = (len(self.skipped) / total * 100) if total > 0 else 0
+        
+        return f"""
+{self.name} Implementation Results:
+{'='*60}
+Total files: {total}
+Successfully fixed: {len(self.successful)} ({success_pct:.1f}%)
+Failed to fix: {len(self.failed)} ({failed_pct:.1f}%)
+Skipped: {len(self.skipped)} ({skipped_pct:.1f}%)
+Average iterations per file: {self.average_iterations():.2f}
 
-        print(f"Fixed code saved to: {saved_paths['fixed']}")
-        print(f"Metadata saved to: {saved_paths['metadata']}")
-    else:
-        print(f"[ERROR] No fix was generated", file=sys.stderr)
-        raise RuntimeError("No fix was generated")
-    return verdict
+Successful files:
+{chr(10).join('  - ' + f for f in self.successful) if self.successful else '  (none)'}
+
+Failed files:
+{chr(10).join('  - ' + f for f in self.failed) if self.failed else '  (none)'}
+
+Skipped files:
+{chr(10).join('  - ' + f for f in self.skipped) if self.skipped else '  (none)'}
+"""
 
 
-def main():
-    # Get all C test case files in the test_cases directory
-    test_cases = sorted(JULIET_DIR.glob("*.c"))
-
-    # Accumulate results and print at end ["success", "failure", "skipped"]
-    stats = [0, 0, 0]
-    success_wb = []
-    failure_wb = []
-
+def main(argv: list[str] | None = None) -> int:
+    """Main orchestration function."""
+    argv = argv if argv is not None else sys.argv[1:]
+    
+    if len(argv) != 1:
+        print("Usage: python3 main.py <CWE#>", file=sys.stderr)
+        print("Example: python3 main.py CWE121_Stack_Based_Buffer_Overflow", file=sys.stderr)
+        return 1
+    
+    cwe_num = argv[0]
+    
+    # Setup paths
+    input_dir = REPO_ROOT / "data" / "juliet" / "omitbad" / cwe_num
+    eval_dir = REPO_ROOT / "data" / "eval" / cwe_num
+    eval_dir.mkdir(parents=True, exist_ok=True)
+    
+    # Verify input directory exists
+    if not input_dir.exists():
+        print(f"[ERROR] Input directory does not exist: {input_dir}", file=sys.stderr)
+        return 1
+    
+    # Get all test case files
+    test_cases = sorted(input_dir.glob("*.c"))
+    
     if not test_cases:
-        print(f"[ERROR] No test cases found in: {JULIET_DIR}", file=sys.stderr)
-        sys.exit(1)
+        print(f"[ERROR] No test cases found in: {input_dir}", file=sys.stderr)
+        return 1
     
     print(f"\n{'='*60}")
-    print(f"Found {len(test_cases)} test case(s) to process")
-    print(f"{'='*60}")
+    print(f"Processing CWE: {cwe_num}")
+    print(f"Found {len(test_cases)} test case(s)")
+    print(f"{'='*60}\n")
     
+    # Initialize statistics for each implementation
+    implementations = {
+        'full': (process_full, ImplementationStats("Full (SA + LLM + Judge)")),
+        'llm_only': (process_llm_only, ImplementationStats("LLM Only (No SA)")),
+        'no_few_shot': (process_no_few_shot, ImplementationStats("No Few-Shot (SA + LLM + Judge, 0 examples)")),
+    }
+    
+    # Process each file with each implementation
     for idx, test_case in enumerate(test_cases, 1):
-        print(f"\n\n{'#'*60}")
-        print(f"# Processing test case {idx}/{len(test_cases)}")
+        print(f"\n{'#'*60}")
+        print(f"# Processing test case {idx}/{len(test_cases)}: {test_case.name}")
         print(f"{'#'*60}")
         
-        try:
-            res = process_test_case_with_llm(test_case)
-        except Exception as e:
-            print(f"\n[ERROR] Failed to process {test_case.name}: {e}", file=sys.stderr)
-            import traceback
-            traceback.print_exc()
-            print(f"[INFO] Continuing to next test case...\n")
-            continue
-
-        # Maintain files holding files succeeded/failed, and skipped on
-        if res == -1: # skip
-            stats[2] += 1
-        elif res == 0: # success
-            stats[0] += 1
-            success_wb.append(test_case.name)
-        else: # fail
-            stats[1] += 1
-            failure_wb.append(test_case.name)
-
-    print(f"\n\n{'='*60}")
-    print(f"All done! Processed {len(test_cases)} test case(s)")
+        for impl_name, (process_func, stats) in implementations.items():
+            print(f"\n--- Running {stats.name} ---")
+            
+            # Capture output
+            with capture_output() as (stdout_capture, stderr_capture):
+                try:
+                    verdict, iteration_count = process_func(test_case)
+                except Exception as e:
+                    print(f"[ERROR] Exception during processing: {e}")
+                    import traceback
+                    traceback.print_exc()
+                    verdict = 1  # Mark as failure
+                    iteration_count = 0
+            
+            # Get captured logs
+            log_output = stdout_capture.getvalue() + "\n[STDERR]\n" + stderr_capture.getvalue()
+            
+            # Record results
+            stats.add_result(test_case.name, verdict, iteration_count, log_output)
+            
+            # Print brief result to console
+            if verdict == 0:
+                result_str = "SUCCESS"
+            elif verdict == -1:
+                result_str = "SKIPPED"
+            else:
+                result_str = "FAILED"
+            
+            print(f"[{result_str}] {test_case.name} - {stats.name} (iterations: {iteration_count})")
+    
+    # Save evaluation results
+    print(f"\n{'='*60}")
+    print("Saving evaluation results...")
     print(f"{'='*60}")
-
-    # Printing back results
-    print(f"{stats[0]}/{sum(stats)} successfully fixed!")
-    print(f"{stats[1]}/{sum(stats)} failed to be fixed...")
-    print(f"{stats[2]} cases skipped.")
-    with open("success.txt", "w") as f:
-        f.write("\n".join(success_wb))
-    with open("failure.txt", "w") as f:
-        f.write("\n".join(failure_wb))
+    
+    # Write eval.txt
+    eval_file = eval_dir / "eval.txt"
+    with eval_file.open("w", encoding="utf-8") as f:
+        f.write(f"Evaluation Results for {cwe_num}\n")
+        f.write(f"Generated: {datetime.now().isoformat()}\n")
+        f.write(f"Total test cases: {len(test_cases)}\n")
+        f.write("="*60 + "\n\n")
+        
+        for impl_name, (_, stats) in implementations.items():
+            f.write(stats.summary())
+            f.write("\n" + "="*60 + "\n\n")
+    
+    # Write log.txt
+    log_file = eval_dir / "log.txt"
+    with log_file.open("w", encoding="utf-8") as f:
+        f.write(f"Detailed Logs for {cwe_num}\n")
+        f.write(f"Generated: {datetime.now().isoformat()}\n")
+        f.write("="*60 + "\n\n")
+        
+        for impl_name, (_, stats) in implementations.items():
+            f.write(f"\n{'#'*60}\n")
+            f.write(f"# Logs for {stats.name}\n")
+            f.write(f"{'#'*60}\n")
+            f.write("".join(stats.log_entries))
+            f.write("\n\n")
+    
+    print(f"\n{'='*60}")
+    print(f"Evaluation results saved to: {eval_file}")
+    print(f"Detailed logs saved to: {log_file}")
+    print(f"{'='*60}\n")
+    
+    # Print summary to console
+    print("\n" + "="*60)
+    print("SUMMARY")
+    print("="*60)
+    for impl_name, (_, stats) in implementations.items():
+        print(f"\n{stats.name}:")
+        print(f"  Success: {len(stats.successful)}/{stats.total_files}")
+        print(f"  Failed: {len(stats.failed)}/{stats.total_files}")
+        print(f"  Skipped: {len(stats.skipped)}/{stats.total_files}")
+        print(f"  Avg iterations: {stats.average_iterations():.2f}")
+    
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

@@ -1,0 +1,3577 @@
+Detailed Logs for CWE590_Free_Memory_Not_on_Heap
+Generated: 2025-12-09T19:01:26.024813
+============================================================
+
+
+############################################################
+# Logs for Full (SA + LLM + Judge)
+############################################################
+
+============================================================
+File: CWE590_Free_Memory_Not_on_Heap__free_char_declare_05_s04_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE590_Free_Memory_Not_on_Heap__free_char_declare_05_s04_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_char_declare_05_s04_OMITBAD.c:16:15: error: Using pointer to local variable 'dataBuffer' that is out of scope. [invalidLifetime]
+    printLine(data);
+              ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_char_declare_05_s04_OMITBAD.c:13:20: note: Array decayed to pointer here.
+            data = dataBuffer;
+                   ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_char_declare_05_s04_OMITBAD.c:10:18: note: Variable created here.
+            char dataBuffer[100];
+                 ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_char_declare_05_s04_OMITBAD.c:16:15: note: Using pointer to local variable 'dataBuffer' that is out of scope.
+    printLine(data);
+              ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_char_declare_05_s04_OMITBAD.c:17:10: error: Using pointer to local variable 'dataBuffer' that is out of scope. [invalidLifetime]
+    free(data);
+         ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_char_declare_05_s04_OMITBAD.c:13:20: note: Array decayed to pointer here.
+            data = dataBuffer;
+                   ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_char_declare_05_s04_OMITBAD.c:10:18: note: Variable created here.
+            char dataBuffer[100];
+                 ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_char_declare_05_s04_OMITBAD.c:17:10: note: Using pointer to local variable 'dataBuffer' that is out of scope.
+    free(data);
+         ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_char_declare_05_s04_OMITBAD.c:17:10: error: Deallocation of an auto-variable (dataBuffer) results in undefined behaviour. [autovarInvalidDeallocation]
+    free(data);
+         ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_char_declare_05_s04_OMITBAD.c:13:20: note: Assignment 'data=dataBuffer', assigned value is dataBuffer
+            data = dataBuffer;
+                   ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_char_declare_05_s04_OMITBAD.c:17:10: note: Deallocating memory that was not dynamically allocated
+    free(data);
+         ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_char_declare_05_s04_OMITBAD.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_char_declare_05_s04_OMITBAD.c: OMITGOOD=1...
+
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_char_declare_05_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_char_declare_05_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response EQUIVALENT
+[SUCCESS] No SA and JUDGE warnings remaining after 1 iteration(s)
+
+=== Saving fixed code ===
+Total iterations: 1
+Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/omitbad_fixes/CWE590_Free_Memory_Not_on_Heap__free_char_declare_05_s04_OMITBAD.c.fixed.c
+Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/omitbad_fixes/CWE590_Free_Memory_Not_on_Heap__free_char_declare_05_s04_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+============================================================
+File: CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.c:14:43: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
+        int64_t * dataBuffer = (int64_t *)ALLOCA(100*sizeof(int64_t));
+                                          ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.c: OMITGOOD=1...
+
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.tmp.c:19:17: warning: If memory allocation fails, then there is a possible null pointer dereference: dataBuffer [nullPointerOutOfMemory]
+                dataBuffer[i] = 5LL;
+                ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.tmp.c:14:49: note: Assuming allocation function fails
+        int64_t * dataBuffer = (int64_t *)malloc(100*sizeof(int64_t));
+                                                ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.tmp.c:14:32: note: Assignment 'dataBuffer=(int64_t*)malloc(100*sizeof(int64_t))', assigned value is 0
+        int64_t * dataBuffer = (int64_t *)malloc(100*sizeof(int64_t));
+                               ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.tmp.c:19:17: note: Null pointer dereference
+                dataBuffer[i] = 5LL;
+                ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[INFO] SA Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 2/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 3/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 4/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 5/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+[WARNING] Max iterations (5) reached. Some warnings may remain.
+
+=== Saving fixed code ===
+Total iterations: 5
+Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/omitbad_fixes/CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.c.fixed.c
+Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/omitbad_fixes/CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+============================================================
+File: CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c:21:23: error: Using pointer to local variable 'dataBuffer' that is out of scope. [invalidLifetime]
+    printLongLongLine(data[0]);
+                      ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c:18:20: note: Array decayed to pointer here.
+            data = dataBuffer;
+                   ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c:10:21: note: Variable created here.
+            int64_t dataBuffer[100];
+                    ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c:21:23: note: Using pointer to local variable 'dataBuffer' that is out of scope.
+    printLongLongLine(data[0]);
+                      ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c:22:10: error: Using pointer to local variable 'dataBuffer' that is out of scope. [invalidLifetime]
+    free(data);
+         ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c:18:20: note: Array decayed to pointer here.
+            data = dataBuffer;
+                   ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c:10:21: note: Variable created here.
+            int64_t dataBuffer[100];
+                    ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c:22:10: note: Using pointer to local variable 'dataBuffer' that is out of scope.
+    free(data);
+         ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c:22:10: error: Deallocation of an auto-variable (dataBuffer) results in undefined behaviour. [autovarInvalidDeallocation]
+    free(data);
+         ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c:18:20: note: Assignment 'data=dataBuffer', assigned value is dataBuffer
+            data = dataBuffer;
+                   ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c:22:10: note: Deallocating memory that was not dynamically allocated
+    free(data);
+         ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c:21:23: warning: Possible null pointer dereference: data [nullPointer]
+    printLongLongLine(data[0]);
+                      ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c:6:12: note: Assignment 'data=NULL', assigned value is 0
+    data = NULL;
+           ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c:7:25: note: Assuming condition is false
+    if(GLOBAL_CONST_FIVE==5)
+                        ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c:21:23: note: Null pointer dereference
+    printLongLongLine(data[0]);
+                      ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c: OMITGOOD=1...
+
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.tmp.c:20:23: warning: Possible null pointer dereference: data [nullPointer]
+    printLongLongLine(data[0]);
+                      ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.tmp.c:8:12: note: Assignment 'data=NULL', assigned value is 0
+    data = NULL;
+           ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.tmp.c:9:25: note: Assuming condition is false
+    if(GLOBAL_CONST_FIVE==5)
+                        ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.tmp.c:20:23: note: Null pointer dereference
+    printLongLongLine(data[0]);
+                      ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[INFO] SA Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 2/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 3/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 4/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 5/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+[WARNING] Max iterations (5) reached. Some warnings may remain.
+
+=== Saving fixed code ===
+Total iterations: 5
+Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/omitbad_fixes/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c.fixed.c
+Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/omitbad_fixes/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+============================================================
+File: CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.c:22:10: error: Deallocation of a static variable (dataBuffer) results in undefined behaviour. [autovarInvalidDeallocation]
+    free(data);
+         ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.c:18:20: note: Assignment 'data=dataBuffer', assigned value is dataBuffer
+            data = dataBuffer;
+                   ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.c:22:10: note: Deallocating memory that was not dynamically allocated
+    free(data);
+         ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.c:21:23: warning: Possible null pointer dereference: data [nullPointer]
+    printLongLongLine(data[0]);
+                      ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.c:6:12: note: Assignment 'data=NULL', assigned value is 0
+    data = NULL;
+           ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.c:7:18: note: Assuming condition is false
+    if(staticFive==5)
+                 ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.c:21:23: note: Null pointer dereference
+    printLongLongLine(data[0]);
+                      ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.c: OMITGOOD=1...
+
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.tmp.c:20:23: warning: Possible null pointer dereference: data [nullPointer]
+    printLongLongLine(data[0]);
+                      ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.tmp.c:6:12: note: Assignment 'data=NULL', assigned value is 0
+    data = NULL;
+           ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.tmp.c:7:18: note: Assuming condition is false
+    if(staticFive==5)
+                 ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.tmp.c:20:23: note: Null pointer dereference
+    printLongLongLine(data[0]);
+                      ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[INFO] SA Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 2/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 3/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 4/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 5/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+[WARNING] Max iterations (5) reached. Some warnings may remain.
+
+=== Saving fixed code ===
+Total iterations: 5
+Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/omitbad_fixes/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.c.fixed.c
+Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/omitbad_fixes/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+============================================================
+File: CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.c:10:39: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
+            int * dataBuffer = (int *)ALLOCA(100*sizeof(int));
+                                      ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.c:21:18: warning: Possible null pointer dereference: data [nullPointer]
+    printIntLine(data[0]);
+                 ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.c:6:12: note: Assignment 'data=NULL', assigned value is 0
+    data = NULL;
+           ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.c:7:18: note: Assuming condition is false
+    if(staticFive==5)
+                 ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.c:21:18: note: Null pointer dereference
+    printIntLine(data[0]);
+                 ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.c: OMITGOOD=1...
+
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.tmp.c:10:39: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
+            int * dataBuffer = (int *)ALLOCA(100*sizeof(int));
+                                      ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[INFO] SA Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 2/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.tmp.c:15:21: warning: If memory allocation fails, then there is a possible null pointer dereference: dataBuffer [nullPointerOutOfMemory]
+                    dataBuffer[i] = 5;
+                    ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.tmp.c:10:45: note: Assuming allocation function fails
+            int * dataBuffer = (int *)malloc(100*sizeof(int)); // Use malloc instead of alloca
+                                            ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.tmp.c:10:32: note: Assignment 'dataBuffer=(int*)malloc(100*sizeof(int))', assigned value is 0
+            int * dataBuffer = (int *)malloc(100*sizeof(int)); // Use malloc instead of alloca
+                               ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.tmp.c:15:21: note: Null pointer dereference
+                    dataBuffer[i] = 5;
+                    ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[INFO] SA Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 3/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 4/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 5/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+[WARNING] Max iterations (5) reached. Some warnings may remain.
+
+=== Saving fixed code ===
+Total iterations: 5
+Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/omitbad_fixes/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.c.fixed.c
+Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/omitbad_fixes/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+============================================================
+File: CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.c:21:18: error: Using pointer to local variable 'dataBuffer' that is out of scope. [invalidLifetime]
+    printIntLine(data[0]);
+                 ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.c:18:20: note: Array decayed to pointer here.
+            data = dataBuffer;
+                   ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.c:10:17: note: Variable created here.
+            int dataBuffer[100];
+                ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.c:21:18: note: Using pointer to local variable 'dataBuffer' that is out of scope.
+    printIntLine(data[0]);
+                 ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.c:22:10: error: Using pointer to local variable 'dataBuffer' that is out of scope. [invalidLifetime]
+    free(data);
+         ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.c:18:20: note: Array decayed to pointer here.
+            data = dataBuffer;
+                   ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.c:10:17: note: Variable created here.
+            int dataBuffer[100];
+                ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.c:22:10: note: Using pointer to local variable 'dataBuffer' that is out of scope.
+    free(data);
+         ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.c:22:10: error: Deallocation of an auto-variable (dataBuffer) results in undefined behaviour. [autovarInvalidDeallocation]
+    free(data);
+         ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.c:18:20: note: Assignment 'data=dataBuffer', assigned value is dataBuffer
+            data = dataBuffer;
+                   ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.c:22:10: note: Deallocating memory that was not dynamically allocated
+    free(data);
+         ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.c: OMITGOOD=1...
+
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.tmp.c:20:18: warning: If memory allocation fails, then there is a possible null pointer dereference: data [nullPointerOutOfMemory]
+    printIntLine(data[0]);
+                 ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.tmp.c:10:33: note: Assuming allocation function fails
+            data = (int *)malloc(100 * sizeof(int));
+                                ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.tmp.c:10:20: note: Assignment 'data=(int*)malloc(100*sizeof(int))', assigned value is 0
+            data = (int *)malloc(100 * sizeof(int));
+                   ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.tmp.c:20:18: note: Null pointer dereference
+    printIntLine(data[0]);
+                 ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[INFO] SA Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 2/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 3/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 4/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 5/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+[WARNING] Max iterations (5) reached. Some warnings may remain.
+
+=== Saving fixed code ===
+Total iterations: 5
+Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/omitbad_fixes/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.c.fixed.c
+Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/omitbad_fixes/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+============================================================
+File: CWE590_Free_Memory_Not_on_Heap__free_int_static_54d_s04_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE590_Free_Memory_Not_on_Heap__free_int_static_54d_s04_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_static_54d_s04_OMITBAD.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_static_54d_s04_OMITBAD.c: OMITGOOD=1...
+
+[INFO] No warnings found in original file. Nothing to fix.
+
+[STDERR]
+
+============================================================
+File: CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.c:10:41: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
+            long * dataBuffer = (long *)ALLOCA(100*sizeof(long));
+                                        ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.c:21:19: warning: Possible null pointer dereference: data [nullPointer]
+    printLongLine(data[0]);
+                  ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.c:6:12: note: Assignment 'data=NULL', assigned value is 0
+    data = NULL;
+           ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.c:7:8: note: Assuming condition is false
+    if(globalTrue)
+       ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.c:21:19: note: Null pointer dereference
+    printLongLine(data[0]);
+                  ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.c: OMITGOOD=1...
+
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.tmp.c:10:41: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
+            long * dataBuffer = (long *)ALLOCA(100*sizeof(long));
+                                        ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[INFO] SA Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 2/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.tmp.c:17:21: warning: If memory allocation fails, then there is a possible null pointer dereference: dataBuffer [nullPointerOutOfMemory]
+                    dataBuffer[i] = 5L;
+                    ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.tmp.c:12:47: note: Assuming allocation function fails
+            long * dataBuffer = (long *)malloc(100*sizeof(long)); // Use malloc instead of alloca
+                                              ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.tmp.c:12:33: note: Assignment 'dataBuffer=(long*)malloc(100*sizeof(long))', assigned value is 0
+            long * dataBuffer = (long *)malloc(100*sizeof(long)); // Use malloc instead of alloca
+                                ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.tmp.c:17:21: note: Null pointer dereference
+                    dataBuffer[i] = 5L;
+                    ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[INFO] SA Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 3/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 4/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 5/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+[WARNING] Max iterations (5) reached. Some warnings may remain.
+
+=== Saving fixed code ===
+Total iterations: 5
+Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/omitbad_fixes/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.c.fixed.c
+Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/omitbad_fixes/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+============================================================
+File: CWE590_Free_Memory_Not_on_Heap__free_long_declare_54e_s04_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE590_Free_Memory_Not_on_Heap__free_long_declare_54e_s04_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_declare_54e_s04_OMITBAD.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_declare_54e_s04_OMITBAD.c: OMITGOOD=1...
+
+[INFO] No warnings found in original file. Nothing to fix.
+
+[STDERR]
+
+============================================================
+File: CWE590_Free_Memory_Not_on_Heap__free_struct_alloca_53c_s05_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE590_Free_Memory_Not_on_Heap__free_struct_alloca_53c_s05_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_struct_alloca_53c_s05_OMITBAD.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_struct_alloca_53c_s05_OMITBAD.c: OMITGOOD=1...
+
+[INFO] No warnings found in original file. Nothing to fix.
+
+[STDERR]
+
+============================================================
+File: CWE590_Free_Memory_Not_on_Heap__free_struct_static_08_s05_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE590_Free_Memory_Not_on_Heap__free_struct_static_08_s05_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_struct_static_08_s05_OMITBAD.c:23:10: error: Deallocation of a static variable (dataBuffer) results in undefined behaviour. [autovarInvalidDeallocation]
+    free(data);
+         ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_struct_static_08_s05_OMITBAD.c:19:20: note: Assignment 'data=dataBuffer', assigned value is dataBuffer
+            data = dataBuffer;
+                   ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_struct_static_08_s05_OMITBAD.c:23:10: note: Deallocating memory that was not dynamically allocated
+    free(data);
+         ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_struct_static_08_s05_OMITBAD.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_struct_static_08_s05_OMITBAD.c: OMITGOOD=1...
+
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_struct_static_08_s05_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_struct_static_08_s05_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response EQUIVALENT
+[SUCCESS] No SA and JUDGE warnings remaining after 1 iteration(s)
+
+=== Saving fixed code ===
+Total iterations: 1
+Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/omitbad_fixes/CWE590_Free_Memory_Not_on_Heap__free_struct_static_08_s05_OMITBAD.c.fixed.c
+Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/omitbad_fixes/CWE590_Free_Memory_Not_on_Heap__free_struct_static_08_s05_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+============================================================
+File: CWE590_Free_Memory_Not_on_Heap__free_wchar_t_alloca_32_s05_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE590_Free_Memory_Not_on_Heap__free_wchar_t_alloca_32_s05_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_alloca_32_s05_OMITBAD.c:12:47: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
+            wchar_t * dataBuffer = (wchar_t *)ALLOCA(100*sizeof(wchar_t));
+                                              ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_alloca_32_s05_OMITBAD.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_alloca_32_s05_OMITBAD.c: OMITGOOD=1...
+
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_alloca_32_s05_OMITBAD.tmp.c:13:21: warning: If memory allocation fails, then there is a possible null pointer dereference: dataBuffer [nullPointerOutOfMemory]
+            wmemset(dataBuffer, L'A', 100-1);
+                    ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_alloca_32_s05_OMITBAD.tmp.c:12:53: note: Assuming allocation function fails
+            wchar_t * dataBuffer = (wchar_t *)malloc(100*sizeof(wchar_t));
+                                                    ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_alloca_32_s05_OMITBAD.tmp.c:12:36: note: Assignment 'dataBuffer=(wchar_t*)malloc(100*sizeof(wchar_t))', assigned value is 0
+            wchar_t * dataBuffer = (wchar_t *)malloc(100*sizeof(wchar_t));
+                                   ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_alloca_32_s05_OMITBAD.tmp.c:13:21: note: Null pointer dereference
+            wmemset(dataBuffer, L'A', 100-1);
+                    ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_alloca_32_s05_OMITBAD.tmp.c:14:13: warning: If memory allocation fails, then there is a possible null pointer dereference: dataBuffer [nullPointerOutOfMemory]
+            dataBuffer[100-1] = L'\0';
+            ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_alloca_32_s05_OMITBAD.tmp.c:12:53: note: Assuming allocation function fails
+            wchar_t * dataBuffer = (wchar_t *)malloc(100*sizeof(wchar_t));
+                                                    ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_alloca_32_s05_OMITBAD.tmp.c:12:36: note: Assignment 'dataBuffer=(wchar_t*)malloc(100*sizeof(wchar_t))', assigned value is 0
+            wchar_t * dataBuffer = (wchar_t *)malloc(100*sizeof(wchar_t));
+                                   ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_alloca_32_s05_OMITBAD.tmp.c:14:13: note: Null pointer dereference
+            dataBuffer[100-1] = L'\0';
+            ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_alloca_32_s05_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_alloca_32_s05_OMITBAD.tmp.c: OMITGOOD=1...
+
+[INFO] SA Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 2/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_alloca_32_s05_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_alloca_32_s05_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 3/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_alloca_32_s05_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_alloca_32_s05_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 4/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_alloca_32_s05_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_alloca_32_s05_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 5/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_alloca_32_s05_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_alloca_32_s05_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+[WARNING] Max iterations (5) reached. Some warnings may remain.
+
+=== Saving fixed code ===
+Total iterations: 5
+Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/omitbad_fixes/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_alloca_32_s05_OMITBAD.c.fixed.c
+Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/omitbad_fixes/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_alloca_32_s05_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+============================================================
+File: CWE590_Free_Memory_Not_on_Heap__free_wchar_t_declare_07_s05_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE590_Free_Memory_Not_on_Heap__free_wchar_t_declare_07_s05_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_declare_07_s05_OMITBAD.c:16:16: error: Using pointer to local variable 'dataBuffer' that is out of scope. [invalidLifetime]
+    printWLine(data);
+               ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_declare_07_s05_OMITBAD.c:13:20: note: Array decayed to pointer here.
+            data = dataBuffer;
+                   ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_declare_07_s05_OMITBAD.c:10:21: note: Variable created here.
+            wchar_t dataBuffer[100];
+                    ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_declare_07_s05_OMITBAD.c:16:16: note: Using pointer to local variable 'dataBuffer' that is out of scope.
+    printWLine(data);
+               ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_declare_07_s05_OMITBAD.c:17:10: error: Using pointer to local variable 'dataBuffer' that is out of scope. [invalidLifetime]
+    free(data);
+         ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_declare_07_s05_OMITBAD.c:13:20: note: Array decayed to pointer here.
+            data = dataBuffer;
+                   ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_declare_07_s05_OMITBAD.c:10:21: note: Variable created here.
+            wchar_t dataBuffer[100];
+                    ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_declare_07_s05_OMITBAD.c:17:10: note: Using pointer to local variable 'dataBuffer' that is out of scope.
+    free(data);
+         ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_declare_07_s05_OMITBAD.c:17:10: error: Deallocation of an auto-variable (dataBuffer) results in undefined behaviour. [autovarInvalidDeallocation]
+    free(data);
+         ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_declare_07_s05_OMITBAD.c:13:20: note: Assignment 'data=dataBuffer', assigned value is dataBuffer
+            data = dataBuffer;
+                   ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_declare_07_s05_OMITBAD.c:17:10: note: Deallocating memory that was not dynamically allocated
+    free(data);
+         ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_declare_07_s05_OMITBAD.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_declare_07_s05_OMITBAD.c: OMITGOOD=1...
+
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_declare_07_s05_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_declare_07_s05_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response EQUIVALENT
+[SUCCESS] No SA and JUDGE warnings remaining after 1 iteration(s)
+
+=== Saving fixed code ===
+Total iterations: 1
+Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/omitbad_fixes/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_declare_07_s05_OMITBAD.c.fixed.c
+Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/omitbad_fixes/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_declare_07_s05_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+============================================================
+File: CWE590_Free_Memory_Not_on_Heap__free_wchar_t_static_17_s05_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE590_Free_Memory_Not_on_Heap__free_wchar_t_static_17_s05_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_static_17_s05_OMITBAD.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_static_17_s05_OMITBAD.c: OMITGOOD=1...
+
+[INFO] No warnings found in original file. Nothing to fix.
+
+[STDERR]
+
+
+
+############################################################
+# Logs for LLM Only (No SA)
+############################################################
+
+============================================================
+File: CWE590_Free_Memory_Not_on_Heap__free_char_declare_05_s04_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE590_Free_Memory_Not_on_Heap__free_char_declare_05_s04_OMITBAD.c
+============================================================
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 2/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 3/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 4/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 5/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+[WARNING] Max iterations (5) reached.
+
+=== Saving fixed code ===
+Total iterations: 5
+Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE590_Free_Memory_Not_on_Heap__free_char_declare_05_s04_OMITBAD.c.fixed.c
+Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE590_Free_Memory_Not_on_Heap__free_char_declare_05_s04_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+============================================================
+File: CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.c
+============================================================
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 2/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 3/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 4/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 5/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+[WARNING] Max iterations (5) reached.
+
+=== Saving fixed code ===
+Total iterations: 5
+Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.c.fixed.c
+Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+============================================================
+File: CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c
+============================================================
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 2/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 3/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 4/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 5/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+[WARNING] Max iterations (5) reached.
+
+=== Saving fixed code ===
+Total iterations: 5
+Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c.fixed.c
+Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+============================================================
+File: CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.c
+============================================================
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 2/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 3/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 4/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 5/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+[WARNING] Max iterations (5) reached.
+
+=== Saving fixed code ===
+Total iterations: 5
+Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.c.fixed.c
+Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+============================================================
+File: CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.c
+============================================================
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 2/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 3/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 4/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 5/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+[WARNING] Max iterations (5) reached.
+
+=== Saving fixed code ===
+Total iterations: 5
+Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.c.fixed.c
+Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+============================================================
+File: CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.c
+============================================================
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 2/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 3/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 4/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 5/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+[WARNING] Max iterations (5) reached.
+
+=== Saving fixed code ===
+Total iterations: 5
+Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.c.fixed.c
+Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+============================================================
+File: CWE590_Free_Memory_Not_on_Heap__free_int_static_54d_s04_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE590_Free_Memory_Not_on_Heap__free_int_static_54d_s04_OMITBAD.c
+============================================================
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 2/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 3/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 4/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 5/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+[WARNING] Max iterations (5) reached.
+
+=== Saving fixed code ===
+Total iterations: 5
+Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE590_Free_Memory_Not_on_Heap__free_int_static_54d_s04_OMITBAD.c.fixed.c
+Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE590_Free_Memory_Not_on_Heap__free_int_static_54d_s04_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+============================================================
+File: CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.c
+============================================================
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 2/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 3/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 4/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 5/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+[WARNING] Max iterations (5) reached.
+
+=== Saving fixed code ===
+Total iterations: 5
+Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.c.fixed.c
+Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+============================================================
+File: CWE590_Free_Memory_Not_on_Heap__free_long_declare_54e_s04_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE590_Free_Memory_Not_on_Heap__free_long_declare_54e_s04_OMITBAD.c
+============================================================
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 2/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 3/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 4/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 5/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+[WARNING] Max iterations (5) reached.
+
+=== Saving fixed code ===
+Total iterations: 5
+Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE590_Free_Memory_Not_on_Heap__free_long_declare_54e_s04_OMITBAD.c.fixed.c
+Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE590_Free_Memory_Not_on_Heap__free_long_declare_54e_s04_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+============================================================
+File: CWE590_Free_Memory_Not_on_Heap__free_struct_alloca_53c_s05_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE590_Free_Memory_Not_on_Heap__free_struct_alloca_53c_s05_OMITBAD.c
+============================================================
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 2/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 3/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 4/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 5/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+[WARNING] Max iterations (5) reached.
+
+=== Saving fixed code ===
+Total iterations: 5
+Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE590_Free_Memory_Not_on_Heap__free_struct_alloca_53c_s05_OMITBAD.c.fixed.c
+Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE590_Free_Memory_Not_on_Heap__free_struct_alloca_53c_s05_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+============================================================
+File: CWE590_Free_Memory_Not_on_Heap__free_struct_static_08_s05_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE590_Free_Memory_Not_on_Heap__free_struct_static_08_s05_OMITBAD.c
+============================================================
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 2/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 3/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 4/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 5/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+[WARNING] Max iterations (5) reached.
+
+=== Saving fixed code ===
+Total iterations: 5
+Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE590_Free_Memory_Not_on_Heap__free_struct_static_08_s05_OMITBAD.c.fixed.c
+Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE590_Free_Memory_Not_on_Heap__free_struct_static_08_s05_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+============================================================
+File: CWE590_Free_Memory_Not_on_Heap__free_wchar_t_alloca_32_s05_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE590_Free_Memory_Not_on_Heap__free_wchar_t_alloca_32_s05_OMITBAD.c
+============================================================
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 2/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 3/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 4/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 5/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+[WARNING] Max iterations (5) reached.
+
+=== Saving fixed code ===
+Total iterations: 5
+Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_alloca_32_s05_OMITBAD.c.fixed.c
+Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_alloca_32_s05_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+============================================================
+File: CWE590_Free_Memory_Not_on_Heap__free_wchar_t_declare_07_s05_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE590_Free_Memory_Not_on_Heap__free_wchar_t_declare_07_s05_OMITBAD.c
+============================================================
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 2/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 3/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 4/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 5/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+[WARNING] Max iterations (5) reached.
+
+=== Saving fixed code ===
+Total iterations: 5
+Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_declare_07_s05_OMITBAD.c.fixed.c
+Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_declare_07_s05_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+============================================================
+File: CWE590_Free_Memory_Not_on_Heap__free_wchar_t_static_17_s05_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE590_Free_Memory_Not_on_Heap__free_wchar_t_static_17_s05_OMITBAD.c
+============================================================
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 2/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 3/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 4/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+============================================================
+=== Iteration 5/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE says NOT equivalent, continuing to next iteration...
+
+[WARNING] Max iterations (5) reached.
+
+=== Saving fixed code ===
+Total iterations: 5
+Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_static_17_s05_OMITBAD.c.fixed.c
+Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_static_17_s05_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+
+
+############################################################
+# Logs for No Few-Shot (SA + LLM + Judge, 0 examples)
+############################################################
+
+============================================================
+File: CWE590_Free_Memory_Not_on_Heap__free_char_declare_05_s04_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE590_Free_Memory_Not_on_Heap__free_char_declare_05_s04_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_char_declare_05_s04_OMITBAD.c:16:15: error: Using pointer to local variable 'dataBuffer' that is out of scope. [invalidLifetime]
+    printLine(data);
+              ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_char_declare_05_s04_OMITBAD.c:13:20: note: Array decayed to pointer here.
+            data = dataBuffer;
+                   ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_char_declare_05_s04_OMITBAD.c:10:18: note: Variable created here.
+            char dataBuffer[100];
+                 ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_char_declare_05_s04_OMITBAD.c:16:15: note: Using pointer to local variable 'dataBuffer' that is out of scope.
+    printLine(data);
+              ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_char_declare_05_s04_OMITBAD.c:17:10: error: Using pointer to local variable 'dataBuffer' that is out of scope. [invalidLifetime]
+    free(data);
+         ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_char_declare_05_s04_OMITBAD.c:13:20: note: Array decayed to pointer here.
+            data = dataBuffer;
+                   ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_char_declare_05_s04_OMITBAD.c:10:18: note: Variable created here.
+            char dataBuffer[100];
+                 ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_char_declare_05_s04_OMITBAD.c:17:10: note: Using pointer to local variable 'dataBuffer' that is out of scope.
+    free(data);
+         ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_char_declare_05_s04_OMITBAD.c:17:10: error: Deallocation of an auto-variable (dataBuffer) results in undefined behaviour. [autovarInvalidDeallocation]
+    free(data);
+         ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_char_declare_05_s04_OMITBAD.c:13:20: note: Assignment 'data=dataBuffer', assigned value is dataBuffer
+            data = dataBuffer;
+                   ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_char_declare_05_s04_OMITBAD.c:17:10: note: Deallocating memory that was not dynamically allocated
+    free(data);
+         ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_char_declare_05_s04_OMITBAD.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_char_declare_05_s04_OMITBAD.c: OMITGOOD=1...
+
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_char_declare_05_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_char_declare_05_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response EQUIVALENT
+[SUCCESS] No SA and JUDGE warnings remaining after 1 iteration(s)
+
+=== Saving fixed code ===
+Total iterations: 1
+Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/no_few_shot_fixes/CWE590_Free_Memory_Not_on_Heap__free_char_declare_05_s04_OMITBAD.c.fixed.c
+Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/no_few_shot_fixes/CWE590_Free_Memory_Not_on_Heap__free_char_declare_05_s04_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+============================================================
+File: CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.c:14:43: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
+        int64_t * dataBuffer = (int64_t *)ALLOCA(100*sizeof(int64_t));
+                                          ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.c: OMITGOOD=1...
+
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.tmp.c:19:17: warning: If memory allocation fails, then there is a possible null pointer dereference: dataBuffer [nullPointerOutOfMemory]
+                dataBuffer[i] = 5LL;
+                ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.tmp.c:14:49: note: Assuming allocation function fails
+        int64_t * dataBuffer = (int64_t *)malloc(100*sizeof(int64_t)); // Changed from ALLOCA to malloc
+                                                ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.tmp.c:14:32: note: Assignment 'dataBuffer=(int64_t*)malloc(100*sizeof(int64_t))', assigned value is 0
+        int64_t * dataBuffer = (int64_t *)malloc(100*sizeof(int64_t)); // Changed from ALLOCA to malloc
+                               ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.tmp.c:19:17: note: Null pointer dereference
+                dataBuffer[i] = 5LL;
+                ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[INFO] SA Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 2/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 3/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 4/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 5/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+[WARNING] Max iterations (5) reached. Some warnings may remain.
+
+=== Saving fixed code ===
+Total iterations: 5
+Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/no_few_shot_fixes/CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.c.fixed.c
+Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/no_few_shot_fixes/CWE590_Free_Memory_Not_on_Heap__free_int64_t_alloca_45_s04_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+============================================================
+File: CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c:21:23: error: Using pointer to local variable 'dataBuffer' that is out of scope. [invalidLifetime]
+    printLongLongLine(data[0]);
+                      ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c:18:20: note: Array decayed to pointer here.
+            data = dataBuffer;
+                   ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c:10:21: note: Variable created here.
+            int64_t dataBuffer[100];
+                    ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c:21:23: note: Using pointer to local variable 'dataBuffer' that is out of scope.
+    printLongLongLine(data[0]);
+                      ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c:22:10: error: Using pointer to local variable 'dataBuffer' that is out of scope. [invalidLifetime]
+    free(data);
+         ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c:18:20: note: Array decayed to pointer here.
+            data = dataBuffer;
+                   ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c:10:21: note: Variable created here.
+            int64_t dataBuffer[100];
+                    ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c:22:10: note: Using pointer to local variable 'dataBuffer' that is out of scope.
+    free(data);
+         ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c:22:10: error: Deallocation of an auto-variable (dataBuffer) results in undefined behaviour. [autovarInvalidDeallocation]
+    free(data);
+         ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c:18:20: note: Assignment 'data=dataBuffer', assigned value is dataBuffer
+            data = dataBuffer;
+                   ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c:22:10: note: Deallocating memory that was not dynamically allocated
+    free(data);
+         ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c:21:23: warning: Possible null pointer dereference: data [nullPointer]
+    printLongLongLine(data[0]);
+                      ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c:6:12: note: Assignment 'data=NULL', assigned value is 0
+    data = NULL;
+           ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c:7:25: note: Assuming condition is false
+    if(GLOBAL_CONST_FIVE==5)
+                        ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c:21:23: note: Null pointer dereference
+    printLongLongLine(data[0]);
+                      ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c: OMITGOOD=1...
+
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.tmp.c:19:23: warning: Possible null pointer dereference: data [nullPointer]
+    printLongLongLine(data[0]);
+                      ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.tmp.c:6:12: note: Assignment 'data=NULL', assigned value is 0
+    data = NULL;
+           ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.tmp.c:7:25: note: Assuming condition is false
+    if(GLOBAL_CONST_FIVE==5)
+                        ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.tmp.c:19:23: note: Null pointer dereference
+    printLongLongLine(data[0]);
+                      ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[INFO] SA Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 2/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 3/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 4/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 5/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+[WARNING] Max iterations (5) reached. Some warnings may remain.
+
+=== Saving fixed code ===
+Total iterations: 5
+Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/no_few_shot_fixes/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c.fixed.c
+Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/no_few_shot_fixes/CWE590_Free_Memory_Not_on_Heap__free_int64_t_declare_13_s04_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+============================================================
+File: CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.c:22:10: error: Deallocation of a static variable (dataBuffer) results in undefined behaviour. [autovarInvalidDeallocation]
+    free(data);
+         ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.c:18:20: note: Assignment 'data=dataBuffer', assigned value is dataBuffer
+            data = dataBuffer;
+                   ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.c:22:10: note: Deallocating memory that was not dynamically allocated
+    free(data);
+         ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.c:21:23: warning: Possible null pointer dereference: data [nullPointer]
+    printLongLongLine(data[0]);
+                      ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.c:6:12: note: Assignment 'data=NULL', assigned value is 0
+    data = NULL;
+           ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.c:7:18: note: Assuming condition is false
+    if(staticFive==5)
+                 ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.c:21:23: note: Null pointer dereference
+    printLongLongLine(data[0]);
+                      ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.c: OMITGOOD=1...
+
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.tmp.c:21:23: warning: Possible null pointer dereference: data [nullPointer]
+    printLongLongLine(data[0]);
+                      ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.tmp.c:6:12: note: Assignment 'data=NULL', assigned value is 0
+    data = NULL;
+           ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.tmp.c:7:18: note: Assuming condition is false
+    if(staticFive==5)
+                 ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.tmp.c:21:23: note: Null pointer dereference
+    printLongLongLine(data[0]);
+                      ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[INFO] SA Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 2/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 3/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 4/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 5/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+[WARNING] Max iterations (5) reached. Some warnings may remain.
+
+=== Saving fixed code ===
+Total iterations: 5
+Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/no_few_shot_fixes/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.c.fixed.c
+Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/no_few_shot_fixes/CWE590_Free_Memory_Not_on_Heap__free_int64_t_static_07_s04_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+============================================================
+File: CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.c:10:39: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
+            int * dataBuffer = (int *)ALLOCA(100*sizeof(int));
+                                      ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.c:21:18: warning: Possible null pointer dereference: data [nullPointer]
+    printIntLine(data[0]);
+                 ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.c:6:12: note: Assignment 'data=NULL', assigned value is 0
+    data = NULL;
+           ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.c:7:18: note: Assuming condition is false
+    if(staticFive==5)
+                 ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.c:21:18: note: Null pointer dereference
+    printIntLine(data[0]);
+                 ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.c: OMITGOOD=1...
+
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.tmp.c:15:21: warning: If memory allocation fails, then there is a possible null pointer dereference: dataBuffer [nullPointerOutOfMemory]
+                    dataBuffer[i] = 5;
+                    ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.tmp.c:10:45: note: Assuming allocation function fails
+            int * dataBuffer = (int *)malloc(100*sizeof(int)); // Changed from ALLOCA to malloc
+                                            ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.tmp.c:10:32: note: Assignment 'dataBuffer=(int*)malloc(100*sizeof(int))', assigned value is 0
+            int * dataBuffer = (int *)malloc(100*sizeof(int)); // Changed from ALLOCA to malloc
+                               ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.tmp.c:15:21: note: Null pointer dereference
+                    dataBuffer[i] = 5;
+                    ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[INFO] SA Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 2/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 3/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 4/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 5/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+[WARNING] Max iterations (5) reached. Some warnings may remain.
+
+=== Saving fixed code ===
+Total iterations: 5
+Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/no_few_shot_fixes/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.c.fixed.c
+Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/no_few_shot_fixes/CWE590_Free_Memory_Not_on_Heap__free_int_alloca_07_s04_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+============================================================
+File: CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.c:21:18: error: Using pointer to local variable 'dataBuffer' that is out of scope. [invalidLifetime]
+    printIntLine(data[0]);
+                 ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.c:18:20: note: Array decayed to pointer here.
+            data = dataBuffer;
+                   ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.c:10:17: note: Variable created here.
+            int dataBuffer[100];
+                ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.c:21:18: note: Using pointer to local variable 'dataBuffer' that is out of scope.
+    printIntLine(data[0]);
+                 ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.c:22:10: error: Using pointer to local variable 'dataBuffer' that is out of scope. [invalidLifetime]
+    free(data);
+         ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.c:18:20: note: Array decayed to pointer here.
+            data = dataBuffer;
+                   ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.c:10:17: note: Variable created here.
+            int dataBuffer[100];
+                ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.c:22:10: note: Using pointer to local variable 'dataBuffer' that is out of scope.
+    free(data);
+         ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.c:22:10: error: Deallocation of an auto-variable (dataBuffer) results in undefined behaviour. [autovarInvalidDeallocation]
+    free(data);
+         ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.c:18:20: note: Assignment 'data=dataBuffer', assigned value is dataBuffer
+            data = dataBuffer;
+                   ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.c:22:10: note: Deallocating memory that was not dynamically allocated
+    free(data);
+         ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.c: OMITGOOD=1...
+
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.tmp.c:20:18: warning: If memory allocation fails, then there is a possible null pointer dereference: data [nullPointerOutOfMemory]
+    printIntLine(data[0]);
+                 ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.tmp.c:10:33: note: Assuming allocation function fails
+            data = (int *)malloc(100 * sizeof(int));
+                                ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.tmp.c:10:20: note: Assignment 'data=(int*)malloc(100*sizeof(int))', assigned value is 0
+            data = (int *)malloc(100 * sizeof(int));
+                   ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.tmp.c:20:18: note: Null pointer dereference
+    printIntLine(data[0]);
+                 ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[INFO] SA Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 2/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 3/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 4/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 5/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+[WARNING] Max iterations (5) reached. Some warnings may remain.
+
+=== Saving fixed code ===
+Total iterations: 5
+Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/no_few_shot_fixes/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.c.fixed.c
+Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/no_few_shot_fixes/CWE590_Free_Memory_Not_on_Heap__free_int_declare_02_s04_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+============================================================
+File: CWE590_Free_Memory_Not_on_Heap__free_int_static_54d_s04_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE590_Free_Memory_Not_on_Heap__free_int_static_54d_s04_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_static_54d_s04_OMITBAD.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_int_static_54d_s04_OMITBAD.c: OMITGOOD=1...
+
+[INFO] No warnings found in original file. Nothing to fix.
+
+[STDERR]
+
+============================================================
+File: CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.c:10:41: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
+            long * dataBuffer = (long *)ALLOCA(100*sizeof(long));
+                                        ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.c:21:19: warning: Possible null pointer dereference: data [nullPointer]
+    printLongLine(data[0]);
+                  ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.c:6:12: note: Assignment 'data=NULL', assigned value is 0
+    data = NULL;
+           ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.c:7:8: note: Assuming condition is false
+    if(globalTrue)
+       ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.c:21:19: note: Null pointer dereference
+    printLongLine(data[0]);
+                  ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.c: OMITGOOD=1...
+
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.tmp.c:10:41: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
+            long * dataBuffer = (long *)ALLOCA(100*sizeof(long));
+                                        ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[INFO] SA Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 2/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.tmp.c:15:21: warning: If memory allocation fails, then there is a possible null pointer dereference: dataBuffer [nullPointerOutOfMemory]
+                    dataBuffer[i] = 5L;
+                    ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.tmp.c:10:47: note: Assuming allocation function fails
+            long * dataBuffer = (long *)malloc(100*sizeof(long)); // Use malloc instead of alloca
+                                              ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.tmp.c:10:33: note: Assignment 'dataBuffer=(long*)malloc(100*sizeof(long))', assigned value is 0
+            long * dataBuffer = (long *)malloc(100*sizeof(long)); // Use malloc instead of alloca
+                                ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.tmp.c:15:21: note: Null pointer dereference
+                    dataBuffer[i] = 5L;
+                    ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[INFO] SA Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 3/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 4/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 5/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+[WARNING] Max iterations (5) reached. Some warnings may remain.
+
+=== Saving fixed code ===
+Total iterations: 5
+Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/no_few_shot_fixes/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.c.fixed.c
+Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/no_few_shot_fixes/CWE590_Free_Memory_Not_on_Heap__free_long_alloca_10_s04_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+============================================================
+File: CWE590_Free_Memory_Not_on_Heap__free_long_declare_54e_s04_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE590_Free_Memory_Not_on_Heap__free_long_declare_54e_s04_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_declare_54e_s04_OMITBAD.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_long_declare_54e_s04_OMITBAD.c: OMITGOOD=1...
+
+[INFO] No warnings found in original file. Nothing to fix.
+
+[STDERR]
+
+============================================================
+File: CWE590_Free_Memory_Not_on_Heap__free_struct_alloca_53c_s05_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE590_Free_Memory_Not_on_Heap__free_struct_alloca_53c_s05_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_struct_alloca_53c_s05_OMITBAD.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_struct_alloca_53c_s05_OMITBAD.c: OMITGOOD=1...
+
+[INFO] No warnings found in original file. Nothing to fix.
+
+[STDERR]
+
+============================================================
+File: CWE590_Free_Memory_Not_on_Heap__free_struct_static_08_s05_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE590_Free_Memory_Not_on_Heap__free_struct_static_08_s05_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_struct_static_08_s05_OMITBAD.c:23:10: error: Deallocation of a static variable (dataBuffer) results in undefined behaviour. [autovarInvalidDeallocation]
+    free(data);
+         ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_struct_static_08_s05_OMITBAD.c:19:20: note: Assignment 'data=dataBuffer', assigned value is dataBuffer
+            data = dataBuffer;
+                   ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_struct_static_08_s05_OMITBAD.c:23:10: note: Deallocating memory that was not dynamically allocated
+    free(data);
+         ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_struct_static_08_s05_OMITBAD.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_struct_static_08_s05_OMITBAD.c: OMITGOOD=1...
+
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_struct_static_08_s05_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_struct_static_08_s05_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response EQUIVALENT
+[SUCCESS] No SA and JUDGE warnings remaining after 1 iteration(s)
+
+=== Saving fixed code ===
+Total iterations: 1
+Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/no_few_shot_fixes/CWE590_Free_Memory_Not_on_Heap__free_struct_static_08_s05_OMITBAD.c.fixed.c
+Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/no_few_shot_fixes/CWE590_Free_Memory_Not_on_Heap__free_struct_static_08_s05_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+============================================================
+File: CWE590_Free_Memory_Not_on_Heap__free_wchar_t_alloca_32_s05_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE590_Free_Memory_Not_on_Heap__free_wchar_t_alloca_32_s05_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_alloca_32_s05_OMITBAD.c:12:47: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
+            wchar_t * dataBuffer = (wchar_t *)ALLOCA(100*sizeof(wchar_t));
+                                              ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_alloca_32_s05_OMITBAD.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_alloca_32_s05_OMITBAD.c: OMITGOOD=1...
+
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_alloca_32_s05_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_alloca_32_s05_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response EQUIVALENT
+[SUCCESS] No SA and JUDGE warnings remaining after 1 iteration(s)
+
+=== Saving fixed code ===
+Total iterations: 1
+Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/no_few_shot_fixes/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_alloca_32_s05_OMITBAD.c.fixed.c
+Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/no_few_shot_fixes/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_alloca_32_s05_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+============================================================
+File: CWE590_Free_Memory_Not_on_Heap__free_wchar_t_declare_07_s05_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE590_Free_Memory_Not_on_Heap__free_wchar_t_declare_07_s05_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_declare_07_s05_OMITBAD.c:16:16: error: Using pointer to local variable 'dataBuffer' that is out of scope. [invalidLifetime]
+    printWLine(data);
+               ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_declare_07_s05_OMITBAD.c:13:20: note: Array decayed to pointer here.
+            data = dataBuffer;
+                   ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_declare_07_s05_OMITBAD.c:10:21: note: Variable created here.
+            wchar_t dataBuffer[100];
+                    ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_declare_07_s05_OMITBAD.c:16:16: note: Using pointer to local variable 'dataBuffer' that is out of scope.
+    printWLine(data);
+               ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_declare_07_s05_OMITBAD.c:17:10: error: Using pointer to local variable 'dataBuffer' that is out of scope. [invalidLifetime]
+    free(data);
+         ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_declare_07_s05_OMITBAD.c:13:20: note: Array decayed to pointer here.
+            data = dataBuffer;
+                   ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_declare_07_s05_OMITBAD.c:10:21: note: Variable created here.
+            wchar_t dataBuffer[100];
+                    ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_declare_07_s05_OMITBAD.c:17:10: note: Using pointer to local variable 'dataBuffer' that is out of scope.
+    free(data);
+         ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_declare_07_s05_OMITBAD.c:17:10: error: Deallocation of an auto-variable (dataBuffer) results in undefined behaviour. [autovarInvalidDeallocation]
+    free(data);
+         ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_declare_07_s05_OMITBAD.c:13:20: note: Assignment 'data=dataBuffer', assigned value is dataBuffer
+            data = dataBuffer;
+                   ^
+/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_declare_07_s05_OMITBAD.c:17:10: note: Deallocating memory that was not dynamically allocated
+    free(data);
+         ^
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_declare_07_s05_OMITBAD.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_declare_07_s05_OMITBAD.c: OMITGOOD=1...
+
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_declare_07_s05_OMITBAD.tmp.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_declare_07_s05_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response EQUIVALENT
+[SUCCESS] No SA and JUDGE warnings remaining after 1 iteration(s)
+
+=== Saving fixed code ===
+Total iterations: 1
+Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/no_few_shot_fixes/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_declare_07_s05_OMITBAD.c.fixed.c
+Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/no_few_shot_fixes/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_declare_07_s05_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+============================================================
+File: CWE590_Free_Memory_Not_on_Heap__free_wchar_t_static_17_s05_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE590_Free_Memory_Not_on_Heap__free_wchar_t_static_17_s05_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_static_17_s05_OMITBAD.c ...
+Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE590_Free_Memory_Not_on_Heap/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_static_17_s05_OMITBAD.c: OMITGOOD=1...
+
+[INFO] No warnings found in original file. Nothing to fix.
+
+[STDERR]
+
+
