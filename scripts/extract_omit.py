@@ -14,7 +14,7 @@ source) followed by only the body inside the `#ifndef OMITGOOD` /
 are removed.
 
 Usage: python3 scripts/extract_omit.py <CWE#>
-Example: python3 scripts/extract_omit.py CWE476
+Example: python3 scripts/extract_omit.py CWE190_Integer_Overflow
 """
 
 import subprocess
