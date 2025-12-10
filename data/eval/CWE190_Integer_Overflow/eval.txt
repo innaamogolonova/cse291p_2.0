@@ -1,0 +1,292 @@
+Evaluation Results for CWE190_Integer_Overflow
+Generated: 2025-12-09T21:48:26.715419
+Total test cases: 78
+============================================================
+
+
+Full (SA + LLM + Judge) Implementation Results:
+============================================================
+Total files: 78
+Successfully fixed: 0 (0.0%)
+Failed to fix: 9 (11.5%)
+Skipped: 69 (88.5%)
+Average iterations per file: 5.00
+
+Successful files:
+  (none)
+
+Failed files:
+  - CWE190_Integer_Overflow__int_connect_socket_add_15_s02_OMITBAD.c
+  - CWE190_Integer_Overflow__int_connect_socket_postinc_63a_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__int_connect_socket_preinc_68a_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__int_connect_socket_square_18_s02_OMITBAD.c
+  - CWE190_Integer_Overflow__int_listen_socket_add_09_s03_OMITBAD.c
+  - CWE190_Integer_Overflow__int_listen_socket_multiply_03_s03_OMITBAD.c
+  - CWE190_Integer_Overflow__int_listen_socket_postinc_14_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__int_listen_socket_preinc_41_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__int_listen_socket_square_17_s03_OMITBAD.c
+
+Skipped files:
+  - CWE190_Integer_Overflow__char_fscanf_add_14_s01_OMITBAD.c
+  - CWE190_Integer_Overflow__char_fscanf_multiply_54b_s01_OMITBAD.c
+  - CWE190_Integer_Overflow__char_fscanf_postinc_05_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__char_fscanf_preinc_42_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__char_max_add_15_s01_OMITBAD.c
+  - CWE190_Integer_Overflow__char_max_multiply_67a_s01_OMITBAD.c
+  - CWE190_Integer_Overflow__char_max_postinc_54c_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__char_max_preinc_22a_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__char_max_square_08_s01_OMITBAD.c
+  - CWE190_Integer_Overflow__char_rand_add_01_s01_OMITBAD.c
+  - CWE190_Integer_Overflow__char_rand_postinc_22b_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__char_rand_preinc_53a_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__char_rand_square_67a_s01_OMITBAD.c
+  - CWE190_Integer_Overflow__int64_t_fscanf_add_45_s01_OMITBAD.c
+  - CWE190_Integer_Overflow__int64_t_fscanf_multiply_45_s01_OMITBAD.c
+  - CWE190_Integer_Overflow__int64_t_fscanf_postinc_53c_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__int64_t_fscanf_preinc_01_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__int64_t_fscanf_square_51a_s02_OMITBAD.c
+  - CWE190_Integer_Overflow__int64_t_max_add_08_s02_OMITBAD.c
+  - CWE190_Integer_Overflow__int64_t_max_multiply_21_s02_OMITBAD.c
+  - CWE190_Integer_Overflow__int64_t_max_postinc_61b_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__int64_t_max_preinc_04_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__int64_t_max_square_64a_s02_OMITBAD.c
+  - CWE190_Integer_Overflow__int64_t_rand_add_14_s02_OMITBAD.c
+  - CWE190_Integer_Overflow__int64_t_rand_postinc_02_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__int64_t_rand_preinc_45_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__int_fgets_add_10_s02_OMITBAD.c
+  - CWE190_Integer_Overflow__int_fgets_multiply_11_s03_OMITBAD.c
+  - CWE190_Integer_Overflow__int_fgets_postinc_09_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__int_fgets_preinc_22b_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__int_fgets_square_53c_s03_OMITBAD.c
+  - CWE190_Integer_Overflow__int_fscanf_add_08_s03_OMITBAD.c
+  - CWE190_Integer_Overflow__int_fscanf_multiply_61b_s03_OMITBAD.c
+  - CWE190_Integer_Overflow__int_fscanf_postinc_65b_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__int_fscanf_preinc_63b_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__int_fscanf_square_52c_s03_OMITBAD.c
+  - CWE190_Integer_Overflow__int_max_add_22a_s03_OMITBAD.c
+  - CWE190_Integer_Overflow__int_max_postinc_17_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__int_max_preinc_22b_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__int_max_square_63a_s03_OMITBAD.c
+  - CWE190_Integer_Overflow__int_rand_add_10_s04_OMITBAD.c
+  - CWE190_Integer_Overflow__int_rand_postinc_52c_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__int_rand_preinc_53d_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__int_rand_square_10_s04_OMITBAD.c
+  - CWE190_Integer_Overflow__short_fscanf_add_66b_s04_OMITBAD.c
+  - CWE190_Integer_Overflow__short_fscanf_multiply_18_s04_OMITBAD.c
+  - CWE190_Integer_Overflow__short_fscanf_postinc_51b_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__short_fscanf_preinc_52c_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__short_fscanf_square_08_s04_OMITBAD.c
+  - CWE190_Integer_Overflow__short_max_add_68b_s04_OMITBAD.c
+  - CWE190_Integer_Overflow__short_max_postinc_53c_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__short_max_preinc_54c_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__short_max_square_22a_s04_OMITBAD.c
+  - CWE190_Integer_Overflow__short_rand_add_64a_s04_OMITBAD.c
+  - CWE190_Integer_Overflow__short_rand_multiply_51b_s04_OMITBAD.c
+  - CWE190_Integer_Overflow__short_rand_postinc_22b_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__short_rand_preinc_07_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__short_rand_square_10_s05_OMITBAD.c
+  - CWE190_Integer_Overflow__unsigned_int_fscanf_add_21_s05_OMITBAD.c
+  - CWE190_Integer_Overflow__unsigned_int_fscanf_postinc_54d_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__unsigned_int_fscanf_preinc_18_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__unsigned_int_fscanf_square_53c_s05_OMITBAD.c
+  - CWE190_Integer_Overflow__unsigned_int_max_add_63a_s05_OMITBAD.c
+  - CWE190_Integer_Overflow__unsigned_int_max_postinc_53b_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__unsigned_int_max_preinc_45_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__unsigned_int_rand_add_52c_s05_OMITBAD.c
+  - CWE190_Integer_Overflow__unsigned_int_rand_multiply_03_s05_OMITBAD.c
+  - CWE190_Integer_Overflow__unsigned_int_rand_postinc_18_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__unsigned_int_rand_preinc_31_s07_OMITBAD.c
+
+============================================================
+
+
+LLM Only (No SA) Implementation Results:
+============================================================
+Total files: 78
+Successfully fixed: 1 (1.3%)
+Failed to fix: 8 (10.3%)
+Skipped: 69 (88.5%)
+Average iterations per file: 4.56
+
+Successful files:
+  - CWE190_Integer_Overflow__int_listen_socket_preinc_41_s07_OMITBAD.c
+
+Failed files:
+  - CWE190_Integer_Overflow__int_connect_socket_add_15_s02_OMITBAD.c
+  - CWE190_Integer_Overflow__int_connect_socket_postinc_63a_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__int_connect_socket_preinc_68a_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__int_connect_socket_square_18_s02_OMITBAD.c
+  - CWE190_Integer_Overflow__int_listen_socket_add_09_s03_OMITBAD.c
+  - CWE190_Integer_Overflow__int_listen_socket_multiply_03_s03_OMITBAD.c
+  - CWE190_Integer_Overflow__int_listen_socket_postinc_14_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__int_listen_socket_square_17_s03_OMITBAD.c
+
+Skipped files:
+  - CWE190_Integer_Overflow__char_fscanf_add_14_s01_OMITBAD.c
+  - CWE190_Integer_Overflow__char_fscanf_multiply_54b_s01_OMITBAD.c
+  - CWE190_Integer_Overflow__char_fscanf_postinc_05_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__char_fscanf_preinc_42_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__char_max_add_15_s01_OMITBAD.c
+  - CWE190_Integer_Overflow__char_max_multiply_67a_s01_OMITBAD.c
+  - CWE190_Integer_Overflow__char_max_postinc_54c_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__char_max_preinc_22a_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__char_max_square_08_s01_OMITBAD.c
+  - CWE190_Integer_Overflow__char_rand_add_01_s01_OMITBAD.c
+  - CWE190_Integer_Overflow__char_rand_postinc_22b_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__char_rand_preinc_53a_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__char_rand_square_67a_s01_OMITBAD.c
+  - CWE190_Integer_Overflow__int64_t_fscanf_add_45_s01_OMITBAD.c
+  - CWE190_Integer_Overflow__int64_t_fscanf_multiply_45_s01_OMITBAD.c
+  - CWE190_Integer_Overflow__int64_t_fscanf_postinc_53c_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__int64_t_fscanf_preinc_01_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__int64_t_fscanf_square_51a_s02_OMITBAD.c
+  - CWE190_Integer_Overflow__int64_t_max_add_08_s02_OMITBAD.c
+  - CWE190_Integer_Overflow__int64_t_max_multiply_21_s02_OMITBAD.c
+  - CWE190_Integer_Overflow__int64_t_max_postinc_61b_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__int64_t_max_preinc_04_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__int64_t_max_square_64a_s02_OMITBAD.c
+  - CWE190_Integer_Overflow__int64_t_rand_add_14_s02_OMITBAD.c
+  - CWE190_Integer_Overflow__int64_t_rand_postinc_02_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__int64_t_rand_preinc_45_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__int_fgets_add_10_s02_OMITBAD.c
+  - CWE190_Integer_Overflow__int_fgets_multiply_11_s03_OMITBAD.c
+  - CWE190_Integer_Overflow__int_fgets_postinc_09_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__int_fgets_preinc_22b_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__int_fgets_square_53c_s03_OMITBAD.c
+  - CWE190_Integer_Overflow__int_fscanf_add_08_s03_OMITBAD.c
+  - CWE190_Integer_Overflow__int_fscanf_multiply_61b_s03_OMITBAD.c
+  - CWE190_Integer_Overflow__int_fscanf_postinc_65b_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__int_fscanf_preinc_63b_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__int_fscanf_square_52c_s03_OMITBAD.c
+  - CWE190_Integer_Overflow__int_max_add_22a_s03_OMITBAD.c
+  - CWE190_Integer_Overflow__int_max_postinc_17_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__int_max_preinc_22b_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__int_max_square_63a_s03_OMITBAD.c
+  - CWE190_Integer_Overflow__int_rand_add_10_s04_OMITBAD.c
+  - CWE190_Integer_Overflow__int_rand_postinc_52c_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__int_rand_preinc_53d_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__int_rand_square_10_s04_OMITBAD.c
+  - CWE190_Integer_Overflow__short_fscanf_add_66b_s04_OMITBAD.c
+  - CWE190_Integer_Overflow__short_fscanf_multiply_18_s04_OMITBAD.c
+  - CWE190_Integer_Overflow__short_fscanf_postinc_51b_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__short_fscanf_preinc_52c_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__short_fscanf_square_08_s04_OMITBAD.c
+  - CWE190_Integer_Overflow__short_max_add_68b_s04_OMITBAD.c
+  - CWE190_Integer_Overflow__short_max_postinc_53c_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__short_max_preinc_54c_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__short_max_square_22a_s04_OMITBAD.c
+  - CWE190_Integer_Overflow__short_rand_add_64a_s04_OMITBAD.c
+  - CWE190_Integer_Overflow__short_rand_multiply_51b_s04_OMITBAD.c
+  - CWE190_Integer_Overflow__short_rand_postinc_22b_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__short_rand_preinc_07_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__short_rand_square_10_s05_OMITBAD.c
+  - CWE190_Integer_Overflow__unsigned_int_fscanf_add_21_s05_OMITBAD.c
+  - CWE190_Integer_Overflow__unsigned_int_fscanf_postinc_54d_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__unsigned_int_fscanf_preinc_18_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__unsigned_int_fscanf_square_53c_s05_OMITBAD.c
+  - CWE190_Integer_Overflow__unsigned_int_max_add_63a_s05_OMITBAD.c
+  - CWE190_Integer_Overflow__unsigned_int_max_postinc_53b_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__unsigned_int_max_preinc_45_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__unsigned_int_rand_add_52c_s05_OMITBAD.c
+  - CWE190_Integer_Overflow__unsigned_int_rand_multiply_03_s05_OMITBAD.c
+  - CWE190_Integer_Overflow__unsigned_int_rand_postinc_18_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__unsigned_int_rand_preinc_31_s07_OMITBAD.c
+
+============================================================
+
+
+No Few-Shot (SA + LLM + Judge, 0 examples) Implementation Results:
+============================================================
+Total files: 78
+Successfully fixed: 0 (0.0%)
+Failed to fix: 9 (11.5%)
+Skipped: 69 (88.5%)
+Average iterations per file: 5.00
+
+Successful files:
+  (none)
+
+Failed files:
+  - CWE190_Integer_Overflow__int_connect_socket_add_15_s02_OMITBAD.c
+  - CWE190_Integer_Overflow__int_connect_socket_postinc_63a_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__int_connect_socket_preinc_68a_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__int_connect_socket_square_18_s02_OMITBAD.c
+  - CWE190_Integer_Overflow__int_listen_socket_add_09_s03_OMITBAD.c
+  - CWE190_Integer_Overflow__int_listen_socket_multiply_03_s03_OMITBAD.c
+  - CWE190_Integer_Overflow__int_listen_socket_postinc_14_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__int_listen_socket_preinc_41_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__int_listen_socket_square_17_s03_OMITBAD.c
+
+Skipped files:
+  - CWE190_Integer_Overflow__char_fscanf_add_14_s01_OMITBAD.c
+  - CWE190_Integer_Overflow__char_fscanf_multiply_54b_s01_OMITBAD.c
+  - CWE190_Integer_Overflow__char_fscanf_postinc_05_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__char_fscanf_preinc_42_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__char_max_add_15_s01_OMITBAD.c
+  - CWE190_Integer_Overflow__char_max_multiply_67a_s01_OMITBAD.c
+  - CWE190_Integer_Overflow__char_max_postinc_54c_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__char_max_preinc_22a_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__char_max_square_08_s01_OMITBAD.c
+  - CWE190_Integer_Overflow__char_rand_add_01_s01_OMITBAD.c
+  - CWE190_Integer_Overflow__char_rand_postinc_22b_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__char_rand_preinc_53a_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__char_rand_square_67a_s01_OMITBAD.c
+  - CWE190_Integer_Overflow__int64_t_fscanf_add_45_s01_OMITBAD.c
+  - CWE190_Integer_Overflow__int64_t_fscanf_multiply_45_s01_OMITBAD.c
+  - CWE190_Integer_Overflow__int64_t_fscanf_postinc_53c_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__int64_t_fscanf_preinc_01_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__int64_t_fscanf_square_51a_s02_OMITBAD.c
+  - CWE190_Integer_Overflow__int64_t_max_add_08_s02_OMITBAD.c
+  - CWE190_Integer_Overflow__int64_t_max_multiply_21_s02_OMITBAD.c
+  - CWE190_Integer_Overflow__int64_t_max_postinc_61b_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__int64_t_max_preinc_04_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__int64_t_max_square_64a_s02_OMITBAD.c
+  - CWE190_Integer_Overflow__int64_t_rand_add_14_s02_OMITBAD.c
+  - CWE190_Integer_Overflow__int64_t_rand_postinc_02_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__int64_t_rand_preinc_45_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__int_fgets_add_10_s02_OMITBAD.c
+  - CWE190_Integer_Overflow__int_fgets_multiply_11_s03_OMITBAD.c
+  - CWE190_Integer_Overflow__int_fgets_postinc_09_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__int_fgets_preinc_22b_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__int_fgets_square_53c_s03_OMITBAD.c
+  - CWE190_Integer_Overflow__int_fscanf_add_08_s03_OMITBAD.c
+  - CWE190_Integer_Overflow__int_fscanf_multiply_61b_s03_OMITBAD.c
+  - CWE190_Integer_Overflow__int_fscanf_postinc_65b_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__int_fscanf_preinc_63b_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__int_fscanf_square_52c_s03_OMITBAD.c
+  - CWE190_Integer_Overflow__int_max_add_22a_s03_OMITBAD.c
+  - CWE190_Integer_Overflow__int_max_postinc_17_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__int_max_preinc_22b_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__int_max_square_63a_s03_OMITBAD.c
+  - CWE190_Integer_Overflow__int_rand_add_10_s04_OMITBAD.c
+  - CWE190_Integer_Overflow__int_rand_postinc_52c_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__int_rand_preinc_53d_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__int_rand_square_10_s04_OMITBAD.c
+  - CWE190_Integer_Overflow__short_fscanf_add_66b_s04_OMITBAD.c
+  - CWE190_Integer_Overflow__short_fscanf_multiply_18_s04_OMITBAD.c
+  - CWE190_Integer_Overflow__short_fscanf_postinc_51b_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__short_fscanf_preinc_52c_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__short_fscanf_square_08_s04_OMITBAD.c
+  - CWE190_Integer_Overflow__short_max_add_68b_s04_OMITBAD.c
+  - CWE190_Integer_Overflow__short_max_postinc_53c_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__short_max_preinc_54c_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__short_max_square_22a_s04_OMITBAD.c
+  - CWE190_Integer_Overflow__short_rand_add_64a_s04_OMITBAD.c
+  - CWE190_Integer_Overflow__short_rand_multiply_51b_s04_OMITBAD.c
+  - CWE190_Integer_Overflow__short_rand_postinc_22b_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__short_rand_preinc_07_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__short_rand_square_10_s05_OMITBAD.c
+  - CWE190_Integer_Overflow__unsigned_int_fscanf_add_21_s05_OMITBAD.c
+  - CWE190_Integer_Overflow__unsigned_int_fscanf_postinc_54d_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__unsigned_int_fscanf_preinc_18_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__unsigned_int_fscanf_square_53c_s05_OMITBAD.c
+  - CWE190_Integer_Overflow__unsigned_int_max_add_63a_s05_OMITBAD.c
+  - CWE190_Integer_Overflow__unsigned_int_max_postinc_53b_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__unsigned_int_max_preinc_45_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__unsigned_int_rand_add_52c_s05_OMITBAD.c
+  - CWE190_Integer_Overflow__unsigned_int_rand_multiply_03_s05_OMITBAD.c
+  - CWE190_Integer_Overflow__unsigned_int_rand_postinc_18_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__unsigned_int_rand_preinc_31_s07_OMITBAD.c
+
+============================================================
+

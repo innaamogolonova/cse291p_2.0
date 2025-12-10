@@ -1,0 +1,125 @@
+Evaluation Results for CWE401_Memory_Leak
+Generated: 2025-12-09T21:46:41.072960
+Total test cases: 23
+============================================================
+
+
+Full (SA + LLM + Judge) Implementation Results:
+============================================================
+Total files: 23
+Successfully fixed: 6 (26.1%)
+Failed to fix: 1 (4.3%)
+Skipped: 16 (69.6%)
+Average iterations per file: 1.57
+
+Successful files:
+  - CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.c
+  - CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.c
+  - CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.c
+  - CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITBAD.c
+  - CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.c
+  - CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.c
+
+Failed files:
+  - CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.c
+
+Skipped files:
+  - CWE401_Memory_Leak__char_calloc_66b_s01_OMITBAD.c
+  - CWE401_Memory_Leak__char_malloc_09_s01_OMITBAD.c
+  - CWE401_Memory_Leak__char_realloc_22b_s01_OMITBAD.c
+  - CWE401_Memory_Leak__int64_t_calloc_66a_s01_OMITBAD.c
+  - CWE401_Memory_Leak__int64_t_realloc_51b_s01_OMITBAD.c
+  - CWE401_Memory_Leak__int_calloc_64a_s01_OMITBAD.c
+  - CWE401_Memory_Leak__int_malloc_66b_s01_OMITBAD.c
+  - CWE401_Memory_Leak__strdup_char_51b_s02_OMITBAD.c
+  - CWE401_Memory_Leak__strdup_wchar_t_17_s03_OMITBAD.c
+  - CWE401_Memory_Leak__struct_twoIntsStruct_calloc_34_s03_OMITBAD.c
+  - CWE401_Memory_Leak__struct_twoIntsStruct_malloc_13_s03_OMITBAD.c
+  - CWE401_Memory_Leak__struct_twoIntsStruct_realloc_05_s03_OMITBAD.c
+  - CWE401_Memory_Leak__twoIntsStruct_calloc_44_s03_OMITBAD.c
+  - CWE401_Memory_Leak__twoIntsStruct_malloc_52c_s03_OMITBAD.c
+  - CWE401_Memory_Leak__twoIntsStruct_realloc_67b_s03_OMITBAD.c
+  - CWE401_Memory_Leak__wchar_t_realloc_61b_s03_OMITBAD.c
+
+============================================================
+
+
+LLM Only (No SA) Implementation Results:
+============================================================
+Total files: 23
+Successfully fixed: 6 (26.1%)
+Failed to fix: 1 (4.3%)
+Skipped: 16 (69.6%)
+Average iterations per file: 1.57
+
+Successful files:
+  - CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.c
+  - CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.c
+  - CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.c
+  - CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITBAD.c
+  - CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.c
+  - CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.c
+
+Failed files:
+  - CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.c
+
+Skipped files:
+  - CWE401_Memory_Leak__char_calloc_66b_s01_OMITBAD.c
+  - CWE401_Memory_Leak__char_malloc_09_s01_OMITBAD.c
+  - CWE401_Memory_Leak__char_realloc_22b_s01_OMITBAD.c
+  - CWE401_Memory_Leak__int64_t_calloc_66a_s01_OMITBAD.c
+  - CWE401_Memory_Leak__int64_t_realloc_51b_s01_OMITBAD.c
+  - CWE401_Memory_Leak__int_calloc_64a_s01_OMITBAD.c
+  - CWE401_Memory_Leak__int_malloc_66b_s01_OMITBAD.c
+  - CWE401_Memory_Leak__strdup_char_51b_s02_OMITBAD.c
+  - CWE401_Memory_Leak__strdup_wchar_t_17_s03_OMITBAD.c
+  - CWE401_Memory_Leak__struct_twoIntsStruct_calloc_34_s03_OMITBAD.c
+  - CWE401_Memory_Leak__struct_twoIntsStruct_malloc_13_s03_OMITBAD.c
+  - CWE401_Memory_Leak__struct_twoIntsStruct_realloc_05_s03_OMITBAD.c
+  - CWE401_Memory_Leak__twoIntsStruct_calloc_44_s03_OMITBAD.c
+  - CWE401_Memory_Leak__twoIntsStruct_malloc_52c_s03_OMITBAD.c
+  - CWE401_Memory_Leak__twoIntsStruct_realloc_67b_s03_OMITBAD.c
+  - CWE401_Memory_Leak__wchar_t_realloc_61b_s03_OMITBAD.c
+
+============================================================
+
+
+No Few-Shot (SA + LLM + Judge, 0 examples) Implementation Results:
+============================================================
+Total files: 23
+Successfully fixed: 6 (26.1%)
+Failed to fix: 1 (4.3%)
+Skipped: 16 (69.6%)
+Average iterations per file: 1.57
+
+Successful files:
+  - CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.c
+  - CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.c
+  - CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.c
+  - CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITBAD.c
+  - CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.c
+  - CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.c
+
+Failed files:
+  - CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.c
+
+Skipped files:
+  - CWE401_Memory_Leak__char_calloc_66b_s01_OMITBAD.c
+  - CWE401_Memory_Leak__char_malloc_09_s01_OMITBAD.c
+  - CWE401_Memory_Leak__char_realloc_22b_s01_OMITBAD.c
+  - CWE401_Memory_Leak__int64_t_calloc_66a_s01_OMITBAD.c
+  - CWE401_Memory_Leak__int64_t_realloc_51b_s01_OMITBAD.c
+  - CWE401_Memory_Leak__int_calloc_64a_s01_OMITBAD.c
+  - CWE401_Memory_Leak__int_malloc_66b_s01_OMITBAD.c
+  - CWE401_Memory_Leak__strdup_char_51b_s02_OMITBAD.c
+  - CWE401_Memory_Leak__strdup_wchar_t_17_s03_OMITBAD.c
+  - CWE401_Memory_Leak__struct_twoIntsStruct_calloc_34_s03_OMITBAD.c
+  - CWE401_Memory_Leak__struct_twoIntsStruct_malloc_13_s03_OMITBAD.c
+  - CWE401_Memory_Leak__struct_twoIntsStruct_realloc_05_s03_OMITBAD.c
+  - CWE401_Memory_Leak__twoIntsStruct_calloc_44_s03_OMITBAD.c
+  - CWE401_Memory_Leak__twoIntsStruct_malloc_52c_s03_OMITBAD.c
+  - CWE401_Memory_Leak__twoIntsStruct_realloc_67b_s03_OMITBAD.c
+  - CWE401_Memory_Leak__wchar_t_realloc_61b_s03_OMITBAD.c
+
+============================================================
+
