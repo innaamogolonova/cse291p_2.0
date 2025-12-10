@@ -1,0 +1,227 @@
+Evaluation Results for CWE122_Heap_Based_Buffer_Overflow
+Generated: 2025-12-09T21:36:53.938604
+Total test cases: 57
+============================================================
+
+
+Full (SA + LLM + Judge) Implementation Results:
+============================================================
+Total files: 57
+Successfully fixed: 6 (10.5%)
+Failed to fix: 6 (10.5%)
+Skipped: 45 (78.9%)
+Average iterations per file: 3.08
+
+Successful files:
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_int64_t_memmove_18_s08_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_wchar_t_memcpy_12_s08_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_wchar_t_memmove_15_s09_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__char_type_overrun_memmove_09_s01_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__sizeof_int64_t_02_s11_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__sizeof_struct_42_s11_OMITBAD.c
+
+Failed files:
+  - CWE122_Heap_Based_Buffer_Overflow__CWE131_loop_10_s05_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE129_connect_socket_09_s06_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_char_loop_18_s07_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_char_memcpy_08_s07_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_char_ncpy_06_s07_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE806_char_memmove_32_s09_OMITBAD.c
+
+Skipped files:
+  - CWE122_Heap_Based_Buffer_Overflow__CWE131_memcpy_52a_s05_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__CWE131_memmove_53c_s06_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__CWE135_15_s06_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE129_fgets_52a_s06_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE129_fscanf_21_s06_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE129_large_68a_s06_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE129_listen_socket_53c_s06_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE129_rand_54d_s06_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE193_char_loop_32_s06_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE193_char_memcpy_22b_s06_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE193_char_ncpy_32_s07_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE193_wchar_t_cpy_53b_s07_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE193_wchar_t_memcpy_68b_s07_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE193_wchar_t_memmove_66a_s07_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_char_memmove_66a_s07_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_char_ncat_22a_s07_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_char_snprintf_67a_s08_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_int64_t_loop_61a_s08_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_int64_t_memcpy_44_s08_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_int_memcpy_63b_s08_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_int_memmove_54a_s08_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_struct_loop_54a_s08_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_struct_memcpy_67b_s08_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_struct_memmove_63b_s08_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_wchar_t_loop_52b_s08_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_wchar_t_ncat_51b_s09_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_wchar_t_ncpy_32_s09_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE806_char_loop_64a_s09_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE806_char_ncat_65a_s09_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE806_wchar_t_loop_14_s09_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE806_wchar_t_memcpy_06_s09_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE806_wchar_t_memmove_15_s10_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE806_wchar_t_ncat_54a_s10_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE806_wchar_t_ncpy_61a_s10_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE806_wchar_t_snprintf_64b_s10_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_dest_char_cpy_67b_s10_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_dest_wchar_t_cat_54c_s10_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_dest_wchar_t_cpy_53b_s10_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_src_char_cat_06_s10_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_src_char_cpy_68a_s10_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_src_wchar_t_cat_54b_s10_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_src_wchar_t_cpy_17_s10_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__char_type_overrun_memcpy_10_s01_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__wchar_t_type_overrun_memcpy_09_s11_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__wchar_t_type_overrun_memmove_16_s11_OMITBAD.c
+
+============================================================
+
+
+LLM Only (No SA) Implementation Results:
+============================================================
+Total files: 57
+Successfully fixed: 5 (8.8%)
+Failed to fix: 7 (12.3%)
+Skipped: 45 (78.9%)
+Average iterations per file: 3.33
+
+Successful files:
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_int64_t_memmove_18_s08_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_wchar_t_memcpy_12_s08_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_wchar_t_memmove_15_s09_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__sizeof_int64_t_02_s11_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__sizeof_struct_42_s11_OMITBAD.c
+
+Failed files:
+  - CWE122_Heap_Based_Buffer_Overflow__CWE131_loop_10_s05_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE129_connect_socket_09_s06_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_char_loop_18_s07_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_char_memcpy_08_s07_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_char_ncpy_06_s07_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE806_char_memmove_32_s09_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__char_type_overrun_memmove_09_s01_OMITBAD.c
+
+Skipped files:
+  - CWE122_Heap_Based_Buffer_Overflow__CWE131_memcpy_52a_s05_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__CWE131_memmove_53c_s06_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__CWE135_15_s06_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE129_fgets_52a_s06_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE129_fscanf_21_s06_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE129_large_68a_s06_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE129_listen_socket_53c_s06_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE129_rand_54d_s06_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE193_char_loop_32_s06_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE193_char_memcpy_22b_s06_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE193_char_ncpy_32_s07_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE193_wchar_t_cpy_53b_s07_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE193_wchar_t_memcpy_68b_s07_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE193_wchar_t_memmove_66a_s07_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_char_memmove_66a_s07_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_char_ncat_22a_s07_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_char_snprintf_67a_s08_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_int64_t_loop_61a_s08_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_int64_t_memcpy_44_s08_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_int_memcpy_63b_s08_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_int_memmove_54a_s08_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_struct_loop_54a_s08_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_struct_memcpy_67b_s08_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_struct_memmove_63b_s08_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_wchar_t_loop_52b_s08_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_wchar_t_ncat_51b_s09_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_wchar_t_ncpy_32_s09_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE806_char_loop_64a_s09_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE806_char_ncat_65a_s09_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE806_wchar_t_loop_14_s09_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE806_wchar_t_memcpy_06_s09_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE806_wchar_t_memmove_15_s10_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE806_wchar_t_ncat_54a_s10_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE806_wchar_t_ncpy_61a_s10_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE806_wchar_t_snprintf_64b_s10_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_dest_char_cpy_67b_s10_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_dest_wchar_t_cat_54c_s10_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_dest_wchar_t_cpy_53b_s10_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_src_char_cat_06_s10_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_src_char_cpy_68a_s10_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_src_wchar_t_cat_54b_s10_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_src_wchar_t_cpy_17_s10_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__char_type_overrun_memcpy_10_s01_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__wchar_t_type_overrun_memcpy_09_s11_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__wchar_t_type_overrun_memmove_16_s11_OMITBAD.c
+
+============================================================
+
+
+No Few-Shot (SA + LLM + Judge, 0 examples) Implementation Results:
+============================================================
+Total files: 57
+Successfully fixed: 8 (14.0%)
+Failed to fix: 4 (7.0%)
+Skipped: 45 (78.9%)
+Average iterations per file: 2.33
+
+Successful files:
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_char_loop_18_s07_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_int64_t_memmove_18_s08_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_wchar_t_memcpy_12_s08_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_wchar_t_memmove_15_s09_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE806_char_memmove_32_s09_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__char_type_overrun_memmove_09_s01_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__sizeof_int64_t_02_s11_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__sizeof_struct_42_s11_OMITBAD.c
+
+Failed files:
+  - CWE122_Heap_Based_Buffer_Overflow__CWE131_loop_10_s05_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE129_connect_socket_09_s06_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_char_memcpy_08_s07_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_char_ncpy_06_s07_OMITBAD.c
+
+Skipped files:
+  - CWE122_Heap_Based_Buffer_Overflow__CWE131_memcpy_52a_s05_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__CWE131_memmove_53c_s06_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__CWE135_15_s06_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE129_fgets_52a_s06_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE129_fscanf_21_s06_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE129_large_68a_s06_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE129_listen_socket_53c_s06_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE129_rand_54d_s06_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE193_char_loop_32_s06_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE193_char_memcpy_22b_s06_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE193_char_ncpy_32_s07_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE193_wchar_t_cpy_53b_s07_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE193_wchar_t_memcpy_68b_s07_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE193_wchar_t_memmove_66a_s07_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_char_memmove_66a_s07_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_char_ncat_22a_s07_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_char_snprintf_67a_s08_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_int64_t_loop_61a_s08_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_int64_t_memcpy_44_s08_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_int_memcpy_63b_s08_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_int_memmove_54a_s08_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_struct_loop_54a_s08_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_struct_memcpy_67b_s08_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_struct_memmove_63b_s08_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_wchar_t_loop_52b_s08_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_wchar_t_ncat_51b_s09_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_wchar_t_ncpy_32_s09_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE806_char_loop_64a_s09_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE806_char_ncat_65a_s09_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE806_wchar_t_loop_14_s09_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE806_wchar_t_memcpy_06_s09_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE806_wchar_t_memmove_15_s10_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE806_wchar_t_ncat_54a_s10_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE806_wchar_t_ncpy_61a_s10_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE806_wchar_t_snprintf_64b_s10_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_dest_char_cpy_67b_s10_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_dest_wchar_t_cat_54c_s10_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_dest_wchar_t_cpy_53b_s10_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_src_char_cat_06_s10_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_src_char_cpy_68a_s10_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_src_wchar_t_cat_54b_s10_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_src_wchar_t_cpy_17_s10_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__char_type_overrun_memcpy_10_s01_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__wchar_t_type_overrun_memcpy_09_s11_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__wchar_t_type_overrun_memmove_16_s11_OMITBAD.c
+
+============================================================
+
