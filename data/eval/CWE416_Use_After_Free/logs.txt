@@ -1,0 +1,403 @@
+Detailed Logs for CWE416_Use_After_Free
+Generated: 2025-12-09T21:53:39.556403
+============================================================
+
+
+============================================================
+Implementation: Full (SA + LLM + Judge)
+File: CWE416_Use_After_Free__malloc_free_char_01_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE416_Use_After_Free__malloc_free_char_01_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_char_01_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_char_01_OMITBAD.c: OMITGOOD=1...
+
+[INFO] No warnings found in original file. Nothing to fix.
+
+[STDERR]
+
+
+============================================================
+Implementation: LLM Only (No SA)
+File: CWE416_Use_After_Free__malloc_free_char_01_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE416_Use_After_Free__malloc_free_char_01_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_char_01_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_char_01_OMITBAD.c: OMITGOOD=1...
+
+[INFO] No warnings found in original file. Nothing to fix.
+
+[STDERR]
+
+
+============================================================
+Implementation: No Few-Shot (SA + LLM + Judge, 0 examples)
+File: CWE416_Use_After_Free__malloc_free_char_01_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE416_Use_After_Free__malloc_free_char_01_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_char_01_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_char_01_OMITBAD.c: OMITGOOD=1...
+
+[INFO] No warnings found in original file. Nothing to fix.
+
+[STDERR]
+
+
+============================================================
+Implementation: Full (SA + LLM + Judge)
+File: CWE416_Use_After_Free__malloc_free_int64_t_12_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE416_Use_After_Free__malloc_free_int64_t_12_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_int64_t_12_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_int64_t_12_OMITBAD.c: OMITGOOD=1...
+
+[INFO] No warnings found in original file. Nothing to fix.
+
+[STDERR]
+
+
+============================================================
+Implementation: LLM Only (No SA)
+File: CWE416_Use_After_Free__malloc_free_int64_t_12_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE416_Use_After_Free__malloc_free_int64_t_12_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_int64_t_12_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_int64_t_12_OMITBAD.c: OMITGOOD=1...
+
+[INFO] No warnings found in original file. Nothing to fix.
+
+[STDERR]
+
+
+============================================================
+Implementation: No Few-Shot (SA + LLM + Judge, 0 examples)
+File: CWE416_Use_After_Free__malloc_free_int64_t_12_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE416_Use_After_Free__malloc_free_int64_t_12_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_int64_t_12_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_int64_t_12_OMITBAD.c: OMITGOOD=1...
+
+[INFO] No warnings found in original file. Nothing to fix.
+
+[STDERR]
+
+
+============================================================
+Implementation: Full (SA + LLM + Judge)
+File: CWE416_Use_After_Free__malloc_free_int_10_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE416_Use_After_Free__malloc_free_int_10_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_int_10_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_int_10_OMITBAD.c: OMITGOOD=1...
+
+[INFO] No warnings found in original file. Nothing to fix.
+
+[STDERR]
+
+
+============================================================
+Implementation: LLM Only (No SA)
+File: CWE416_Use_After_Free__malloc_free_int_10_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE416_Use_After_Free__malloc_free_int_10_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_int_10_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_int_10_OMITBAD.c: OMITGOOD=1...
+
+[INFO] No warnings found in original file. Nothing to fix.
+
+[STDERR]
+
+
+============================================================
+Implementation: No Few-Shot (SA + LLM + Judge, 0 examples)
+File: CWE416_Use_After_Free__malloc_free_int_10_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE416_Use_After_Free__malloc_free_int_10_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_int_10_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_int_10_OMITBAD.c: OMITGOOD=1...
+
+[INFO] No warnings found in original file. Nothing to fix.
+
+[STDERR]
+
+
+============================================================
+Implementation: Full (SA + LLM + Judge)
+File: CWE416_Use_After_Free__malloc_free_long_06_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE416_Use_After_Free__malloc_free_long_06_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_long_06_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_long_06_OMITBAD.c: OMITGOOD=1...
+
+[INFO] No warnings found in original file. Nothing to fix.
+
+[STDERR]
+
+
+============================================================
+Implementation: LLM Only (No SA)
+File: CWE416_Use_After_Free__malloc_free_long_06_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE416_Use_After_Free__malloc_free_long_06_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_long_06_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_long_06_OMITBAD.c: OMITGOOD=1...
+
+[INFO] No warnings found in original file. Nothing to fix.
+
+[STDERR]
+
+
+============================================================
+Implementation: No Few-Shot (SA + LLM + Judge, 0 examples)
+File: CWE416_Use_After_Free__malloc_free_long_06_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE416_Use_After_Free__malloc_free_long_06_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_long_06_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_long_06_OMITBAD.c: OMITGOOD=1...
+
+[INFO] No warnings found in original file. Nothing to fix.
+
+[STDERR]
+
+
+============================================================
+Implementation: Full (SA + LLM + Judge)
+File: CWE416_Use_After_Free__malloc_free_struct_11_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE416_Use_After_Free__malloc_free_struct_11_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_struct_11_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_struct_11_OMITBAD.c: OMITGOOD=1...
+
+[INFO] No warnings found in original file. Nothing to fix.
+
+[STDERR]
+
+
+============================================================
+Implementation: LLM Only (No SA)
+File: CWE416_Use_After_Free__malloc_free_struct_11_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE416_Use_After_Free__malloc_free_struct_11_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_struct_11_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_struct_11_OMITBAD.c: OMITGOOD=1...
+
+[INFO] No warnings found in original file. Nothing to fix.
+
+[STDERR]
+
+
+============================================================
+Implementation: No Few-Shot (SA + LLM + Judge, 0 examples)
+File: CWE416_Use_After_Free__malloc_free_struct_11_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE416_Use_After_Free__malloc_free_struct_11_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_struct_11_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_struct_11_OMITBAD.c: OMITGOOD=1...
+
+[INFO] No warnings found in original file. Nothing to fix.
+
+[STDERR]
+
+
+============================================================
+Implementation: Full (SA + LLM + Judge)
+File: CWE416_Use_After_Free__malloc_free_wchar_t_18_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE416_Use_After_Free__malloc_free_wchar_t_18_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_wchar_t_18_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_wchar_t_18_OMITBAD.c: OMITGOOD=1...
+
+[INFO] No warnings found in original file. Nothing to fix.
+
+[STDERR]
+
+
+============================================================
+Implementation: LLM Only (No SA)
+File: CWE416_Use_After_Free__malloc_free_wchar_t_18_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE416_Use_After_Free__malloc_free_wchar_t_18_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_wchar_t_18_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_wchar_t_18_OMITBAD.c: OMITGOOD=1...
+
+[INFO] No warnings found in original file. Nothing to fix.
+
+[STDERR]
+
+
+============================================================
+Implementation: No Few-Shot (SA + LLM + Judge, 0 examples)
+File: CWE416_Use_After_Free__malloc_free_wchar_t_18_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE416_Use_After_Free__malloc_free_wchar_t_18_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_wchar_t_18_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_wchar_t_18_OMITBAD.c: OMITGOOD=1...
+
+[INFO] No warnings found in original file. Nothing to fix.
+
+[STDERR]
+
+
+============================================================
+Implementation: Full (SA + LLM + Judge)
+File: CWE416_Use_After_Free__return_freed_ptr_12_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE416_Use_After_Free__return_freed_ptr_12_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE416_Use_After_Free/CWE416_Use_After_Free__return_freed_ptr_12_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE416_Use_After_Free/CWE416_Use_After_Free__return_freed_ptr_12_OMITBAD.c: OMITGOOD=1...
+
+[INFO] No warnings found in original file. Nothing to fix.
+
+[STDERR]
+
+
+============================================================
+Implementation: LLM Only (No SA)
+File: CWE416_Use_After_Free__return_freed_ptr_12_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE416_Use_After_Free__return_freed_ptr_12_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE416_Use_After_Free/CWE416_Use_After_Free__return_freed_ptr_12_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE416_Use_After_Free/CWE416_Use_After_Free__return_freed_ptr_12_OMITBAD.c: OMITGOOD=1...
+
+[INFO] No warnings found in original file. Nothing to fix.
+
+[STDERR]
+
+
+============================================================
+Implementation: No Few-Shot (SA + LLM + Judge, 0 examples)
+File: CWE416_Use_After_Free__return_freed_ptr_12_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE416_Use_After_Free__return_freed_ptr_12_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE416_Use_After_Free/CWE416_Use_After_Free__return_freed_ptr_12_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE416_Use_After_Free/CWE416_Use_After_Free__return_freed_ptr_12_OMITBAD.c: OMITGOOD=1...
+
+[INFO] No warnings found in original file. Nothing to fix.
+
+[STDERR]
+

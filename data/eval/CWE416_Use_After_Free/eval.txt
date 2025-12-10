@@ -1,0 +1,83 @@
+Evaluation Results for CWE416_Use_After_Free
+Generated: 2025-12-09T21:53:40.883964
+Total test cases: 7
+============================================================
+
+
+Full (SA + LLM + Judge) Implementation Results:
+============================================================
+Total files: 7
+Successfully fixed: 0 (0.0%)
+Failed to fix: 0 (0.0%)
+Skipped: 7 (100.0%)
+Average iterations per file: 0.00
+
+Successful files:
+  (none)
+
+Failed files:
+  (none)
+
+Skipped files:
+  - CWE416_Use_After_Free__malloc_free_char_01_OMITBAD.c
+  - CWE416_Use_After_Free__malloc_free_int64_t_12_OMITBAD.c
+  - CWE416_Use_After_Free__malloc_free_int_10_OMITBAD.c
+  - CWE416_Use_After_Free__malloc_free_long_06_OMITBAD.c
+  - CWE416_Use_After_Free__malloc_free_struct_11_OMITBAD.c
+  - CWE416_Use_After_Free__malloc_free_wchar_t_18_OMITBAD.c
+  - CWE416_Use_After_Free__return_freed_ptr_12_OMITBAD.c
+
+============================================================
+
+
+LLM Only (No SA) Implementation Results:
+============================================================
+Total files: 7
+Successfully fixed: 0 (0.0%)
+Failed to fix: 0 (0.0%)
+Skipped: 7 (100.0%)
+Average iterations per file: 0.00
+
+Successful files:
+  (none)
+
+Failed files:
+  (none)
+
+Skipped files:
+  - CWE416_Use_After_Free__malloc_free_char_01_OMITBAD.c
+  - CWE416_Use_After_Free__malloc_free_int64_t_12_OMITBAD.c
+  - CWE416_Use_After_Free__malloc_free_int_10_OMITBAD.c
+  - CWE416_Use_After_Free__malloc_free_long_06_OMITBAD.c
+  - CWE416_Use_After_Free__malloc_free_struct_11_OMITBAD.c
+  - CWE416_Use_After_Free__malloc_free_wchar_t_18_OMITBAD.c
+  - CWE416_Use_After_Free__return_freed_ptr_12_OMITBAD.c
+
+============================================================
+
+
+No Few-Shot (SA + LLM + Judge, 0 examples) Implementation Results:
+============================================================
+Total files: 7
+Successfully fixed: 0 (0.0%)
+Failed to fix: 0 (0.0%)
+Skipped: 7 (100.0%)
+Average iterations per file: 0.00
+
+Successful files:
+  (none)
+
+Failed files:
+  (none)
+
+Skipped files:
+  - CWE416_Use_After_Free__malloc_free_char_01_OMITBAD.c
+  - CWE416_Use_After_Free__malloc_free_int64_t_12_OMITBAD.c
+  - CWE416_Use_After_Free__malloc_free_int_10_OMITBAD.c
+  - CWE416_Use_After_Free__malloc_free_long_06_OMITBAD.c
+  - CWE416_Use_After_Free__malloc_free_struct_11_OMITBAD.c
+  - CWE416_Use_After_Free__malloc_free_wchar_t_18_OMITBAD.c
+  - CWE416_Use_After_Free__return_freed_ptr_12_OMITBAD.c
+
+============================================================
+

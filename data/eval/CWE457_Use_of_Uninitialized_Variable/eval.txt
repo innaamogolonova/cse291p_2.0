@@ -1,0 +1,134 @@
+Evaluation Results for CWE457_Use_of_Uninitialized_Variable
+Generated: 2025-12-09T22:17:40.376445
+Total test cases: 26
+============================================================
+
+
+Full (SA + LLM + Judge) Implementation Results:
+============================================================
+Total files: 26
+Successfully fixed: 6 (23.1%)
+Failed to fix: 7 (26.9%)
+Skipped: 13 (50.0%)
+Average iterations per file: 3.15
+
+Successful files:
+  - CWE457_Use_of_Uninitialized_Variable__char_pointer_02_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__double_04_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__double_array_malloc_partial_init_02_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__int64_t_07_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__int_16_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__long_17_s01_OMITBAD.c
+
+Failed files:
+  - CWE457_Use_of_Uninitialized_Variable__double_array_alloca_partial_init_18_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__double_pointer_14_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__int_array_alloca_partial_init_64a_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__int_pointer_09_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__struct_array_alloca_partial_init_10_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__struct_array_malloc_no_init_02_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__struct_pointer_02_s01_OMITBAD.c
+
+Skipped files:
+  - CWE457_Use_of_Uninitialized_Variable__double_array_alloca_no_init_63b_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__double_array_declare_no_init_04_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__double_array_declare_partial_init_02_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__double_array_malloc_no_init_17_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__int_array_alloca_no_init_64b_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__int_array_declare_partial_init_16_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__int_array_malloc_partial_init_18_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__struct_64a_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__struct_array_alloca_no_init_63b_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__struct_array_declare_no_init_14_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__struct_array_declare_partial_init_08_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__struct_array_malloc_partial_init_18_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__wchar_t_pointer_64b_s02_OMITBAD.c
+
+============================================================
+
+
+LLM Only (No SA) Implementation Results:
+============================================================
+Total files: 26
+Successfully fixed: 5 (19.2%)
+Failed to fix: 8 (30.8%)
+Skipped: 13 (50.0%)
+Average iterations per file: 3.46
+
+Successful files:
+  - CWE457_Use_of_Uninitialized_Variable__char_pointer_02_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__double_04_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__double_pointer_14_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__int64_t_07_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__long_17_s01_OMITBAD.c
+
+Failed files:
+  - CWE457_Use_of_Uninitialized_Variable__double_array_alloca_partial_init_18_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__double_array_malloc_partial_init_02_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__int_16_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__int_array_alloca_partial_init_64a_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__int_pointer_09_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__struct_array_alloca_partial_init_10_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__struct_array_malloc_no_init_02_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__struct_pointer_02_s01_OMITBAD.c
+
+Skipped files:
+  - CWE457_Use_of_Uninitialized_Variable__double_array_alloca_no_init_63b_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__double_array_declare_no_init_04_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__double_array_declare_partial_init_02_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__double_array_malloc_no_init_17_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__int_array_alloca_no_init_64b_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__int_array_declare_partial_init_16_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__int_array_malloc_partial_init_18_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__struct_64a_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__struct_array_alloca_no_init_63b_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__struct_array_declare_no_init_14_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__struct_array_declare_partial_init_08_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__struct_array_malloc_partial_init_18_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__wchar_t_pointer_64b_s02_OMITBAD.c
+
+============================================================
+
+
+No Few-Shot (SA + LLM + Judge, 0 examples) Implementation Results:
+============================================================
+Total files: 26
+Successfully fixed: 8 (30.8%)
+Failed to fix: 5 (19.2%)
+Skipped: 13 (50.0%)
+Average iterations per file: 2.54
+
+Successful files:
+  - CWE457_Use_of_Uninitialized_Variable__char_pointer_02_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__double_04_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__double_array_malloc_partial_init_02_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__double_pointer_14_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__int64_t_07_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__int_16_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__long_17_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__struct_pointer_02_s01_OMITBAD.c
+
+Failed files:
+  - CWE457_Use_of_Uninitialized_Variable__double_array_alloca_partial_init_18_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__int_array_alloca_partial_init_64a_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__int_pointer_09_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__struct_array_alloca_partial_init_10_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__struct_array_malloc_no_init_02_s01_OMITBAD.c
+
+Skipped files:
+  - CWE457_Use_of_Uninitialized_Variable__double_array_alloca_no_init_63b_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__double_array_declare_no_init_04_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__double_array_declare_partial_init_02_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__double_array_malloc_no_init_17_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__int_array_alloca_no_init_64b_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__int_array_declare_partial_init_16_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__int_array_malloc_partial_init_18_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__struct_64a_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__struct_array_alloca_no_init_63b_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__struct_array_declare_no_init_14_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__struct_array_declare_partial_init_08_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__struct_array_malloc_partial_init_18_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__wchar_t_pointer_64b_s02_OMITBAD.c
+
+============================================================
+

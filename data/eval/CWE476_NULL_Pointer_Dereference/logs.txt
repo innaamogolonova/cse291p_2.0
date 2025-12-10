@@ -1,0 +1,1377 @@
+Detailed Logs for CWE476_NULL_Pointer_Dereference
+Generated: 2025-12-09T22:26:40.387928
+============================================================
+
+
+============================================================
+Implementation: Full (SA + LLM + Judge)
+File: CWE476_NULL_Pointer_Dereference__binary_if_07_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE476_NULL_Pointer_Dereference__binary_if_07_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__binary_if_07_OMITBAD.c:8:51: error: Null pointer dereference: twoIntsStructPointer [nullPointer]
+            if ((twoIntsStructPointer != NULL) & (twoIntsStructPointer->intOne == 5))
+                                                  ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__binary_if_07_OMITBAD.c:7:51: note: Assignment 'twoIntsStructPointer=NULL', assigned value is 0
+            twoIntsStruct *twoIntsStructPointer = NULL;
+                                                  ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__binary_if_07_OMITBAD.c:8:51: note: Null pointer dereference
+            if ((twoIntsStructPointer != NULL) & (twoIntsStructPointer->intOne == 5))
+                                                  ^
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__binary_if_07_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__binary_if_07_OMITBAD.c: OMITGOOD=1...
+
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__binary_if_07_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__binary_if_07_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response EQUIVALENT
+[SUCCESS] No SA and JUDGE warnings remaining after 1 iteration(s)
+
+=== Saving fixed code ===
+Total iterations: 1
+Fixed code saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/omitbad_fixes/CWE476_NULL_Pointer_Dereference__binary_if_07_OMITBAD.c.fixed.c
+Metadata saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/omitbad_fixes/CWE476_NULL_Pointer_Dereference__binary_if_07_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+
+============================================================
+Implementation: LLM Only (No SA)
+File: CWE476_NULL_Pointer_Dereference__binary_if_07_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE476_NULL_Pointer_Dereference__binary_if_07_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__binary_if_07_OMITBAD.c:8:51: error: Null pointer dereference: twoIntsStructPointer [nullPointer]
+            if ((twoIntsStructPointer != NULL) & (twoIntsStructPointer->intOne == 5))
+                                                  ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__binary_if_07_OMITBAD.c:7:51: note: Assignment 'twoIntsStructPointer=NULL', assigned value is 0
+            twoIntsStruct *twoIntsStructPointer = NULL;
+                                                  ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__binary_if_07_OMITBAD.c:8:51: note: Null pointer dereference
+            if ((twoIntsStructPointer != NULL) & (twoIntsStructPointer->intOne == 5))
+                                                  ^
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__binary_if_07_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__binary_if_07_OMITBAD.c: OMITGOOD=1...
+
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__binary_if_07_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__binary_if_07_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response EQUIVALENT
+[SUCCESS] No SA and JUDGE warnings remaining after 1 iteration(s)
+
+=== Saving fixed code ===
+Total iterations: 1
+Fixed code saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/llm_only_fixes/CWE476_NULL_Pointer_Dereference__binary_if_07_OMITBAD.c.fixed.c
+Metadata saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/llm_only_fixes/CWE476_NULL_Pointer_Dereference__binary_if_07_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+
+============================================================
+Implementation: No Few-Shot (SA + LLM + Judge, 0 examples)
+File: CWE476_NULL_Pointer_Dereference__binary_if_07_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE476_NULL_Pointer_Dereference__binary_if_07_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__binary_if_07_OMITBAD.c:8:51: error: Null pointer dereference: twoIntsStructPointer [nullPointer]
+            if ((twoIntsStructPointer != NULL) & (twoIntsStructPointer->intOne == 5))
+                                                  ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__binary_if_07_OMITBAD.c:7:51: note: Assignment 'twoIntsStructPointer=NULL', assigned value is 0
+            twoIntsStruct *twoIntsStructPointer = NULL;
+                                                  ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__binary_if_07_OMITBAD.c:8:51: note: Null pointer dereference
+            if ((twoIntsStructPointer != NULL) & (twoIntsStructPointer->intOne == 5))
+                                                  ^
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__binary_if_07_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__binary_if_07_OMITBAD.c: OMITGOOD=1...
+
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__binary_if_07_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__binary_if_07_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response EQUIVALENT
+[SUCCESS] No SA and JUDGE warnings remaining after 1 iteration(s)
+
+=== Saving fixed code ===
+Total iterations: 1
+Fixed code saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/no_few_shot_fixes/CWE476_NULL_Pointer_Dereference__binary_if_07_OMITBAD.c.fixed.c
+Metadata saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/no_few_shot_fixes/CWE476_NULL_Pointer_Dereference__binary_if_07_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+
+============================================================
+Implementation: Full (SA + LLM + Judge)
+File: CWE476_NULL_Pointer_Dereference__char_03_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE476_NULL_Pointer_Dereference__char_03_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__char_03_OMITBAD.c:12:26: error: Null pointer dereference: data [nullPointer]
+        printHexCharLine(data[0]);
+                         ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__char_03_OMITBAD.c:8:16: note: Assignment 'data=NULL', assigned value is 0
+        data = NULL;
+               ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__char_03_OMITBAD.c:12:26: note: Null pointer dereference
+        printHexCharLine(data[0]);
+                         ^
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__char_03_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__char_03_OMITBAD.c: OMITGOOD=1...
+
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__char_03_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__char_03_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response EQUIVALENT
+[SUCCESS] No SA and JUDGE warnings remaining after 1 iteration(s)
+
+=== Saving fixed code ===
+Total iterations: 1
+Fixed code saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/omitbad_fixes/CWE476_NULL_Pointer_Dereference__char_03_OMITBAD.c.fixed.c
+Metadata saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/omitbad_fixes/CWE476_NULL_Pointer_Dereference__char_03_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+
+============================================================
+Implementation: LLM Only (No SA)
+File: CWE476_NULL_Pointer_Dereference__char_03_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE476_NULL_Pointer_Dereference__char_03_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__char_03_OMITBAD.c:12:26: error: Null pointer dereference: data [nullPointer]
+        printHexCharLine(data[0]);
+                         ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__char_03_OMITBAD.c:8:16: note: Assignment 'data=NULL', assigned value is 0
+        data = NULL;
+               ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__char_03_OMITBAD.c:12:26: note: Null pointer dereference
+        printHexCharLine(data[0]);
+                         ^
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__char_03_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__char_03_OMITBAD.c: OMITGOOD=1...
+
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__char_03_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__char_03_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response EQUIVALENT
+[SUCCESS] No SA and JUDGE warnings remaining after 1 iteration(s)
+
+=== Saving fixed code ===
+Total iterations: 1
+Fixed code saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/llm_only_fixes/CWE476_NULL_Pointer_Dereference__char_03_OMITBAD.c.fixed.c
+Metadata saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/llm_only_fixes/CWE476_NULL_Pointer_Dereference__char_03_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+
+============================================================
+Implementation: No Few-Shot (SA + LLM + Judge, 0 examples)
+File: CWE476_NULL_Pointer_Dereference__char_03_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE476_NULL_Pointer_Dereference__char_03_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__char_03_OMITBAD.c:12:26: error: Null pointer dereference: data [nullPointer]
+        printHexCharLine(data[0]);
+                         ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__char_03_OMITBAD.c:8:16: note: Assignment 'data=NULL', assigned value is 0
+        data = NULL;
+               ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__char_03_OMITBAD.c:12:26: note: Null pointer dereference
+        printHexCharLine(data[0]);
+                         ^
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__char_03_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__char_03_OMITBAD.c: OMITGOOD=1...
+
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__char_03_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__char_03_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response EQUIVALENT
+[SUCCESS] No SA and JUDGE warnings remaining after 1 iteration(s)
+
+=== Saving fixed code ===
+Total iterations: 1
+Fixed code saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/no_few_shot_fixes/CWE476_NULL_Pointer_Dereference__char_03_OMITBAD.c.fixed.c
+Metadata saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/no_few_shot_fixes/CWE476_NULL_Pointer_Dereference__char_03_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+
+============================================================
+Implementation: Full (SA + LLM + Judge)
+File: CWE476_NULL_Pointer_Dereference__deref_after_check_11_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE476_NULL_Pointer_Dereference__deref_after_check_11_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__deref_after_check_11_OMITBAD.c:10:31: error: Null pointer dereference: intPointer [nullPointer]
+                printIntLine(*intPointer);
+                              ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__deref_after_check_11_OMITBAD.c:7:31: note: Assignment 'intPointer=NULL', assigned value is 0
+            int *intPointer = NULL;
+                              ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__deref_after_check_11_OMITBAD.c:10:31: note: Null pointer dereference
+                printIntLine(*intPointer);
+                              ^
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__deref_after_check_11_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__deref_after_check_11_OMITBAD.c: OMITGOOD=1...
+
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__deref_after_check_11_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__deref_after_check_11_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response EQUIVALENT
+[SUCCESS] No SA and JUDGE warnings remaining after 1 iteration(s)
+
+=== Saving fixed code ===
+Total iterations: 1
+Fixed code saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/omitbad_fixes/CWE476_NULL_Pointer_Dereference__deref_after_check_11_OMITBAD.c.fixed.c
+Metadata saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/omitbad_fixes/CWE476_NULL_Pointer_Dereference__deref_after_check_11_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+
+============================================================
+Implementation: LLM Only (No SA)
+File: CWE476_NULL_Pointer_Dereference__deref_after_check_11_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE476_NULL_Pointer_Dereference__deref_after_check_11_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__deref_after_check_11_OMITBAD.c:10:31: error: Null pointer dereference: intPointer [nullPointer]
+                printIntLine(*intPointer);
+                              ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__deref_after_check_11_OMITBAD.c:7:31: note: Assignment 'intPointer=NULL', assigned value is 0
+            int *intPointer = NULL;
+                              ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__deref_after_check_11_OMITBAD.c:10:31: note: Null pointer dereference
+                printIntLine(*intPointer);
+                              ^
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__deref_after_check_11_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__deref_after_check_11_OMITBAD.c: OMITGOOD=1...
+
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__deref_after_check_11_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__deref_after_check_11_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response EQUIVALENT
+[SUCCESS] No SA and JUDGE warnings remaining after 1 iteration(s)
+
+=== Saving fixed code ===
+Total iterations: 1
+Fixed code saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/llm_only_fixes/CWE476_NULL_Pointer_Dereference__deref_after_check_11_OMITBAD.c.fixed.c
+Metadata saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/llm_only_fixes/CWE476_NULL_Pointer_Dereference__deref_after_check_11_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+
+============================================================
+Implementation: No Few-Shot (SA + LLM + Judge, 0 examples)
+File: CWE476_NULL_Pointer_Dereference__deref_after_check_11_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE476_NULL_Pointer_Dereference__deref_after_check_11_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__deref_after_check_11_OMITBAD.c:10:31: error: Null pointer dereference: intPointer [nullPointer]
+                printIntLine(*intPointer);
+                              ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__deref_after_check_11_OMITBAD.c:7:31: note: Assignment 'intPointer=NULL', assigned value is 0
+            int *intPointer = NULL;
+                              ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__deref_after_check_11_OMITBAD.c:10:31: note: Null pointer dereference
+                printIntLine(*intPointer);
+                              ^
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__deref_after_check_11_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__deref_after_check_11_OMITBAD.c: OMITGOOD=1...
+
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__deref_after_check_11_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__deref_after_check_11_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response EQUIVALENT
+[SUCCESS] No SA and JUDGE warnings remaining after 1 iteration(s)
+
+=== Saving fixed code ===
+Total iterations: 1
+Fixed code saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/no_few_shot_fixes/CWE476_NULL_Pointer_Dereference__deref_after_check_11_OMITBAD.c.fixed.c
+Metadata saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/no_few_shot_fixes/CWE476_NULL_Pointer_Dereference__deref_after_check_11_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+
+============================================================
+Implementation: Full (SA + LLM + Judge)
+File: CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.c:9:26: error: Uninitialized variable: *dataPtr1 [uninitvar]
+        int64_t * data = *dataPtr1;
+                         ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.c:14:26: error: Uninitialized variable: *dataPtr2 [uninitvar]
+        int64_t * data = *dataPtr2;
+                         ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.c:7:27: note: Assignment 'dataPtr2=&data', assigned value is <Uninit>
+    int64_t * *dataPtr2 = &data;
+                          ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.c:14:26: note: Uninitialized variable: *dataPtr2
+        int64_t * data = *dataPtr2;
+                         ^
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.c: OMITGOOD=1...
+
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c:9:26: error: Uninitialized variable: *dataPtr1 [uninitvar]
+        int64_t * data = *dataPtr1;
+                         ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c:14:26: error: Uninitialized variable: *dataPtr2 [uninitvar]
+        int64_t * data = *dataPtr2;
+                         ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c:7:27: note: Assignment 'dataPtr2=&data', assigned value is <Uninit>
+    int64_t * *dataPtr2 = &data;
+                          ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c:14:26: note: Uninitialized variable: *dataPtr2
+        int64_t * data = *dataPtr2;
+                         ^
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c: OMITGOOD=1...
+
+[INFO] SA Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 2/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c:9:26: error: Uninitialized variable: *dataPtr1 [uninitvar]
+        int64_t * data = *dataPtr1;
+                         ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c:14:26: error: Uninitialized variable: *dataPtr2 [uninitvar]
+        int64_t * data = *dataPtr2;
+                         ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c:7:27: note: Assignment 'dataPtr2=&data', assigned value is <Uninit>
+    int64_t * *dataPtr2 = &data;
+                          ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c:14:26: note: Uninitialized variable: *dataPtr2
+        int64_t * data = *dataPtr2;
+                         ^
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c: OMITGOOD=1...
+
+[INFO] SA Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 3/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c:10:26: error: Uninitialized variable: *dataPtr1 [uninitvar]
+        int64_t * data = *dataPtr1;
+                         ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c:15:26: error: Uninitialized variable: *dataPtr2 [uninitvar]
+        int64_t * data = *dataPtr2;
+                         ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c:8:27: note: Assignment 'dataPtr2=&data', assigned value is <Uninit>
+    int64_t * *dataPtr2 = &data;
+                          ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c:15:26: note: Uninitialized variable: *dataPtr2
+        int64_t * data = *dataPtr2;
+                         ^
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c: OMITGOOD=1...
+
+[INFO] SA Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 4/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 5/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+[WARNING] Max iterations (5) reached. Some warnings may remain.
+
+=== Saving fixed code ===
+Total iterations: 5
+Fixed code saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/omitbad_fixes/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.c.fixed.c
+Metadata saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/omitbad_fixes/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+
+============================================================
+Implementation: LLM Only (No SA)
+File: CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.c:9:26: error: Uninitialized variable: *dataPtr1 [uninitvar]
+        int64_t * data = *dataPtr1;
+                         ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.c:14:26: error: Uninitialized variable: *dataPtr2 [uninitvar]
+        int64_t * data = *dataPtr2;
+                         ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.c:7:27: note: Assignment 'dataPtr2=&data', assigned value is <Uninit>
+    int64_t * *dataPtr2 = &data;
+                          ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.c:14:26: note: Uninitialized variable: *dataPtr2
+        int64_t * data = *dataPtr2;
+                         ^
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.c: OMITGOOD=1...
+
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c:9:26: error: Uninitialized variable: *dataPtr1 [uninitvar]
+        int64_t * data = *dataPtr1;
+                         ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c:14:26: error: Uninitialized variable: *dataPtr2 [uninitvar]
+        int64_t * data = *dataPtr2;
+                         ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c:7:27: note: Assignment 'dataPtr2=&data', assigned value is <Uninit>
+    int64_t * *dataPtr2 = &data;
+                          ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c:14:26: note: Uninitialized variable: *dataPtr2
+        int64_t * data = *dataPtr2;
+                         ^
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c: OMITGOOD=1...
+
+[INFO] SA Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 2/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c:9:26: error: Uninitialized variable: *dataPtr1 [uninitvar]
+        int64_t * data = *dataPtr1;
+                         ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c:14:26: error: Uninitialized variable: *dataPtr2 [uninitvar]
+        int64_t * data = *dataPtr2;
+                         ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c:7:27: note: Assignment 'dataPtr2=&data', assigned value is <Uninit>
+    int64_t * *dataPtr2 = &data;
+                          ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c:14:26: note: Uninitialized variable: *dataPtr2
+        int64_t * data = *dataPtr2;
+                         ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c:29:26: error: Uninitialized variable: *dataPtr1 [uninitvar]
+        int64_t * data = *dataPtr1;
+                         ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c:34:26: error: Uninitialized variable: *dataPtr2 [uninitvar]
+        int64_t * data = *dataPtr2;
+                         ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c:27:27: note: Assignment 'dataPtr2=&data', assigned value is <Uninit>
+    int64_t * *dataPtr2 = &data;
+                          ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c:34:26: note: Uninitialized variable: *dataPtr2
+        int64_t * data = *dataPtr2;
+                         ^
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c: OMITGOOD=1...
+
+[INFO] SA Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 3/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c:9:26: error: Uninitialized variable: *dataPtr1 [uninitvar]
+        int64_t * data = *dataPtr1;
+                         ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c:14:26: error: Uninitialized variable: *dataPtr2 [uninitvar]
+        int64_t * data = *dataPtr2;
+                         ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c:7:27: note: Assignment 'dataPtr2=&data', assigned value is <Uninit>
+    int64_t * *dataPtr2 = &data;
+                          ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c:14:26: note: Uninitialized variable: *dataPtr2
+        int64_t * data = *dataPtr2;
+                         ^
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c: OMITGOOD=1...
+
+[INFO] SA Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 4/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c:9:26: error: Uninitialized variable: *dataPtr1 [uninitvar]
+        int64_t * data = *dataPtr1;
+                         ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c:14:26: error: Uninitialized variable: *dataPtr2 [uninitvar]
+        int64_t * data = *dataPtr2;
+                         ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c:7:27: note: Assignment 'dataPtr2=&data', assigned value is <Uninit>
+    int64_t * *dataPtr2 = &data;
+                          ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c:14:26: note: Uninitialized variable: *dataPtr2
+        int64_t * data = *dataPtr2;
+                         ^
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c: OMITGOOD=1...
+
+[INFO] SA Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 5/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c:9:26: error: Uninitialized variable: *dataPtr1 [uninitvar]
+        int64_t * data = *dataPtr1;
+                         ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c:14:26: error: Uninitialized variable: *dataPtr2 [uninitvar]
+        int64_t * data = *dataPtr2;
+                         ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c:7:27: note: Assignment 'dataPtr2=&data', assigned value is <Uninit>
+    int64_t * *dataPtr2 = &data;
+                          ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c:14:26: note: Uninitialized variable: *dataPtr2
+        int64_t * data = *dataPtr2;
+                         ^
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c: OMITGOOD=1...
+
+[INFO] SA Warnings still present, continuing to next iteration...
+
+[WARNING] Max iterations (5) reached. Some warnings may remain.
+
+=== Saving fixed code ===
+Total iterations: 5
+Fixed code saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/llm_only_fixes/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.c.fixed.c
+Metadata saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/llm_only_fixes/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+
+============================================================
+Implementation: No Few-Shot (SA + LLM + Judge, 0 examples)
+File: CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.c:9:26: error: Uninitialized variable: *dataPtr1 [uninitvar]
+        int64_t * data = *dataPtr1;
+                         ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.c:14:26: error: Uninitialized variable: *dataPtr2 [uninitvar]
+        int64_t * data = *dataPtr2;
+                         ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.c:7:27: note: Assignment 'dataPtr2=&data', assigned value is <Uninit>
+    int64_t * *dataPtr2 = &data;
+                          ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.c:14:26: note: Uninitialized variable: *dataPtr2
+        int64_t * data = *dataPtr2;
+                         ^
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.c: OMITGOOD=1...
+
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response EQUIVALENT
+[SUCCESS] No SA and JUDGE warnings remaining after 1 iteration(s)
+
+=== Saving fixed code ===
+Total iterations: 1
+Fixed code saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/no_few_shot_fixes/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.c.fixed.c
+Metadata saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/no_few_shot_fixes/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+
+============================================================
+Implementation: Full (SA + LLM + Judge)
+File: CWE476_NULL_Pointer_Dereference__int_34_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE476_NULL_Pointer_Dereference__int_34_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int_34_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int_34_OMITBAD.c: OMITGOOD=1...
+
+[INFO] No warnings found in original file. Nothing to fix.
+
+[STDERR]
+
+
+============================================================
+Implementation: LLM Only (No SA)
+File: CWE476_NULL_Pointer_Dereference__int_34_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE476_NULL_Pointer_Dereference__int_34_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int_34_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int_34_OMITBAD.c: OMITGOOD=1...
+
+[INFO] No warnings found in original file. Nothing to fix.
+
+[STDERR]
+
+
+============================================================
+Implementation: No Few-Shot (SA + LLM + Judge, 0 examples)
+File: CWE476_NULL_Pointer_Dereference__int_34_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE476_NULL_Pointer_Dereference__int_34_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int_34_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int_34_OMITBAD.c: OMITGOOD=1...
+
+[INFO] No warnings found in original file. Nothing to fix.
+
+[STDERR]
+
+
+============================================================
+Implementation: Full (SA + LLM + Judge)
+File: CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.c:10:14: warning: Either the condition 'intPointer!=NULL' is redundant or there is possible null pointer dereference: intPointer. [nullPointerRedundantCheck]
+            *intPointer = 5;
+             ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.c:12:28: note: Assuming that condition 'intPointer!=NULL' is not redundant
+            if (intPointer != NULL)
+                           ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.c:10:14: note: Null pointer dereference
+            *intPointer = 5;
+             ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.c:11:27: warning: Either the condition 'intPointer!=NULL' is redundant or there is possible null pointer dereference: intPointer. [nullPointerRedundantCheck]
+            printIntLine(*intPointer);
+                          ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.c:12:28: note: Assuming that condition 'intPointer!=NULL' is not redundant
+            if (intPointer != NULL)
+                           ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.c:11:27: note: Null pointer dereference
+            printIntLine(*intPointer);
+                          ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.c:16:27: warning: Either the condition 'intPointer!=NULL' is redundant or there is possible null pointer dereference: intPointer. [nullPointerRedundantCheck]
+            printIntLine(*intPointer);
+                          ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.c:12:28: note: Assuming that condition 'intPointer!=NULL' is not redundant
+            if (intPointer != NULL)
+                           ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.c:16:27: note: Null pointer dereference
+            printIntLine(*intPointer);
+                          ^
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.c: OMITGOOD=1...
+
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response EQUIVALENT
+[SUCCESS] No SA and JUDGE warnings remaining after 1 iteration(s)
+
+=== Saving fixed code ===
+Total iterations: 1
+Fixed code saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/omitbad_fixes/CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.c.fixed.c
+Metadata saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/omitbad_fixes/CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+
+============================================================
+Implementation: LLM Only (No SA)
+File: CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.c:10:14: warning: Either the condition 'intPointer!=NULL' is redundant or there is possible null pointer dereference: intPointer. [nullPointerRedundantCheck]
+            *intPointer = 5;
+             ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.c:12:28: note: Assuming that condition 'intPointer!=NULL' is not redundant
+            if (intPointer != NULL)
+                           ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.c:10:14: note: Null pointer dereference
+            *intPointer = 5;
+             ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.c:11:27: warning: Either the condition 'intPointer!=NULL' is redundant or there is possible null pointer dereference: intPointer. [nullPointerRedundantCheck]
+            printIntLine(*intPointer);
+                          ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.c:12:28: note: Assuming that condition 'intPointer!=NULL' is not redundant
+            if (intPointer != NULL)
+                           ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.c:11:27: note: Null pointer dereference
+            printIntLine(*intPointer);
+                          ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.c:16:27: warning: Either the condition 'intPointer!=NULL' is redundant or there is possible null pointer dereference: intPointer. [nullPointerRedundantCheck]
+            printIntLine(*intPointer);
+                          ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.c:12:28: note: Assuming that condition 'intPointer!=NULL' is not redundant
+            if (intPointer != NULL)
+                           ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.c:16:27: note: Null pointer dereference
+            printIntLine(*intPointer);
+                          ^
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.c: OMITGOOD=1...
+
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response EQUIVALENT
+[SUCCESS] No SA and JUDGE warnings remaining after 1 iteration(s)
+
+=== Saving fixed code ===
+Total iterations: 1
+Fixed code saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/llm_only_fixes/CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.c.fixed.c
+Metadata saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/llm_only_fixes/CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+
+============================================================
+Implementation: No Few-Shot (SA + LLM + Judge, 0 examples)
+File: CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.c:10:14: warning: Either the condition 'intPointer!=NULL' is redundant or there is possible null pointer dereference: intPointer. [nullPointerRedundantCheck]
+            *intPointer = 5;
+             ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.c:12:28: note: Assuming that condition 'intPointer!=NULL' is not redundant
+            if (intPointer != NULL)
+                           ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.c:10:14: note: Null pointer dereference
+            *intPointer = 5;
+             ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.c:11:27: warning: Either the condition 'intPointer!=NULL' is redundant or there is possible null pointer dereference: intPointer. [nullPointerRedundantCheck]
+            printIntLine(*intPointer);
+                          ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.c:12:28: note: Assuming that condition 'intPointer!=NULL' is not redundant
+            if (intPointer != NULL)
+                           ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.c:11:27: note: Null pointer dereference
+            printIntLine(*intPointer);
+                          ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.c:16:27: warning: Either the condition 'intPointer!=NULL' is redundant or there is possible null pointer dereference: intPointer. [nullPointerRedundantCheck]
+            printIntLine(*intPointer);
+                          ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.c:12:28: note: Assuming that condition 'intPointer!=NULL' is not redundant
+            if (intPointer != NULL)
+                           ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.c:16:27: note: Null pointer dereference
+            printIntLine(*intPointer);
+                          ^
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.c: OMITGOOD=1...
+
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response EQUIVALENT
+[SUCCESS] No SA and JUDGE warnings remaining after 1 iteration(s)
+
+=== Saving fixed code ===
+Total iterations: 1
+Fixed code saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/no_few_shot_fixes/CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.c.fixed.c
+Metadata saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/no_few_shot_fixes/CWE476_NULL_Pointer_Dereference__null_check_after_deref_17_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+
+============================================================
+Implementation: Full (SA + LLM + Judge)
+File: CWE476_NULL_Pointer_Dereference__struct_67a_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE476_NULL_Pointer_Dereference__struct_67a_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__struct_67a_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__struct_67a_OMITBAD.c: OMITGOOD=1...
+
+[INFO] No warnings found in original file. Nothing to fix.
+
+[STDERR]
+
+
+============================================================
+Implementation: LLM Only (No SA)
+File: CWE476_NULL_Pointer_Dereference__struct_67a_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE476_NULL_Pointer_Dereference__struct_67a_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__struct_67a_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__struct_67a_OMITBAD.c: OMITGOOD=1...
+
+[INFO] No warnings found in original file. Nothing to fix.
+
+[STDERR]
+
+
+============================================================
+Implementation: No Few-Shot (SA + LLM + Judge, 0 examples)
+File: CWE476_NULL_Pointer_Dereference__struct_67a_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE476_NULL_Pointer_Dereference__struct_67a_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__struct_67a_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__struct_67a_OMITBAD.c: OMITGOOD=1...
+
+[INFO] No warnings found in original file. Nothing to fix.
+
+[STDERR]
+
+
+============================================================
+Implementation: Full (SA + LLM + Judge)
+File: CWE476_NULL_Pointer_Dereference__wchar_t_09_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE476_NULL_Pointer_Dereference__wchar_t_09_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__wchar_t_09_OMITBAD.c:12:24: warning: Possible null pointer dereference: data [nullPointer]
+        printWcharLine(data[0]);
+                       ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__wchar_t_09_OMITBAD.c:8:16: note: Assignment 'data=NULL', assigned value is 0
+        data = NULL;
+               ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__wchar_t_09_OMITBAD.c:12:24: note: Null pointer dereference
+        printWcharLine(data[0]);
+                       ^
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__wchar_t_09_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__wchar_t_09_OMITBAD.c: OMITGOOD=1...
+
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__wchar_t_09_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__wchar_t_09_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response EQUIVALENT
+[SUCCESS] No SA and JUDGE warnings remaining after 1 iteration(s)
+
+=== Saving fixed code ===
+Total iterations: 1
+Fixed code saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/omitbad_fixes/CWE476_NULL_Pointer_Dereference__wchar_t_09_OMITBAD.c.fixed.c
+Metadata saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/omitbad_fixes/CWE476_NULL_Pointer_Dereference__wchar_t_09_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+
+============================================================
+Implementation: LLM Only (No SA)
+File: CWE476_NULL_Pointer_Dereference__wchar_t_09_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE476_NULL_Pointer_Dereference__wchar_t_09_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__wchar_t_09_OMITBAD.c:12:24: warning: Possible null pointer dereference: data [nullPointer]
+        printWcharLine(data[0]);
+                       ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__wchar_t_09_OMITBAD.c:8:16: note: Assignment 'data=NULL', assigned value is 0
+        data = NULL;
+               ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__wchar_t_09_OMITBAD.c:12:24: note: Null pointer dereference
+        printWcharLine(data[0]);
+                       ^
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__wchar_t_09_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__wchar_t_09_OMITBAD.c: OMITGOOD=1...
+
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__wchar_t_09_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__wchar_t_09_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response EQUIVALENT
+[SUCCESS] No SA and JUDGE warnings remaining after 1 iteration(s)
+
+=== Saving fixed code ===
+Total iterations: 1
+Fixed code saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/llm_only_fixes/CWE476_NULL_Pointer_Dereference__wchar_t_09_OMITBAD.c.fixed.c
+Metadata saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/llm_only_fixes/CWE476_NULL_Pointer_Dereference__wchar_t_09_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
+
+============================================================
+Implementation: No Few-Shot (SA + LLM + Judge, 0 examples)
+File: CWE476_NULL_Pointer_Dereference__wchar_t_09_OMITBAD.c
+============================================================
+
+============================================================
+Processing: CWE476_NULL_Pointer_Dereference__wchar_t_09_OMITBAD.c
+============================================================
+
+=== Running cppcheck on original file ===
+[DIAGNOSTICS]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__wchar_t_09_OMITBAD.c:12:24: warning: Possible null pointer dereference: data [nullPointer]
+        printWcharLine(data[0]);
+                       ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__wchar_t_09_OMITBAD.c:8:16: note: Assignment 'data=NULL', assigned value is 0
+        data = NULL;
+               ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__wchar_t_09_OMITBAD.c:12:24: note: Null pointer dereference
+        printWcharLine(data[0]);
+                       ^
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__wchar_t_09_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__wchar_t_09_OMITBAD.c: OMITGOOD=1...
+
+
+=== Reading source code ===
+
+=== Initializing LLM client ===
+
+============================================================
+=== Iteration 1/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__wchar_t_09_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__wchar_t_09_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response EQUIVALENT
+[SUCCESS] No SA and JUDGE warnings remaining after 1 iteration(s)
+
+=== Saving fixed code ===
+Total iterations: 1
+Fixed code saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/no_few_shot_fixes/CWE476_NULL_Pointer_Dereference__wchar_t_09_OMITBAD.c.fixed.c
+Metadata saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/no_few_shot_fixes/CWE476_NULL_Pointer_Dereference__wchar_t_09_OMITBAD.c.fixed.metadata.json
+
+[STDERR]
+
