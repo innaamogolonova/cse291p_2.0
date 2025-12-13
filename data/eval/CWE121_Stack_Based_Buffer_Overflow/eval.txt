@@ -1,5 +1,5 @@
 Evaluation Results for CWE121_Stack_Based_Buffer_Overflow
-Generated: 2025-12-09T21:17:03.083346
+Generated: 2025-12-12T18:02:18.164556
 Total test cases: 106
 ============================================================
 
@@ -7,35 +7,40 @@ Total test cases: 106
 Full (SA + LLM + Judge) Implementation Results:
 ============================================================
 Total files: 106
-Successfully fixed: 24 (22.6%)
-Failed to fix: 21 (19.8%)
+Successfully fixed: 28 (26.4%)
+Failed to fix: 17 (16.0%)
 Skipped: 61 (57.5%)
-Average iterations per file: 2.93
+Average iterations per file: 1.14
+Fail reasons: 10 SA / 7 Judge
 
 Successful files:
   - CWE121_Stack_Based_Buffer_Overflow__CWE135_61a_s01_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE193_char_alloca_loop_64a_s02_OMITBAD.c
-  - CWE121_Stack_Based_Buffer_Overflow__CWE193_char_declare_ncpy_10_s02_OMITBAD.c
+  - CWE121_Stack_Based_Buffer_Overflow__CWE193_char_declare_cpy_05_s02_OMITBAD.c
+  - CWE121_Stack_Based_Buffer_Overflow__CWE193_wchar_t_alloca_loop_63a_s02_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE193_wchar_t_alloca_memcpy_01_s02_OMITBAD.c
+  - CWE121_Stack_Based_Buffer_Overflow__CWE193_wchar_t_declare_memmove_10_s03_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE193_wchar_t_declare_ncpy_13_s03_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE805_char_alloca_memcpy_65a_s03_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE805_char_alloca_snprintf_31_s03_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE805_int64_t_alloca_loop_34_s04_OMITBAD.c
+  - CWE121_Stack_Based_Buffer_Overflow__CWE805_int64_t_alloca_memmove_41_s04_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE805_int64_t_declare_loop_05_s04_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE805_int64_t_declare_memcpy_11_s04_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE805_int_alloca_loop_45_s04_OMITBAD.c
-  - CWE121_Stack_Based_Buffer_Overflow__CWE805_int_alloca_memcpy_18_s04_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE805_struct_alloca_memmove_65a_s05_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE805_wchar_t_alloca_memmove_66a_s05_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE805_wchar_t_alloca_ncpy_66a_s05_OMITBAD.c
-  - CWE121_Stack_Based_Buffer_Overflow__CWE806_char_alloca_memcpy_10_s06_OMITBAD.c
+  - CWE121_Stack_Based_Buffer_Overflow__CWE805_wchar_t_alloca_snprintf_07_s05_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE806_char_alloca_ncat_54a_s06_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE806_char_alloca_snprintf_14_s06_OMITBAD.c
+  - CWE121_Stack_Based_Buffer_Overflow__CWE806_wchar_t_alloca_loop_02_s07_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE806_wchar_t_alloca_memcpy_63a_s07_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE806_wchar_t_alloca_memmove_17_s07_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE806_wchar_t_alloca_ncat_61a_s07_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE806_wchar_t_alloca_ncpy_18_s07_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__dest_char_alloca_cpy_18_s08_OMITBAD.c
+  - CWE121_Stack_Based_Buffer_Overflow__dest_wchar_t_alloca_cpy_01_s08_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__src_char_alloca_cpy_64a_s08_OMITBAD.c
 
 Failed files:
@@ -44,21 +49,17 @@ Failed files:
   - CWE121_Stack_Based_Buffer_Overflow__CWE193_char_alloca_cpy_15_s01_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE193_char_alloca_memmove_17_s02_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE193_char_alloca_ncpy_14_s02_OMITBAD.c
-  - CWE121_Stack_Based_Buffer_Overflow__CWE193_char_declare_cpy_05_s02_OMITBAD.c
+  - CWE121_Stack_Based_Buffer_Overflow__CWE193_char_declare_ncpy_10_s02_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE193_wchar_t_alloca_cpy_04_s02_OMITBAD.c
-  - CWE121_Stack_Based_Buffer_Overflow__CWE193_wchar_t_alloca_loop_63a_s02_OMITBAD.c
-  - CWE121_Stack_Based_Buffer_Overflow__CWE193_wchar_t_declare_memmove_10_s03_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE805_char_alloca_loop_31_s03_OMITBAD.c
-  - CWE121_Stack_Based_Buffer_Overflow__CWE805_int64_t_alloca_memmove_41_s04_OMITBAD.c
+  - CWE121_Stack_Based_Buffer_Overflow__CWE805_int_alloca_memcpy_18_s04_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE805_int_alloca_memmove_10_s04_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE805_struct_alloca_loop_32_s04_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE805_wchar_t_alloca_loop_05_s05_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE805_wchar_t_alloca_memcpy_14_s05_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE805_wchar_t_alloca_ncat_14_s05_OMITBAD.c
-  - CWE121_Stack_Based_Buffer_Overflow__CWE805_wchar_t_alloca_snprintf_07_s05_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE805_wchar_t_declare_ncpy_10_s05_OMITBAD.c
-  - CWE121_Stack_Based_Buffer_Overflow__CWE806_wchar_t_alloca_loop_02_s07_OMITBAD.c
-  - CWE121_Stack_Based_Buffer_Overflow__dest_wchar_t_alloca_cpy_01_s08_OMITBAD.c
+  - CWE121_Stack_Based_Buffer_Overflow__CWE806_char_alloca_memcpy_10_s06_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__dest_wchar_t_declare_cpy_32_s08_OMITBAD.c
 
 Skipped files:
@@ -130,13 +131,13 @@ Skipped files:
 LLM Only (No SA) Implementation Results:
 ============================================================
 Total files: 106
-Successfully fixed: 2 (1.9%)
-Failed to fix: 43 (40.6%)
+Successfully fixed: 1 (0.9%)
+Failed to fix: 44 (41.5%)
 Skipped: 61 (57.5%)
-Average iterations per file: 4.82
+Average iterations per file: 1.00
+Fail reasons: 44 SA / 0 Judge
 
 Successful files:
-  - CWE121_Stack_Based_Buffer_Overflow__CWE193_char_declare_cpy_05_s02_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE805_int64_t_declare_memcpy_11_s04_OMITBAD.c
 
 Failed files:
@@ -147,6 +148,7 @@ Failed files:
   - CWE121_Stack_Based_Buffer_Overflow__CWE193_char_alloca_loop_64a_s02_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE193_char_alloca_memmove_17_s02_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE193_char_alloca_ncpy_14_s02_OMITBAD.c
+  - CWE121_Stack_Based_Buffer_Overflow__CWE193_char_declare_cpy_05_s02_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE193_char_declare_ncpy_10_s02_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE193_wchar_t_alloca_cpy_04_s02_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE193_wchar_t_alloca_loop_63a_s02_OMITBAD.c
@@ -256,7 +258,8 @@ Total files: 106
 Successfully fixed: 32 (30.2%)
 Failed to fix: 13 (12.3%)
 Skipped: 61 (57.5%)
-Average iterations per file: 2.18
+Average iterations per file: 1.03
+Fail reasons: 9 SA / 4 Judge
 
 Successful files:
   - CWE121_Stack_Based_Buffer_Overflow__CWE135_61a_s01_OMITBAD.c
@@ -264,14 +267,15 @@ Successful files:
   - CWE121_Stack_Based_Buffer_Overflow__CWE193_char_alloca_loop_64a_s02_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE193_char_alloca_memmove_17_s02_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE193_char_declare_cpy_05_s02_OMITBAD.c
+  - CWE121_Stack_Based_Buffer_Overflow__CWE193_char_declare_ncpy_10_s02_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE193_wchar_t_alloca_loop_63a_s02_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE193_wchar_t_alloca_memcpy_01_s02_OMITBAD.c
+  - CWE121_Stack_Based_Buffer_Overflow__CWE193_wchar_t_declare_memmove_10_s03_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE193_wchar_t_declare_ncpy_13_s03_OMITBAD.c
-  - CWE121_Stack_Based_Buffer_Overflow__CWE805_char_alloca_loop_31_s03_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE805_char_alloca_memcpy_65a_s03_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE805_char_alloca_snprintf_31_s03_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE805_int64_t_alloca_loop_34_s04_OMITBAD.c
-  - CWE121_Stack_Based_Buffer_Overflow__CWE805_int64_t_declare_loop_05_s04_OMITBAD.c
+  - CWE121_Stack_Based_Buffer_Overflow__CWE805_int64_t_alloca_memmove_41_s04_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE805_int64_t_declare_memcpy_11_s04_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE805_int_alloca_loop_45_s04_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE805_int_alloca_memcpy_18_s04_OMITBAD.c
@@ -289,23 +293,22 @@ Successful files:
   - CWE121_Stack_Based_Buffer_Overflow__CWE806_wchar_t_alloca_ncpy_18_s07_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__dest_char_alloca_cpy_18_s08_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__dest_wchar_t_alloca_cpy_01_s08_OMITBAD.c
-  - CWE121_Stack_Based_Buffer_Overflow__dest_wchar_t_declare_cpy_32_s08_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__src_char_alloca_cpy_64a_s08_OMITBAD.c
 
 Failed files:
   - CWE121_Stack_Based_Buffer_Overflow__CWE131_loop_32_s01_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE131_memcpy_11_s01_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE193_char_alloca_ncpy_14_s02_OMITBAD.c
-  - CWE121_Stack_Based_Buffer_Overflow__CWE193_char_declare_ncpy_10_s02_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE193_wchar_t_alloca_cpy_04_s02_OMITBAD.c
-  - CWE121_Stack_Based_Buffer_Overflow__CWE193_wchar_t_declare_memmove_10_s03_OMITBAD.c
-  - CWE121_Stack_Based_Buffer_Overflow__CWE805_int64_t_alloca_memmove_41_s04_OMITBAD.c
+  - CWE121_Stack_Based_Buffer_Overflow__CWE805_char_alloca_loop_31_s03_OMITBAD.c
+  - CWE121_Stack_Based_Buffer_Overflow__CWE805_int64_t_declare_loop_05_s04_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE805_int_alloca_memmove_10_s04_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE805_struct_alloca_loop_32_s04_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE805_wchar_t_alloca_loop_05_s05_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE805_wchar_t_alloca_memcpy_14_s05_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE805_wchar_t_alloca_ncat_14_s05_OMITBAD.c
   - CWE121_Stack_Based_Buffer_Overflow__CWE805_wchar_t_declare_ncpy_10_s05_OMITBAD.c
+  - CWE121_Stack_Based_Buffer_Overflow__dest_wchar_t_declare_cpy_32_s08_OMITBAD.c
 
 Skipped files:
   - CWE121_Stack_Based_Buffer_Overflow__CWE129_fgets_11_s01_OMITBAD.c

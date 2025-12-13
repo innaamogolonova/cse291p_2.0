@@ -1,5 +1,5 @@
 Detailed Logs for CWE415_Double_Free
-Generated: 2025-12-09T21:50:08.052426
+Generated: 2025-12-12T16:04:28.954961
 ============================================================
 
 
@@ -380,6 +380,15 @@ Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CW
 /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:21:13: note: Memory pointed to by 'data' is freed twice.
             free(data);
             ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:29:13: error: Memory pointed to by 'data' is freed twice. [doubleFree]
+            free(data);
+            ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:11:9: note: Memory pointed to by 'data' is freed twice.
+        free(data);
+        ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:29:13: note: Memory pointed to by 'data' is freed twice.
+            free(data);
+            ^
 Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c ...
 Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c: OMITGOOD=1...
 
@@ -403,13 +412,13 @@ Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CW
 /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:21:13: note: Memory pointed to by 'data' is freed twice.
             free(data);
             ^
-/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:30:13: error: Memory pointed to by 'data' is freed twice. [doubleFree]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:29:13: error: Memory pointed to by 'data' is freed twice. [doubleFree]
             free(data);
             ^
 /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:11:9: note: Memory pointed to by 'data' is freed twice.
         free(data);
         ^
-/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:30:13: note: Memory pointed to by 'data' is freed twice.
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:29:13: note: Memory pointed to by 'data' is freed twice.
             free(data);
             ^
 Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c ...
@@ -435,13 +444,13 @@ Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CW
 /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:21:13: note: Memory pointed to by 'data' is freed twice.
             free(data);
             ^
-/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:31:13: error: Memory pointed to by 'data' is freed twice. [doubleFree]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:30:13: error: Memory pointed to by 'data' is freed twice. [doubleFree]
             free(data);
             ^
 /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:11:9: note: Memory pointed to by 'data' is freed twice.
         free(data);
         ^
-/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:31:13: note: Memory pointed to by 'data' is freed twice.
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:30:13: note: Memory pointed to by 'data' is freed twice.
             free(data);
             ^
 Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c ...
@@ -581,15 +590,6 @@ Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CW
         free(data);
         ^
 /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:23:13: note: Memory pointed to by 'data' is freed twice.
-            free(data);
-            ^
-/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:31:13: error: Memory pointed to by 'data' is freed twice. [doubleFree]
-            free(data);
-            ^
-/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:11:9: note: Memory pointed to by 'data' is freed twice.
-        free(data);
-        ^
-/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:31:13: note: Memory pointed to by 'data' is freed twice.
             free(data);
             ^
 Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c ...
@@ -752,15 +752,6 @@ Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CW
         free(data);
         ^
 /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:22:13: note: Memory pointed to by 'data' is freed twice.
-            free(data);
-            ^
-/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:31:13: error: Memory pointed to by 'data' is freed twice. [doubleFree]
-            free(data);
-            ^
-/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:11:9: note: Memory pointed to by 'data' is freed twice.
-        free(data);
-        ^
-/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c:31:13: note: Memory pointed to by 'data' is freed twice.
             free(data);
             ^
 Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE415_Double_Free/CWE415_Double_Free__malloc_free_long_12_s01_OMITBAD.tmp.c ...

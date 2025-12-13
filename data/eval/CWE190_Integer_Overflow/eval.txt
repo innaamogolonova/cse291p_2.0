@@ -1,5 +1,5 @@
 Evaluation Results for CWE190_Integer_Overflow
-Generated: 2025-12-09T21:48:26.715419
+Generated: 2025-12-12T18:51:50.306583
 Total test cases: 78
 ============================================================
 
@@ -7,13 +7,14 @@ Total test cases: 78
 Full (SA + LLM + Judge) Implementation Results:
 ============================================================
 Total files: 78
-Successfully fixed: 0 (0.0%)
-Failed to fix: 9 (11.5%)
+Successfully fixed: 1 (1.3%)
+Failed to fix: 8 (10.3%)
 Skipped: 69 (88.5%)
-Average iterations per file: 5.00
+Average iterations per file: 4.00
+Fail reasons: 2 SA / 6 Judge
 
 Successful files:
-  (none)
+  - CWE190_Integer_Overflow__int_listen_socket_postinc_14_s06_OMITBAD.c
 
 Failed files:
   - CWE190_Integer_Overflow__int_connect_socket_add_15_s02_OMITBAD.c
@@ -22,7 +23,6 @@ Failed files:
   - CWE190_Integer_Overflow__int_connect_socket_square_18_s02_OMITBAD.c
   - CWE190_Integer_Overflow__int_listen_socket_add_09_s03_OMITBAD.c
   - CWE190_Integer_Overflow__int_listen_socket_multiply_03_s03_OMITBAD.c
-  - CWE190_Integer_Overflow__int_listen_socket_postinc_14_s06_OMITBAD.c
   - CWE190_Integer_Overflow__int_listen_socket_preinc_41_s07_OMITBAD.c
   - CWE190_Integer_Overflow__int_listen_socket_square_17_s03_OMITBAD.c
 
@@ -106,19 +106,20 @@ Total files: 78
 Successfully fixed: 1 (1.3%)
 Failed to fix: 8 (10.3%)
 Skipped: 69 (88.5%)
-Average iterations per file: 4.56
+Average iterations per file: 4.00
+Fail reasons: 2 SA / 6 Judge
 
 Successful files:
-  - CWE190_Integer_Overflow__int_listen_socket_preinc_41_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__int_connect_socket_add_15_s02_OMITBAD.c
 
 Failed files:
-  - CWE190_Integer_Overflow__int_connect_socket_add_15_s02_OMITBAD.c
   - CWE190_Integer_Overflow__int_connect_socket_postinc_63a_s06_OMITBAD.c
   - CWE190_Integer_Overflow__int_connect_socket_preinc_68a_s07_OMITBAD.c
   - CWE190_Integer_Overflow__int_connect_socket_square_18_s02_OMITBAD.c
   - CWE190_Integer_Overflow__int_listen_socket_add_09_s03_OMITBAD.c
   - CWE190_Integer_Overflow__int_listen_socket_multiply_03_s03_OMITBAD.c
   - CWE190_Integer_Overflow__int_listen_socket_postinc_14_s06_OMITBAD.c
+  - CWE190_Integer_Overflow__int_listen_socket_preinc_41_s07_OMITBAD.c
   - CWE190_Integer_Overflow__int_listen_socket_square_17_s03_OMITBAD.c
 
 Skipped files:
@@ -198,21 +199,21 @@ Skipped files:
 No Few-Shot (SA + LLM + Judge, 0 examples) Implementation Results:
 ============================================================
 Total files: 78
-Successfully fixed: 0 (0.0%)
-Failed to fix: 9 (11.5%)
+Successfully fixed: 3 (3.8%)
+Failed to fix: 6 (7.7%)
 Skipped: 69 (88.5%)
-Average iterations per file: 5.00
+Average iterations per file: 2.33
+Fail reasons: 3 SA / 3 Judge
 
 Successful files:
-  (none)
+  - CWE190_Integer_Overflow__int_connect_socket_preinc_68a_s07_OMITBAD.c
+  - CWE190_Integer_Overflow__int_connect_socket_square_18_s02_OMITBAD.c
+  - CWE190_Integer_Overflow__int_listen_socket_multiply_03_s03_OMITBAD.c
 
 Failed files:
   - CWE190_Integer_Overflow__int_connect_socket_add_15_s02_OMITBAD.c
   - CWE190_Integer_Overflow__int_connect_socket_postinc_63a_s06_OMITBAD.c
-  - CWE190_Integer_Overflow__int_connect_socket_preinc_68a_s07_OMITBAD.c
-  - CWE190_Integer_Overflow__int_connect_socket_square_18_s02_OMITBAD.c
   - CWE190_Integer_Overflow__int_listen_socket_add_09_s03_OMITBAD.c
-  - CWE190_Integer_Overflow__int_listen_socket_multiply_03_s03_OMITBAD.c
   - CWE190_Integer_Overflow__int_listen_socket_postinc_14_s06_OMITBAD.c
   - CWE190_Integer_Overflow__int_listen_socket_preinc_41_s07_OMITBAD.c
   - CWE190_Integer_Overflow__int_listen_socket_square_17_s03_OMITBAD.c

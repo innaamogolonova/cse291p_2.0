@@ -1,5 +1,5 @@
 Detailed Logs for CWE457_Use_of_Uninitialized_Variable
-Generated: 2025-12-09T22:02:49.737814
+Generated: 2025-12-12T16:22:03.937832
 ============================================================
 
 
@@ -513,7 +513,7 @@ Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CW
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
-/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__double_array_alloca_partial_init_18_s01_OMITBAD.tmp.c:5:22: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__double_array_alloca_partial_init_18_s01_OMITBAD.tmp.c:6:22: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
     data = (double *)ALLOCA(10*sizeof(double));
                      ^
 Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__double_array_alloca_partial_init_18_s01_OMITBAD.tmp.c ...
@@ -530,7 +530,7 @@ Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CW
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
-/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__double_array_alloca_partial_init_18_s01_OMITBAD.tmp.c:5:22: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__double_array_alloca_partial_init_18_s01_OMITBAD.tmp.c:6:22: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
     data = (double *)ALLOCA(10*sizeof(double));
                      ^
 Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__double_array_alloca_partial_init_18_s01_OMITBAD.tmp.c ...
@@ -547,7 +547,7 @@ Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CW
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
-/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__double_array_alloca_partial_init_18_s01_OMITBAD.tmp.c:5:22: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__double_array_alloca_partial_init_18_s01_OMITBAD.tmp.c:6:22: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
     data = (double *)ALLOCA(10*sizeof(double));
                      ^
 Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__double_array_alloca_partial_init_18_s01_OMITBAD.tmp.c ...
@@ -564,7 +564,7 @@ Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CW
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
-/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__double_array_alloca_partial_init_18_s01_OMITBAD.tmp.c:5:22: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__double_array_alloca_partial_init_18_s01_OMITBAD.tmp.c:6:22: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
     data = (double *)ALLOCA(10*sizeof(double));
                      ^
 Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__double_array_alloca_partial_init_18_s01_OMITBAD.tmp.c ...
@@ -966,7 +966,7 @@ Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CW
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
-/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__double_array_malloc_partial_init_02_s01_OMITBAD.tmp.c:31:1: error: Memory leak: data [memleak]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__double_array_malloc_partial_init_02_s01_OMITBAD.tmp.c:33:1: error: Memory leak: data [memleak]
 }
 ^
 Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__double_array_malloc_partial_init_02_s01_OMITBAD.tmp.c ...
@@ -983,13 +983,14 @@ Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CW
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
-/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__double_array_malloc_partial_init_02_s01_OMITBAD.tmp.c:31:1: error: Memory leak: data [memleak]
-}
-^
 Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__double_array_malloc_partial_init_02_s01_OMITBAD.tmp.c ...
 Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__double_array_malloc_partial_init_02_s01_OMITBAD.tmp.c: OMITGOOD=1...
 
-[INFO] SA Warnings still present, continuing to next iteration...
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
 
 ============================================================
 === Iteration 4/5 ===
@@ -1000,13 +1001,14 @@ Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CW
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
-/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__double_array_malloc_partial_init_02_s01_OMITBAD.tmp.c:33:1: error: Memory leak: data [memleak]
-}
-^
 Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__double_array_malloc_partial_init_02_s01_OMITBAD.tmp.c ...
 Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__double_array_malloc_partial_init_02_s01_OMITBAD.tmp.c: OMITGOOD=1...
 
-[INFO] SA Warnings still present, continuing to next iteration...
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
 
 ============================================================
 === Iteration 5/5 ===
@@ -1067,17 +1069,90 @@ Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CW
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__double_array_malloc_partial_init_02_s01_OMITBAD.tmp.c:31:1: error: Memory leak: data [memleak]
+}
+^
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__double_array_malloc_partial_init_02_s01_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__double_array_malloc_partial_init_02_s01_OMITBAD.tmp.c: OMITGOOD=1...
+
+[INFO] SA Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 2/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
 Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__double_array_malloc_partial_init_02_s01_OMITBAD.tmp.c ...
 Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__double_array_malloc_partial_init_02_s01_OMITBAD.tmp.c: OMITGOOD=1...
 
 [SUCCESS] No SA warnings remain
 
 === Calling JUDGE LLM ===
-[SUCCESS] JUDGE LLM gave a response EQUIVALENT
-[SUCCESS] No SA and JUDGE warnings remaining after 1 iteration(s)
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 3/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__double_array_malloc_partial_init_02_s01_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__double_array_malloc_partial_init_02_s01_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 4/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__double_array_malloc_partial_init_02_s01_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__double_array_malloc_partial_init_02_s01_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 5/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__double_array_malloc_partial_init_02_s01_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__double_array_malloc_partial_init_02_s01_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+[WARNING] Max iterations (5) reached. Some warnings may remain.
 
 === Saving fixed code ===
-Total iterations: 1
+Total iterations: 5
 Fixed code saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/no_few_shot_fixes/CWE457_Use_of_Uninitialized_Variable__double_array_malloc_partial_init_02_s01_OMITBAD.c.fixed.c
 Metadata saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/no_few_shot_fixes/CWE457_Use_of_Uninitialized_Variable__double_array_malloc_partial_init_02_s01_OMITBAD.c.fixed.metadata.json
 
@@ -1192,14 +1267,22 @@ Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CW
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__double_pointer_14_s01_OMITBAD.tmp.c:13:26: error: Using pointer to local variable 'temp' that is out of scope. [invalidLifetime]
+        printDoubleLine(*data);
+                         ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__double_pointer_14_s01_OMITBAD.tmp.c:9:16: note: Address of variable taken here.
+        data = &temp; // Assign address of temp to data
+               ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__double_pointer_14_s01_OMITBAD.tmp.c:8:16: note: Variable created here.
+        double temp = 5.0; // Initialize temp
+               ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__double_pointer_14_s01_OMITBAD.tmp.c:13:26: note: Using pointer to local variable 'temp' that is out of scope.
+        printDoubleLine(*data);
+                         ^
 Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__double_pointer_14_s01_OMITBAD.tmp.c ...
 Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__double_pointer_14_s01_OMITBAD.tmp.c: OMITGOOD=1...
 
-[SUCCESS] No SA warnings remain
-
-=== Calling JUDGE LLM ===
-[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
-[INFO] JUDGE Warnings still present, continuing to next iteration...
+[INFO] SA Warnings still present, continuing to next iteration...
 
 [WARNING] Max iterations (5) reached. Some warnings may remain.
 
@@ -1773,7 +1856,7 @@ Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CW
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
-/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__int_array_alloca_partial_init_64a_s01_OMITBAD.tmp.c:6:19: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__int_array_alloca_partial_init_64a_s01_OMITBAD.tmp.c:7:19: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
     data = (int *)ALLOCA(10*sizeof(int));
                   ^
 Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__int_array_alloca_partial_init_64a_s01_OMITBAD.tmp.c ...
@@ -1790,7 +1873,7 @@ Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CW
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
-/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__int_array_alloca_partial_init_64a_s01_OMITBAD.tmp.c:6:19: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__int_array_alloca_partial_init_64a_s01_OMITBAD.tmp.c:7:19: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
     data = (int *)ALLOCA(10*sizeof(int));
                   ^
 Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__int_array_alloca_partial_init_64a_s01_OMITBAD.tmp.c ...
@@ -1948,15 +2031,17 @@ Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CW
 Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__int_array_alloca_partial_init_64a_s01_OMITBAD.tmp.c: OMITGOOD=1...
 
 [INFO] SA Warnings still present, continuing to next iteration...
-
-[WARNING] Max iterations (5) reached. Some warnings may remain.
-
-=== Saving fixed code ===
-Total iterations: 5
-Fixed code saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/llm_only_fixes/CWE457_Use_of_Uninitialized_Variable__int_array_alloca_partial_init_64a_s01_OMITBAD.c.fixed.c
-Metadata saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/llm_only_fixes/CWE457_Use_of_Uninitialized_Variable__int_array_alloca_partial_init_64a_s01_OMITBAD.c.fixed.metadata.json
+[ERROR] Exception during processing: [Errno 13] Permission denied: '/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__int_array_alloca_partial_init_64a_s01_OMITBAD.tmp.c'
 
 [STDERR]
+Traceback (most recent call last):
+  File "/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/main.py", line 158, in main
+    verdict, iteration_count = process_func(test_case)
+  File "/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/scripts/llm_only.py", line 150, in process_test_case_with_llm
+    temp_file.unlink()
+  File "/usr/lib/python3.10/pathlib.py", line 1206, in unlink
+    self._accessor.unlink(self)
+PermissionError: [Errno 13] Permission denied: '/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__int_array_alloca_partial_init_64a_s01_OMITBAD.tmp.c'
 
 
 ============================================================
@@ -2352,7 +2437,7 @@ Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CW
         printIntLine(*data);
                       ^
 /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__int_pointer_09_s01_OMITBAD.tmp.c:8:16: note: Assignment 'data=NULL', assigned value is 0
-        data = NULL; // Initialize data to NULL
+        data = NULL; // Initialize data to avoid use of uninitialized variable
                ^
 /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__int_pointer_09_s01_OMITBAD.tmp.c:12:23: note: Null pointer dereference
         printIntLine(*data);
@@ -2371,19 +2456,14 @@ Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CW
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
-/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__int_pointer_09_s01_OMITBAD.tmp.c:13:23: warning: Possible null pointer dereference: data [nullPointer]
-        printIntLine(*data);
-                      ^
-/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__int_pointer_09_s01_OMITBAD.tmp.c:8:16: note: Assignment 'data=NULL', assigned value is 0
-        data = NULL; // Initialize data to NULL
-               ^
-/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__int_pointer_09_s01_OMITBAD.tmp.c:13:23: note: Null pointer dereference
-        printIntLine(*data);
-                      ^
 Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__int_pointer_09_s01_OMITBAD.tmp.c ...
 Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__int_pointer_09_s01_OMITBAD.tmp.c: OMITGOOD=1...
 
-[INFO] SA Warnings still present, continuing to next iteration...
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
 
 ============================================================
 === Iteration 3/5 ===
@@ -2509,7 +2589,7 @@ Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CW
 [SUCCESS] No SA warnings remain
 
 === Calling JUDGE LLM ===
-[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVLENT
 [INFO] JUDGE Warnings still present, continuing to next iteration...
 
 ============================================================
@@ -3116,7 +3196,7 @@ Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CW
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
-/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__struct_array_alloca_partial_init_10_s01_OMITBAD.tmp.c:6:29: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__struct_array_alloca_partial_init_10_s01_OMITBAD.tmp.c:5:29: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
     data = (twoIntsStruct *)ALLOCA(10*sizeof(twoIntsStruct));
                             ^
 Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__struct_array_alloca_partial_init_10_s01_OMITBAD.tmp.c ...
@@ -3133,7 +3213,7 @@ Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CW
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
-/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__struct_array_alloca_partial_init_10_s01_OMITBAD.tmp.c:6:29: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__struct_array_alloca_partial_init_10_s01_OMITBAD.tmp.c:5:29: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
     data = (twoIntsStruct *)ALLOCA(10*sizeof(twoIntsStruct));
                             ^
 Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__struct_array_alloca_partial_init_10_s01_OMITBAD.tmp.c ...
@@ -3150,7 +3230,7 @@ Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CW
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
-/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__struct_array_alloca_partial_init_10_s01_OMITBAD.tmp.c:6:29: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__struct_array_alloca_partial_init_10_s01_OMITBAD.tmp.c:5:29: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
     data = (twoIntsStruct *)ALLOCA(10*sizeof(twoIntsStruct));
                             ^
 Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__struct_array_alloca_partial_init_10_s01_OMITBAD.tmp.c ...
@@ -3167,7 +3247,7 @@ Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CW
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
-/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__struct_array_alloca_partial_init_10_s01_OMITBAD.tmp.c:6:29: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__struct_array_alloca_partial_init_10_s01_OMITBAD.tmp.c:5:29: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
     data = (twoIntsStruct *)ALLOCA(10*sizeof(twoIntsStruct));
                             ^
 Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__struct_array_alloca_partial_init_10_s01_OMITBAD.tmp.c ...
@@ -3330,7 +3410,7 @@ Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CW
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
-/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__struct_array_malloc_no_init_02_s01_OMITBAD.tmp.c:25:1: error: Memory leak: data [memleak]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__struct_array_malloc_no_init_02_s01_OMITBAD.tmp.c:26:1: error: Memory leak: data [memleak]
 }
 ^
 Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__struct_array_malloc_no_init_02_s01_OMITBAD.tmp.c ...
@@ -3568,7 +3648,7 @@ Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CW
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
-/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__struct_array_malloc_no_init_02_s01_OMITBAD.tmp.c:25:1: error: Memory leak: data [memleak]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__struct_array_malloc_no_init_02_s01_OMITBAD.tmp.c:22:1: error: Memory leak: data [memleak]
 }
 ^
 Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__struct_array_malloc_no_init_02_s01_OMITBAD.tmp.c ...
@@ -3585,14 +3665,13 @@ Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CW
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__struct_array_malloc_no_init_02_s01_OMITBAD.tmp.c:22:1: error: Memory leak: data [memleak]
+}
+^
 Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__struct_array_malloc_no_init_02_s01_OMITBAD.tmp.c ...
 Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__struct_array_malloc_no_init_02_s01_OMITBAD.tmp.c: OMITGOOD=1...
 
-[SUCCESS] No SA warnings remain
-
-=== Calling JUDGE LLM ===
-[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
-[INFO] JUDGE Warnings still present, continuing to next iteration...
+[INFO] SA Warnings still present, continuing to next iteration...
 
 ============================================================
 === Iteration 3/5 ===
@@ -3894,22 +3973,22 @@ Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CW
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
-/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__struct_pointer_02_s01_OMITBAD.tmp.c:13:22: error: Null pointer dereference: data [nullPointer]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__struct_pointer_02_s01_OMITBAD.tmp.c:12:22: error: Null pointer dereference: data [nullPointer]
         printIntLine(data->intOne);
                      ^
-/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__struct_pointer_02_s01_OMITBAD.tmp.c:9:16: note: Assignment 'data=NULL', assigned value is 0
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__struct_pointer_02_s01_OMITBAD.tmp.c:8:16: note: Assignment 'data=NULL', assigned value is 0
+        data = NULL; // Initialize data to NULL
+               ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__struct_pointer_02_s01_OMITBAD.tmp.c:12:22: note: Null pointer dereference
+        printIntLine(data->intOne);
+                     ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__struct_pointer_02_s01_OMITBAD.tmp.c:13:22: error: Null pointer dereference: data [nullPointer]
+        printIntLine(data->intTwo);
+                     ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__struct_pointer_02_s01_OMITBAD.tmp.c:8:16: note: Assignment 'data=NULL', assigned value is 0
         data = NULL; // Initialize data to NULL
                ^
 /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__struct_pointer_02_s01_OMITBAD.tmp.c:13:22: note: Null pointer dereference
-        printIntLine(data->intOne);
-                     ^
-/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__struct_pointer_02_s01_OMITBAD.tmp.c:14:22: error: Null pointer dereference: data [nullPointer]
-        printIntLine(data->intTwo);
-                     ^
-/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__struct_pointer_02_s01_OMITBAD.tmp.c:9:16: note: Assignment 'data=NULL', assigned value is 0
-        data = NULL; // Initialize data to NULL
-               ^
-/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__struct_pointer_02_s01_OMITBAD.tmp.c:14:22: note: Null pointer dereference
         printIntLine(data->intTwo);
                      ^
 Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__struct_pointer_02_s01_OMITBAD.tmp.c ...
@@ -3926,14 +4005,13 @@ Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CW
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__struct_pointer_02_s01_OMITBAD.tmp.c:21:1: error: Unmatched '}'. Configuration: 'OMITGOOD=1'. [syntaxError]
+}
+^
 Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__struct_pointer_02_s01_OMITBAD.tmp.c ...
 Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__struct_pointer_02_s01_OMITBAD.tmp.c: OMITGOOD=1...
 
-[SUCCESS] No SA warnings remain
-
-=== Calling JUDGE LLM ===
-[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
-[INFO] JUDGE Warnings still present, continuing to next iteration...
+[INFO] SA Warnings still present, continuing to next iteration...
 
 ============================================================
 === Iteration 3/5 ===
@@ -3944,14 +4022,19 @@ Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CW
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__struct_pointer_02_s01_OMITBAD.tmp.c:18:22: error: Null pointer dereference: data [nullPointer]
+        printIntLine(data->intTwo);
+                     ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__struct_pointer_02_s01_OMITBAD.tmp.c:8:16: note: Assignment 'data=NULL', assigned value is 0
+        data = NULL; // Initialize data to NULL
+               ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__struct_pointer_02_s01_OMITBAD.tmp.c:18:22: note: Null pointer dereference
+        printIntLine(data->intTwo);
+                     ^
 Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__struct_pointer_02_s01_OMITBAD.tmp.c ...
 Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__struct_pointer_02_s01_OMITBAD.tmp.c: OMITGOOD=1...
 
-[SUCCESS] No SA warnings remain
-
-=== Calling JUDGE LLM ===
-[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
-[INFO] JUDGE Warnings still present, continuing to next iteration...
+[INFO] SA Warnings still present, continuing to next iteration...
 
 ============================================================
 === Iteration 4/5 ===
@@ -3962,14 +4045,19 @@ Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CW
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__struct_pointer_02_s01_OMITBAD.tmp.c:23:22: error: Null pointer dereference: data [nullPointer]
+        printIntLine(data->intTwo);
+                     ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__struct_pointer_02_s01_OMITBAD.tmp.c:8:16: note: Assignment 'data=NULL', assigned value is 0
+        data = NULL; // Initialize data to NULL
+               ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__struct_pointer_02_s01_OMITBAD.tmp.c:23:22: note: Null pointer dereference
+        printIntLine(data->intTwo);
+                     ^
 Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__struct_pointer_02_s01_OMITBAD.tmp.c ...
 Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE457_Use_of_Uninitialized_Variable/CWE457_Use_of_Uninitialized_Variable__struct_pointer_02_s01_OMITBAD.tmp.c: OMITGOOD=1...
 
-[SUCCESS] No SA warnings remain
-
-=== Calling JUDGE LLM ===
-[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
-[INFO] JUDGE Warnings still present, continuing to next iteration...
+[INFO] SA Warnings still present, continuing to next iteration...
 
 ============================================================
 === Iteration 5/5 ===

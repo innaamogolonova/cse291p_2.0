@@ -45,6 +45,7 @@ class ImplementationStats:
         self.total_files = 0
         self.successful = []
         self.failed = []
+        self.failreasons = [0,0] # Store whether fail was because of SA or Judge
         self.skipped = []
         self.iterations = []  # Store iteration counts for all processed files
         self.log_entries = []  # Store log output for each file
@@ -61,7 +62,7 @@ class ImplementationStats:
             self.iterations.append(iteration_count)
         else:  # failure
             self.failed.append(filename)
-            self.iterations.append(iteration_count)
+            self.failreasons[verdict-1] += 1
     
     def average_iterations(self) -> float:
         """Calculate average iterations across all processed files."""
@@ -82,6 +83,7 @@ Successfully fixed: {len(self.successful)} ({success_pct:.1f}%)
 Failed to fix: {len(self.failed)} ({failed_pct:.1f}%)
 Skipped: {len(self.skipped)} ({skipped_pct:.1f}%)
 Average iterations per file: {self.average_iterations():.2f}
+Fail reasons: {self.failreasons[0]} SA / {self.failreasons[1]} Judge
 
 Successful files:
 {chr(10).join('  - ' + f for f in self.successful) if self.successful else '  (none)'}

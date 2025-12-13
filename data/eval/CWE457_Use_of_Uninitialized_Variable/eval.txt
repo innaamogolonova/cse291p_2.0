@@ -1,5 +1,5 @@
 Evaluation Results for CWE457_Use_of_Uninitialized_Variable
-Generated: 2025-12-09T22:17:40.376445
+Generated: 2025-12-12T16:37:58.132150
 Total test cases: 26
 ============================================================
 
@@ -10,7 +10,8 @@ Total files: 26
 Successfully fixed: 6 (23.1%)
 Failed to fix: 7 (26.9%)
 Skipped: 13 (50.0%)
-Average iterations per file: 3.15
+Average iterations per file: 1.00
+Fail reasons: 4 SA / 3 Judge
 
 Successful files:
   - CWE457_Use_of_Uninitialized_Variable__char_pointer_02_s01_OMITBAD.c
@@ -53,7 +54,8 @@ Total files: 26
 Successfully fixed: 5 (19.2%)
 Failed to fix: 8 (30.8%)
 Skipped: 13 (50.0%)
-Average iterations per file: 3.46
+Average iterations per file: 1.00
+Fail reasons: 4 SA / 4 Judge
 
 Successful files:
   - CWE457_Use_of_Uninitialized_Variable__char_pointer_02_s01_OMITBAD.c
@@ -93,15 +95,15 @@ Skipped files:
 No Few-Shot (SA + LLM + Judge, 0 examples) Implementation Results:
 ============================================================
 Total files: 26
-Successfully fixed: 8 (30.8%)
-Failed to fix: 5 (19.2%)
+Successfully fixed: 7 (26.9%)
+Failed to fix: 6 (23.1%)
 Skipped: 13 (50.0%)
-Average iterations per file: 2.54
+Average iterations per file: 1.00
+Fail reasons: 3 SA / 3 Judge
 
 Successful files:
   - CWE457_Use_of_Uninitialized_Variable__char_pointer_02_s01_OMITBAD.c
   - CWE457_Use_of_Uninitialized_Variable__double_04_s01_OMITBAD.c
-  - CWE457_Use_of_Uninitialized_Variable__double_array_malloc_partial_init_02_s01_OMITBAD.c
   - CWE457_Use_of_Uninitialized_Variable__double_pointer_14_s01_OMITBAD.c
   - CWE457_Use_of_Uninitialized_Variable__int64_t_07_s01_OMITBAD.c
   - CWE457_Use_of_Uninitialized_Variable__int_16_s01_OMITBAD.c
@@ -110,6 +112,7 @@ Successful files:
 
 Failed files:
   - CWE457_Use_of_Uninitialized_Variable__double_array_alloca_partial_init_18_s01_OMITBAD.c
+  - CWE457_Use_of_Uninitialized_Variable__double_array_malloc_partial_init_02_s01_OMITBAD.c
   - CWE457_Use_of_Uninitialized_Variable__int_array_alloca_partial_init_64a_s01_OMITBAD.c
   - CWE457_Use_of_Uninitialized_Variable__int_pointer_09_s01_OMITBAD.c
   - CWE457_Use_of_Uninitialized_Variable__struct_array_alloca_partial_init_10_s01_OMITBAD.c

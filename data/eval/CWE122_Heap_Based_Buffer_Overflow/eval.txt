@@ -1,5 +1,5 @@
 Evaluation Results for CWE122_Heap_Based_Buffer_Overflow
-Generated: 2025-12-09T21:36:53.938604
+Generated: 2025-12-12T18:22:37.593285
 Total test cases: 57
 ============================================================
 
@@ -10,13 +10,14 @@ Total files: 57
 Successfully fixed: 6 (10.5%)
 Failed to fix: 6 (10.5%)
 Skipped: 45 (78.9%)
-Average iterations per file: 3.08
+Average iterations per file: 1.00
+Fail reasons: 1 SA / 5 Judge
 
 Successful files:
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE129_fscanf_21_s06_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_int64_t_memmove_18_s08_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_wchar_t_memcpy_12_s08_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_wchar_t_memmove_15_s09_OMITBAD.c
-  - CWE122_Heap_Based_Buffer_Overflow__char_type_overrun_memmove_09_s01_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__sizeof_int64_t_02_s11_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__sizeof_struct_42_s11_OMITBAD.c
 
@@ -33,7 +34,6 @@ Skipped files:
   - CWE122_Heap_Based_Buffer_Overflow__CWE131_memmove_53c_s06_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__CWE135_15_s06_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__c_CWE129_fgets_52a_s06_OMITBAD.c
-  - CWE122_Heap_Based_Buffer_Overflow__c_CWE129_fscanf_21_s06_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__c_CWE129_large_68a_s06_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__c_CWE129_listen_socket_53c_s06_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__c_CWE129_rand_54d_s06_OMITBAD.c
@@ -72,6 +72,7 @@ Skipped files:
   - CWE122_Heap_Based_Buffer_Overflow__c_src_wchar_t_cat_54b_s10_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__c_src_wchar_t_cpy_17_s10_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__char_type_overrun_memcpy_10_s01_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__char_type_overrun_memmove_09_s01_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__wchar_t_type_overrun_memcpy_09_s11_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__wchar_t_type_overrun_memmove_16_s11_OMITBAD.c
 
@@ -81,14 +82,16 @@ Skipped files:
 LLM Only (No SA) Implementation Results:
 ============================================================
 Total files: 57
-Successfully fixed: 5 (8.8%)
-Failed to fix: 7 (12.3%)
+Successfully fixed: 6 (10.5%)
+Failed to fix: 6 (10.5%)
 Skipped: 45 (78.9%)
-Average iterations per file: 3.33
+Average iterations per file: 1.00
+Fail reasons: 5 SA / 1 Judge
 
 Successful files:
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE129_fscanf_21_s06_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_char_loop_18_s07_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_int64_t_memmove_18_s08_OMITBAD.c
-  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_wchar_t_memcpy_12_s08_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_wchar_t_memmove_15_s09_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__sizeof_int64_t_02_s11_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__sizeof_struct_42_s11_OMITBAD.c
@@ -96,18 +99,16 @@ Successful files:
 Failed files:
   - CWE122_Heap_Based_Buffer_Overflow__CWE131_loop_10_s05_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__c_CWE129_connect_socket_09_s06_OMITBAD.c
-  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_char_loop_18_s07_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_char_memcpy_08_s07_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_char_ncpy_06_s07_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_wchar_t_memcpy_12_s08_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__c_CWE806_char_memmove_32_s09_OMITBAD.c
-  - CWE122_Heap_Based_Buffer_Overflow__char_type_overrun_memmove_09_s01_OMITBAD.c
 
 Skipped files:
   - CWE122_Heap_Based_Buffer_Overflow__CWE131_memcpy_52a_s05_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__CWE131_memmove_53c_s06_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__CWE135_15_s06_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__c_CWE129_fgets_52a_s06_OMITBAD.c
-  - CWE122_Heap_Based_Buffer_Overflow__c_CWE129_fscanf_21_s06_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__c_CWE129_large_68a_s06_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__c_CWE129_listen_socket_53c_s06_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__c_CWE129_rand_54d_s06_OMITBAD.c
@@ -146,6 +147,7 @@ Skipped files:
   - CWE122_Heap_Based_Buffer_Overflow__c_src_wchar_t_cat_54b_s10_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__c_src_wchar_t_cpy_17_s10_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__char_type_overrun_memcpy_10_s01_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__char_type_overrun_memmove_09_s01_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__wchar_t_type_overrun_memcpy_09_s11_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__wchar_t_type_overrun_memmove_16_s11_OMITBAD.c
 
@@ -158,15 +160,16 @@ Total files: 57
 Successfully fixed: 8 (14.0%)
 Failed to fix: 4 (7.0%)
 Skipped: 45 (78.9%)
-Average iterations per file: 2.33
+Average iterations per file: 1.12
+Fail reasons: 0 SA / 4 Judge
 
 Successful files:
+  - CWE122_Heap_Based_Buffer_Overflow__c_CWE129_fscanf_21_s06_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_char_loop_18_s07_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_int64_t_memmove_18_s08_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_wchar_t_memcpy_12_s08_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__c_CWE805_wchar_t_memmove_15_s09_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__c_CWE806_char_memmove_32_s09_OMITBAD.c
-  - CWE122_Heap_Based_Buffer_Overflow__char_type_overrun_memmove_09_s01_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__sizeof_int64_t_02_s11_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__sizeof_struct_42_s11_OMITBAD.c
 
@@ -181,7 +184,6 @@ Skipped files:
   - CWE122_Heap_Based_Buffer_Overflow__CWE131_memmove_53c_s06_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__CWE135_15_s06_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__c_CWE129_fgets_52a_s06_OMITBAD.c
-  - CWE122_Heap_Based_Buffer_Overflow__c_CWE129_fscanf_21_s06_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__c_CWE129_large_68a_s06_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__c_CWE129_listen_socket_53c_s06_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__c_CWE129_rand_54d_s06_OMITBAD.c
@@ -220,6 +222,7 @@ Skipped files:
   - CWE122_Heap_Based_Buffer_Overflow__c_src_wchar_t_cat_54b_s10_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__c_src_wchar_t_cpy_17_s10_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__char_type_overrun_memcpy_10_s01_OMITBAD.c
+  - CWE122_Heap_Based_Buffer_Overflow__char_type_overrun_memmove_09_s01_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__wchar_t_type_overrun_memcpy_09_s11_OMITBAD.c
   - CWE122_Heap_Based_Buffer_Overflow__wchar_t_type_overrun_memmove_16_s11_OMITBAD.c
 

@@ -30,7 +30,7 @@ def unwrap_markdown(text: str) -> str:
     
     return "\n".join(lines)
 
-# Returns (verdict, iteration_count) tuple: verdict is 0 when successful fix, -1 when skipped, 1 when failed
+# Returns (verdict, iteration_count) tuple: verdict is 0 when successful fix, -1 when skipped, 1,2 when failed bc SA/Judge
 def process_test_case_with_llm(test_file: Path) -> tuple[int, int]:
     """
     Process a single test case with LLM-only iterative fixing (no few-shot examples, minimal SA feedback):
@@ -143,6 +143,7 @@ def process_test_case_with_llm(test_file: Path) -> tuple[int, int]:
                 current_code = fix_result.fixed_code
                 # Still use simple diagnostics in next iteration
                 current_diagnostics = simple_diagnostics
+                verdict = 1
         finally:
             # Clean up temporary file
             if temp_file.exists():
@@ -166,7 +167,7 @@ def process_test_case_with_llm(test_file: Path) -> tuple[int, int]:
 
             # Check if JUDGE warnings remain
             if "NOT" in judge_result.verdict:
-                verdict = 1
+                verdict = 2
                 print(f"[INFO] JUDGE Warnings still present, continuing to next iteration...")
             else:
                 print(f"[SUCCESS] No SA and JUDGE warnings remaining after {iteration} iteration(s)")

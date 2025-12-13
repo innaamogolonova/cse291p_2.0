@@ -1,5 +1,5 @@
 Evaluation Results for CWE416_Use_After_Free
-Generated: 2025-12-09T21:53:40.883964
+Generated: 2025-12-12T16:08:19.647514
 Total test cases: 7
 ============================================================
 
@@ -11,6 +11,7 @@ Successfully fixed: 0 (0.0%)
 Failed to fix: 0 (0.0%)
 Skipped: 7 (100.0%)
 Average iterations per file: 0.00
+Fail reasons: 0 SA / 0 Judge
 
 Successful files:
   (none)
@@ -37,6 +38,7 @@ Successfully fixed: 0 (0.0%)
 Failed to fix: 0 (0.0%)
 Skipped: 7 (100.0%)
 Average iterations per file: 0.00
+Fail reasons: 0 SA / 0 Judge
 
 Successful files:
   (none)
@@ -63,6 +65,7 @@ Successfully fixed: 0 (0.0%)
 Failed to fix: 0 (0.0%)
 Skipped: 7 (100.0%)
 Average iterations per file: 0.00
+Fail reasons: 0 SA / 0 Judge
 
 Successful files:
   (none)

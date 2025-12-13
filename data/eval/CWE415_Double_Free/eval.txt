@@ -1,5 +1,5 @@
 Evaluation Results for CWE415_Double_Free
-Generated: 2025-12-09T21:52:06.147053
+Generated: 2025-12-12T16:07:33.300873
 Total test cases: 6
 ============================================================
 
@@ -10,7 +10,8 @@ Total files: 6
 Successfully fixed: 1 (16.7%)
 Failed to fix: 1 (16.7%)
 Skipped: 4 (66.7%)
-Average iterations per file: 3.00
+Average iterations per file: 1.00
+Fail reasons: 1 SA / 0 Judge
 
 Successful files:
   - CWE415_Double_Free__malloc_free_char_10_s01_OMITBAD.c
@@ -33,7 +34,8 @@ Total files: 6
 Successfully fixed: 1 (16.7%)
 Failed to fix: 1 (16.7%)
 Skipped: 4 (66.7%)
-Average iterations per file: 3.00
+Average iterations per file: 1.00
+Fail reasons: 1 SA / 0 Judge
 
 Successful files:
   - CWE415_Double_Free__malloc_free_char_10_s01_OMITBAD.c
@@ -56,7 +58,8 @@ Total files: 6
 Successfully fixed: 1 (16.7%)
 Failed to fix: 1 (16.7%)
 Skipped: 4 (66.7%)
-Average iterations per file: 3.00
+Average iterations per file: 1.00
+Fail reasons: 1 SA / 0 Judge
 
 Successful files:
   - CWE415_Double_Free__malloc_free_char_10_s01_OMITBAD.c

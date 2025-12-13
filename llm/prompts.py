@@ -5,6 +5,7 @@ from textwrap import dedent
 
 import sys
 from pathlib import Path
+from llm.static_analyzer import run_cppcheck
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 FEW_SHOT_BAD = REPO_ROOT / "few_shot_examples" / "bad"
@@ -82,13 +83,15 @@ def build_fix_user_prompt(
     return "\n\n".join(parts).strip()
 
 def load_shot_io(idx: int) -> str:
-    out = f"Example #{idx} Input C Source Code with Memory-Safety Violation\n"
+    out = f"--- Example #{idx} Input C Source Code with Memory-Safety Violation ---\n"
     bad_file = FEW_SHOT_BAD / f"{idx:02d}.c"
     good_file = FEW_SHOT_GOOD / f"{idx:02d}.c"
     with open(bad_file, "r", encoding="utf-8") as file:
         out += file.read()
         out += "\n"
-    out += f"Example #{idx} Fixed Output C Source Code without Memory-Safety Violation\n"
+    out += f"--- Example #{idx} Static analyzer diagnostics ---\n"
+    out += run_cppcheck(bad_file)
+    out += f"--- Example #{idx} Fixed Output C Source Code without Memory-Safety Violation ---\n"
     with open(good_file, "r", encoding="utf-8") as file:
         out += file.read()
         out += "\n"
@@ -127,7 +130,7 @@ def build_omitbad_fix_user_prompt(
     # Construct few-shot IO examples
     few_shot_part = ""
     if num_shots > 0:
-        few_shot_part = "The following contains input-output examples of C/C++ source code with memory-safety bugs, and their fixes.\n"
+        few_shot_part = "The following contains input-output examples of C/C++ source code with memory-safety bugs, static analyzer diagnostics, and their fixes.\n"
         for idx in range(1, min(5,num_shots)+1):
             few_shot_part += load_shot_io(idx)
     

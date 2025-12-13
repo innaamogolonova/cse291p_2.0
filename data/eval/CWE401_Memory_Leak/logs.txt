@@ -1,5 +1,5 @@
 Detailed Logs for CWE401_Memory_Leak
-Generated: 2025-12-09T21:41:43.295856
+Generated: 2025-12-12T18:52:31.763612
 ============================================================
 
 
@@ -14,8 +14,8 @@ Processing: CWE401_Memory_Leak__char_calloc_66b_s01_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__char_calloc_66b_s01_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__char_calloc_66b_s01_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__char_calloc_66b_s01_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__char_calloc_66b_s01_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 
@@ -33,8 +33,8 @@ Processing: CWE401_Memory_Leak__char_calloc_66b_s01_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__char_calloc_66b_s01_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__char_calloc_66b_s01_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__char_calloc_66b_s01_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__char_calloc_66b_s01_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 
@@ -52,8 +52,8 @@ Processing: CWE401_Memory_Leak__char_calloc_66b_s01_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__char_calloc_66b_s01_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__char_calloc_66b_s01_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__char_calloc_66b_s01_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__char_calloc_66b_s01_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 
@@ -71,8 +71,8 @@ Processing: CWE401_Memory_Leak__char_malloc_09_s01_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__char_malloc_09_s01_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__char_malloc_09_s01_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__char_malloc_09_s01_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__char_malloc_09_s01_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 
@@ -90,8 +90,8 @@ Processing: CWE401_Memory_Leak__char_malloc_09_s01_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__char_malloc_09_s01_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__char_malloc_09_s01_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__char_malloc_09_s01_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__char_malloc_09_s01_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 
@@ -109,8 +109,8 @@ Processing: CWE401_Memory_Leak__char_malloc_09_s01_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__char_malloc_09_s01_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__char_malloc_09_s01_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__char_malloc_09_s01_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__char_malloc_09_s01_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 
@@ -128,8 +128,8 @@ Processing: CWE401_Memory_Leak__char_realloc_22b_s01_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__char_realloc_22b_s01_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__char_realloc_22b_s01_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__char_realloc_22b_s01_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__char_realloc_22b_s01_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 
@@ -147,8 +147,8 @@ Processing: CWE401_Memory_Leak__char_realloc_22b_s01_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__char_realloc_22b_s01_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__char_realloc_22b_s01_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__char_realloc_22b_s01_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__char_realloc_22b_s01_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 
@@ -166,8 +166,8 @@ Processing: CWE401_Memory_Leak__char_realloc_22b_s01_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__char_realloc_22b_s01_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__char_realloc_22b_s01_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__char_realloc_22b_s01_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__char_realloc_22b_s01_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 
@@ -185,8 +185,8 @@ Processing: CWE401_Memory_Leak__int64_t_calloc_66a_s01_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_calloc_66a_s01_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_calloc_66a_s01_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_calloc_66a_s01_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_calloc_66a_s01_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 
@@ -204,8 +204,8 @@ Processing: CWE401_Memory_Leak__int64_t_calloc_66a_s01_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_calloc_66a_s01_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_calloc_66a_s01_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_calloc_66a_s01_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_calloc_66a_s01_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 
@@ -223,8 +223,8 @@ Processing: CWE401_Memory_Leak__int64_t_calloc_66a_s01_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_calloc_66a_s01_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_calloc_66a_s01_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_calloc_66a_s01_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_calloc_66a_s01_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 
@@ -242,14 +242,11 @@ Processing: CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.c:16:27: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.c:16:27: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
         data = (int64_t *)ALLOCA(100*sizeof(int64_t));
                           ^
-/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.c:28:1: error: Memory leak: data [memleak]
-}
-^
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.c: OMITGOOD=1...
 
 
 === Reading source code ===
@@ -265,14 +262,11 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
-/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c:16:27: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c:16:27: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
         data = (int64_t *)ALLOCA(100*sizeof(int64_t));
                           ^
-/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c:30:1: error: Memory leak: data [memleak]
-}
-^
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c: OMITGOOD=1...
 
 [INFO] SA Warnings still present, continuing to next iteration...
 
@@ -285,11 +279,11 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
-/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c:16:27: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c:17:27: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
         data = (int64_t *)ALLOCA(100*sizeof(int64_t));
                           ^
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c: OMITGOOD=1...
 
 [INFO] SA Warnings still present, continuing to next iteration...
 
@@ -302,11 +296,20 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
-/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c:16:27: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
-        data = (int64_t *)ALLOCA(100*sizeof(int64_t));
-                          ^
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c: OMITGOOD=1...
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c:29:13: error: Using pointer to local variable 'data_stack' that is out of scope. [invalidLifetime]
+        if (data != NULL) free(data);
+            ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c:18:16: note: Array decayed to pointer here.
+        data = data_stack;
+               ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c:17:17: note: Variable created here.
+        int64_t data_stack[100]; // Use stack allocation instead of alloca
+                ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c:29:13: note: Using pointer to local variable 'data_stack' that is out of scope.
+        if (data != NULL) free(data);
+            ^
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c: OMITGOOD=1...
 
 [INFO] SA Warnings still present, continuing to next iteration...
 
@@ -319,13 +322,14 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
-/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c:16:27: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
-        data = (int64_t *)ALLOCA(100*sizeof(int64_t));
-                          ^
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c: OMITGOOD=1...
 
-[INFO] SA Warnings still present, continuing to next iteration...
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
 
 ============================================================
 === Iteration 5/5 ===
@@ -336,20 +340,21 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
-/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c:16:27: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
-        data = (int64_t *)ALLOCA(100*sizeof(int64_t));
-                          ^
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c: OMITGOOD=1...
 
-[INFO] SA Warnings still present, continuing to next iteration...
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
 
 [WARNING] Max iterations (5) reached. Some warnings may remain.
 
 === Saving fixed code ===
 Total iterations: 5
-Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/omitbad_fixes/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.c.fixed.c
-Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/omitbad_fixes/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.c.fixed.metadata.json
+Fixed code saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/omitbad_fixes/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.c.fixed.c
+Metadata saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/omitbad_fixes/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.c.fixed.metadata.json
 
 [STDERR]
 
@@ -365,14 +370,11 @@ Processing: CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.c:16:27: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.c:16:27: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
         data = (int64_t *)ALLOCA(100*sizeof(int64_t));
                           ^
-/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.c:28:1: error: Memory leak: data [memleak]
-}
-^
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.c: OMITGOOD=1...
 
 
 === Reading source code ===
@@ -388,11 +390,11 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
-/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c:16:27: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c:16:27: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
         data = (int64_t *)ALLOCA(100*sizeof(int64_t));
                           ^
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c: OMITGOOD=1...
 
 [INFO] SA Warnings still present, continuing to next iteration...
 
@@ -405,11 +407,11 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
-/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c:16:27: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c:16:27: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
         data = (int64_t *)ALLOCA(100*sizeof(int64_t));
                           ^
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c: OMITGOOD=1...
 
 [INFO] SA Warnings still present, continuing to next iteration...
 
@@ -422,11 +424,11 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
-/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c:16:27: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c:16:27: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
         data = (int64_t *)ALLOCA(100*sizeof(int64_t));
                           ^
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c: OMITGOOD=1...
 
 [INFO] SA Warnings still present, continuing to next iteration...
 
@@ -439,11 +441,11 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
-/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c:16:27: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c:16:27: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
         data = (int64_t *)ALLOCA(100*sizeof(int64_t));
                           ^
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c: OMITGOOD=1...
 
 [INFO] SA Warnings still present, continuing to next iteration...
 
@@ -456,11 +458,11 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
-/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c:16:27: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c:16:27: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
         data = (int64_t *)ALLOCA(100*sizeof(int64_t));
                           ^
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c: OMITGOOD=1...
 
 [INFO] SA Warnings still present, continuing to next iteration...
 
@@ -468,8 +470,8 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Saving fixed code ===
 Total iterations: 5
-Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.c.fixed.c
-Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.c.fixed.metadata.json
+Fixed code saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/llm_only_fixes/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.c.fixed.c
+Metadata saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/llm_only_fixes/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.c.fixed.metadata.json
 
 [STDERR]
 
@@ -485,14 +487,11 @@ Processing: CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.c:16:27: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.c:16:27: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
         data = (int64_t *)ALLOCA(100*sizeof(int64_t));
                           ^
-/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.c:28:1: error: Memory leak: data [memleak]
-}
-^
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.c: OMITGOOD=1...
 
 
 === Reading source code ===
@@ -508,11 +507,11 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
-/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c:16:27: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c:16:27: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
         data = (int64_t *)ALLOCA(100*sizeof(int64_t));
                           ^
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c: OMITGOOD=1...
 
 [INFO] SA Warnings still present, continuing to next iteration...
 
@@ -525,71 +524,19 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
-/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c:31:1: error: Memory leak: data [memleak]
-}
-^
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c: OMITGOOD=1...
 
-[INFO] SA Warnings still present, continuing to next iteration...
+[SUCCESS] No SA warnings remain
 
-============================================================
-=== Iteration 3/5 ===
-============================================================
-
-=== Calling LLM to generate fix ===
-[SUCCESS] LLM generated a fix
-
-=== Running cppcheck on fixed code ===
-[DIAGNOSTICS AFTER FIX]
-/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c:31:1: error: Memory leak: data [memleak]
-}
-^
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c: OMITGOOD=1...
-
-[INFO] SA Warnings still present, continuing to next iteration...
-
-============================================================
-=== Iteration 4/5 ===
-============================================================
-
-=== Calling LLM to generate fix ===
-[SUCCESS] LLM generated a fix
-
-=== Running cppcheck on fixed code ===
-[DIAGNOSTICS AFTER FIX]
-/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c:31:1: error: Memory leak: data [memleak]
-}
-^
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c: OMITGOOD=1...
-
-[INFO] SA Warnings still present, continuing to next iteration...
-
-============================================================
-=== Iteration 5/5 ===
-============================================================
-
-=== Calling LLM to generate fix ===
-[SUCCESS] LLM generated a fix
-
-=== Running cppcheck on fixed code ===
-[DIAGNOSTICS AFTER FIX]
-/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c:31:1: error: Memory leak: data [memleak]
-}
-^
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.tmp.c: OMITGOOD=1...
-
-[INFO] SA Warnings still present, continuing to next iteration...
-
-[WARNING] Max iterations (5) reached. Some warnings may remain.
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response EQUIVALENT
+[SUCCESS] No SA and JUDGE warnings remaining after 2 iteration(s)
 
 === Saving fixed code ===
-Total iterations: 5
-Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/no_few_shot_fixes/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.c.fixed.c
-Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/no_few_shot_fixes/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.c.fixed.metadata.json
+Total iterations: 2
+Fixed code saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/no_few_shot_fixes/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.c.fixed.c
+Metadata saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/no_few_shot_fixes/CWE401_Memory_Leak__int64_t_malloc_12_s01_OMITBAD.c.fixed.metadata.json
 
 [STDERR]
 
@@ -605,8 +552,8 @@ Processing: CWE401_Memory_Leak__int64_t_realloc_51b_s01_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_realloc_51b_s01_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_realloc_51b_s01_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_realloc_51b_s01_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_realloc_51b_s01_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 
@@ -624,8 +571,8 @@ Processing: CWE401_Memory_Leak__int64_t_realloc_51b_s01_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_realloc_51b_s01_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_realloc_51b_s01_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_realloc_51b_s01_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_realloc_51b_s01_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 
@@ -643,8 +590,8 @@ Processing: CWE401_Memory_Leak__int64_t_realloc_51b_s01_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_realloc_51b_s01_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_realloc_51b_s01_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_realloc_51b_s01_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int64_t_realloc_51b_s01_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 
@@ -662,8 +609,8 @@ Processing: CWE401_Memory_Leak__int_calloc_64a_s01_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int_calloc_64a_s01_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int_calloc_64a_s01_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int_calloc_64a_s01_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int_calloc_64a_s01_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 
@@ -681,8 +628,8 @@ Processing: CWE401_Memory_Leak__int_calloc_64a_s01_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int_calloc_64a_s01_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int_calloc_64a_s01_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int_calloc_64a_s01_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int_calloc_64a_s01_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 
@@ -700,8 +647,8 @@ Processing: CWE401_Memory_Leak__int_calloc_64a_s01_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int_calloc_64a_s01_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int_calloc_64a_s01_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int_calloc_64a_s01_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int_calloc_64a_s01_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 
@@ -719,8 +666,8 @@ Processing: CWE401_Memory_Leak__int_malloc_66b_s01_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int_malloc_66b_s01_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int_malloc_66b_s01_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int_malloc_66b_s01_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int_malloc_66b_s01_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 
@@ -738,8 +685,8 @@ Processing: CWE401_Memory_Leak__int_malloc_66b_s01_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int_malloc_66b_s01_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int_malloc_66b_s01_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int_malloc_66b_s01_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int_malloc_66b_s01_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 
@@ -757,8 +704,8 @@ Processing: CWE401_Memory_Leak__int_malloc_66b_s01_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int_malloc_66b_s01_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int_malloc_66b_s01_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int_malloc_66b_s01_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__int_malloc_66b_s01_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 
@@ -776,11 +723,11 @@ Processing: CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.c:12:13: error: Common realloc mistake: 'data' nulled but not freed upon failure [memleakOnRealloc]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.c:12:13: error: Common realloc mistake: 'data' nulled but not freed upon failure [memleakOnRealloc]
             data = (char *)realloc(data, (130000)*sizeof(char));
             ^
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.c: OMITGOOD=1...
 
 
 === Reading source code ===
@@ -796,8 +743,8 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.tmp.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.tmp.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.tmp.c: OMITGOOD=1...
 
 [SUCCESS] No SA warnings remain
 
@@ -807,8 +754,8 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Saving fixed code ===
 Total iterations: 1
-Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/omitbad_fixes/CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.c.fixed.c
-Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/omitbad_fixes/CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.c.fixed.metadata.json
+Fixed code saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/omitbad_fixes/CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.c.fixed.c
+Metadata saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/omitbad_fixes/CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.c.fixed.metadata.json
 
 [STDERR]
 
@@ -824,11 +771,11 @@ Processing: CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.c:12:13: error: Common realloc mistake: 'data' nulled but not freed upon failure [memleakOnRealloc]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.c:12:13: error: Common realloc mistake: 'data' nulled but not freed upon failure [memleakOnRealloc]
             data = (char *)realloc(data, (130000)*sizeof(char));
             ^
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.c: OMITGOOD=1...
 
 
 === Reading source code ===
@@ -844,8 +791,8 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.tmp.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.tmp.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.tmp.c: OMITGOOD=1...
 
 [SUCCESS] No SA warnings remain
 
@@ -855,8 +802,8 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Saving fixed code ===
 Total iterations: 1
-Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.c.fixed.c
-Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.c.fixed.metadata.json
+Fixed code saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/llm_only_fixes/CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.c.fixed.c
+Metadata saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/llm_only_fixes/CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.c.fixed.metadata.json
 
 [STDERR]
 
@@ -872,11 +819,11 @@ Processing: CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.c:12:13: error: Common realloc mistake: 'data' nulled but not freed upon failure [memleakOnRealloc]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.c:12:13: error: Common realloc mistake: 'data' nulled but not freed upon failure [memleakOnRealloc]
             data = (char *)realloc(data, (130000)*sizeof(char));
             ^
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.c: OMITGOOD=1...
 
 
 === Reading source code ===
@@ -892,8 +839,8 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.tmp.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.tmp.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.tmp.c: OMITGOOD=1...
 
 [SUCCESS] No SA warnings remain
 
@@ -903,8 +850,8 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Saving fixed code ===
 Total iterations: 1
-Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/no_few_shot_fixes/CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.c.fixed.c
-Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/no_few_shot_fixes/CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.c.fixed.metadata.json
+Fixed code saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/no_few_shot_fixes/CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.c.fixed.c
+Metadata saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/no_few_shot_fixes/CWE401_Memory_Leak__malloc_realloc_char_02_s01_OMITBAD.c.fixed.metadata.json
 
 [STDERR]
 
@@ -920,11 +867,11 @@ Processing: CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.c:10:9: error: Common realloc mistake: 'data' nulled but not freed upon failure [memleakOnRealloc]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.c:10:9: error: Common realloc mistake: 'data' nulled but not freed upon failure [memleakOnRealloc]
         data = (int64_t *)realloc(data, (130000)*sizeof(int64_t));
         ^
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.c: OMITGOOD=1...
 
 
 === Reading source code ===
@@ -940,8 +887,8 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.tmp.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.tmp.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.tmp.c: OMITGOOD=1...
 
 [SUCCESS] No SA warnings remain
 
@@ -951,8 +898,8 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Saving fixed code ===
 Total iterations: 1
-Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/omitbad_fixes/CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.c.fixed.c
-Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/omitbad_fixes/CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.c.fixed.metadata.json
+Fixed code saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/omitbad_fixes/CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.c.fixed.c
+Metadata saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/omitbad_fixes/CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.c.fixed.metadata.json
 
 [STDERR]
 
@@ -968,11 +915,11 @@ Processing: CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.c:10:9: error: Common realloc mistake: 'data' nulled but not freed upon failure [memleakOnRealloc]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.c:10:9: error: Common realloc mistake: 'data' nulled but not freed upon failure [memleakOnRealloc]
         data = (int64_t *)realloc(data, (130000)*sizeof(int64_t));
         ^
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.c: OMITGOOD=1...
 
 
 === Reading source code ===
@@ -988,8 +935,8 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.tmp.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.tmp.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.tmp.c: OMITGOOD=1...
 
 [SUCCESS] No SA warnings remain
 
@@ -999,8 +946,8 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Saving fixed code ===
 Total iterations: 1
-Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.c.fixed.c
-Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.c.fixed.metadata.json
+Fixed code saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/llm_only_fixes/CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.c.fixed.c
+Metadata saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/llm_only_fixes/CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.c.fixed.metadata.json
 
 [STDERR]
 
@@ -1016,11 +963,11 @@ Processing: CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.c:10:9: error: Common realloc mistake: 'data' nulled but not freed upon failure [memleakOnRealloc]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.c:10:9: error: Common realloc mistake: 'data' nulled but not freed upon failure [memleakOnRealloc]
         data = (int64_t *)realloc(data, (130000)*sizeof(int64_t));
         ^
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.c: OMITGOOD=1...
 
 
 === Reading source code ===
@@ -1036,8 +983,8 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.tmp.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.tmp.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.tmp.c: OMITGOOD=1...
 
 [SUCCESS] No SA warnings remain
 
@@ -1047,8 +994,8 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Saving fixed code ===
 Total iterations: 1
-Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/no_few_shot_fixes/CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.c.fixed.c
-Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/no_few_shot_fixes/CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.c.fixed.metadata.json
+Fixed code saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/no_few_shot_fixes/CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.c.fixed.c
+Metadata saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/no_few_shot_fixes/CWE401_Memory_Leak__malloc_realloc_int64_t_01_s01_OMITBAD.c.fixed.metadata.json
 
 [STDERR]
 
@@ -1064,11 +1011,11 @@ Processing: CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.c:12:13: error: Common realloc mistake: 'data' nulled but not freed upon failure [memleakOnRealloc]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.c:12:13: error: Common realloc mistake: 'data' nulled but not freed upon failure [memleakOnRealloc]
             data = (int *)realloc(data, (130000)*sizeof(int));
             ^
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.c: OMITGOOD=1...
 
 
 === Reading source code ===
@@ -1084,8 +1031,8 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.tmp.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.tmp.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.tmp.c: OMITGOOD=1...
 
 [SUCCESS] No SA warnings remain
 
@@ -1095,8 +1042,8 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Saving fixed code ===
 Total iterations: 1
-Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/omitbad_fixes/CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.c.fixed.c
-Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/omitbad_fixes/CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.c.fixed.metadata.json
+Fixed code saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/omitbad_fixes/CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.c.fixed.c
+Metadata saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/omitbad_fixes/CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.c.fixed.metadata.json
 
 [STDERR]
 
@@ -1112,11 +1059,11 @@ Processing: CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.c:12:13: error: Common realloc mistake: 'data' nulled but not freed upon failure [memleakOnRealloc]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.c:12:13: error: Common realloc mistake: 'data' nulled but not freed upon failure [memleakOnRealloc]
             data = (int *)realloc(data, (130000)*sizeof(int));
             ^
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.c: OMITGOOD=1...
 
 
 === Reading source code ===
@@ -1132,8 +1079,8 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.tmp.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.tmp.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.tmp.c: OMITGOOD=1...
 
 [SUCCESS] No SA warnings remain
 
@@ -1143,8 +1090,8 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Saving fixed code ===
 Total iterations: 1
-Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.c.fixed.c
-Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.c.fixed.metadata.json
+Fixed code saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/llm_only_fixes/CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.c.fixed.c
+Metadata saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/llm_only_fixes/CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.c.fixed.metadata.json
 
 [STDERR]
 
@@ -1160,11 +1107,11 @@ Processing: CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.c:12:13: error: Common realloc mistake: 'data' nulled but not freed upon failure [memleakOnRealloc]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.c:12:13: error: Common realloc mistake: 'data' nulled but not freed upon failure [memleakOnRealloc]
             data = (int *)realloc(data, (130000)*sizeof(int));
             ^
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.c: OMITGOOD=1...
 
 
 === Reading source code ===
@@ -1180,8 +1127,8 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.tmp.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.tmp.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.tmp.c: OMITGOOD=1...
 
 [SUCCESS] No SA warnings remain
 
@@ -1191,8 +1138,8 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Saving fixed code ===
 Total iterations: 1
-Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/no_few_shot_fixes/CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.c.fixed.c
-Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/no_few_shot_fixes/CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.c.fixed.metadata.json
+Fixed code saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/no_few_shot_fixes/CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.c.fixed.c
+Metadata saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/no_few_shot_fixes/CWE401_Memory_Leak__malloc_realloc_int_06_s01_OMITBAD.c.fixed.metadata.json
 
 [STDERR]
 
@@ -1208,11 +1155,11 @@ Processing: CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITB
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITBAD.c:13:13: error: Common realloc mistake: 'data' nulled but not freed upon failure [memleakOnRealloc]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITBAD.c:13:13: error: Common realloc mistake: 'data' nulled but not freed upon failure [memleakOnRealloc]
             data = (struct _twoIntsStruct *)realloc(data, (130000)*sizeof(struct _twoIntsStruct));
             ^
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITBAD.c: OMITGOOD=1...
 
 
 === Reading source code ===
@@ -1228,8 +1175,8 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITBAD.tmp.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITBAD.tmp.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITBAD.tmp.c: OMITGOOD=1...
 
 [SUCCESS] No SA warnings remain
 
@@ -1239,8 +1186,8 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Saving fixed code ===
 Total iterations: 1
-Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/omitbad_fixes/CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITBAD.c.fixed.c
-Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/omitbad_fixes/CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITBAD.c.fixed.metadata.json
+Fixed code saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/omitbad_fixes/CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITBAD.c.fixed.c
+Metadata saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/omitbad_fixes/CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITBAD.c.fixed.metadata.json
 
 [STDERR]
 
@@ -1256,11 +1203,11 @@ Processing: CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITB
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITBAD.c:13:13: error: Common realloc mistake: 'data' nulled but not freed upon failure [memleakOnRealloc]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITBAD.c:13:13: error: Common realloc mistake: 'data' nulled but not freed upon failure [memleakOnRealloc]
             data = (struct _twoIntsStruct *)realloc(data, (130000)*sizeof(struct _twoIntsStruct));
             ^
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITBAD.c: OMITGOOD=1...
 
 
 === Reading source code ===
@@ -1276,8 +1223,8 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITBAD.tmp.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITBAD.tmp.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITBAD.tmp.c: OMITGOOD=1...
 
 [SUCCESS] No SA warnings remain
 
@@ -1287,8 +1234,8 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Saving fixed code ===
 Total iterations: 1
-Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITBAD.c.fixed.c
-Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITBAD.c.fixed.metadata.json
+Fixed code saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/llm_only_fixes/CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITBAD.c.fixed.c
+Metadata saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/llm_only_fixes/CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITBAD.c.fixed.metadata.json
 
 [STDERR]
 
@@ -1304,11 +1251,11 @@ Processing: CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITB
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITBAD.c:13:13: error: Common realloc mistake: 'data' nulled but not freed upon failure [memleakOnRealloc]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITBAD.c:13:13: error: Common realloc mistake: 'data' nulled but not freed upon failure [memleakOnRealloc]
             data = (struct _twoIntsStruct *)realloc(data, (130000)*sizeof(struct _twoIntsStruct));
             ^
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITBAD.c: OMITGOOD=1...
 
 
 === Reading source code ===
@@ -1324,8 +1271,8 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITBAD.tmp.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITBAD.tmp.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITBAD.tmp.c: OMITGOOD=1...
 
 [SUCCESS] No SA warnings remain
 
@@ -1335,8 +1282,8 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Saving fixed code ===
 Total iterations: 1
-Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/no_few_shot_fixes/CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITBAD.c.fixed.c
-Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/no_few_shot_fixes/CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITBAD.c.fixed.metadata.json
+Fixed code saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/no_few_shot_fixes/CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITBAD.c.fixed.c
+Metadata saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/no_few_shot_fixes/CWE401_Memory_Leak__malloc_realloc_struct_twoIntsStruct_13_s01_OMITBAD.c.fixed.metadata.json
 
 [STDERR]
 
@@ -1352,11 +1299,11 @@ Processing: CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.c:14:13: error: Common realloc mistake: 'data' nulled but not freed upon failure [memleakOnRealloc]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.c:14:13: error: Common realloc mistake: 'data' nulled but not freed upon failure [memleakOnRealloc]
             data = (twoIntsStruct *)realloc(data, (130000)*sizeof(twoIntsStruct));
             ^
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.c: OMITGOOD=1...
 
 
 === Reading source code ===
@@ -1372,8 +1319,8 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.tmp.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.tmp.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.tmp.c: OMITGOOD=1...
 
 [SUCCESS] No SA warnings remain
 
@@ -1383,8 +1330,8 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Saving fixed code ===
 Total iterations: 1
-Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/omitbad_fixes/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.c.fixed.c
-Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/omitbad_fixes/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.c.fixed.metadata.json
+Fixed code saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/omitbad_fixes/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.c.fixed.c
+Metadata saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/omitbad_fixes/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.c.fixed.metadata.json
 
 [STDERR]
 
@@ -1400,11 +1347,11 @@ Processing: CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.c:14:13: error: Common realloc mistake: 'data' nulled but not freed upon failure [memleakOnRealloc]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.c:14:13: error: Common realloc mistake: 'data' nulled but not freed upon failure [memleakOnRealloc]
             data = (twoIntsStruct *)realloc(data, (130000)*sizeof(twoIntsStruct));
             ^
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.c: OMITGOOD=1...
 
 
 === Reading source code ===
@@ -1420,8 +1367,8 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.tmp.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.tmp.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.tmp.c: OMITGOOD=1...
 
 [SUCCESS] No SA warnings remain
 
@@ -1431,8 +1378,8 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Saving fixed code ===
 Total iterations: 1
-Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.c.fixed.c
-Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.c.fixed.metadata.json
+Fixed code saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/llm_only_fixes/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.c.fixed.c
+Metadata saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/llm_only_fixes/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.c.fixed.metadata.json
 
 [STDERR]
 
@@ -1448,11 +1395,11 @@ Processing: CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.c:14:13: error: Common realloc mistake: 'data' nulled but not freed upon failure [memleakOnRealloc]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.c:14:13: error: Common realloc mistake: 'data' nulled but not freed upon failure [memleakOnRealloc]
             data = (twoIntsStruct *)realloc(data, (130000)*sizeof(twoIntsStruct));
             ^
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.c: OMITGOOD=1...
 
 
 === Reading source code ===
@@ -1468,8 +1415,8 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.tmp.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.tmp.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.tmp.c: OMITGOOD=1...
 
 [SUCCESS] No SA warnings remain
 
@@ -1479,8 +1426,8 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Saving fixed code ===
 Total iterations: 1
-Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/no_few_shot_fixes/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.c.fixed.c
-Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/no_few_shot_fixes/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.c.fixed.metadata.json
+Fixed code saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/no_few_shot_fixes/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.c.fixed.c
+Metadata saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/no_few_shot_fixes/CWE401_Memory_Leak__malloc_realloc_twoIntsStruct_17_s01_OMITBAD.c.fixed.metadata.json
 
 [STDERR]
 
@@ -1496,11 +1443,11 @@ Processing: CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.c:12:13: error: Common realloc mistake: 'data' nulled but not freed upon failure [memleakOnRealloc]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.c:12:13: error: Common realloc mistake: 'data' nulled but not freed upon failure [memleakOnRealloc]
             data = (wchar_t *)realloc(data, (130000)*sizeof(wchar_t));
             ^
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.c: OMITGOOD=1...
 
 
 === Reading source code ===
@@ -1516,8 +1463,8 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.tmp.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.tmp.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.tmp.c: OMITGOOD=1...
 
 [SUCCESS] No SA warnings remain
 
@@ -1527,8 +1474,8 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Saving fixed code ===
 Total iterations: 1
-Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/omitbad_fixes/CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.c.fixed.c
-Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/omitbad_fixes/CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.c.fixed.metadata.json
+Fixed code saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/omitbad_fixes/CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.c.fixed.c
+Metadata saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/omitbad_fixes/CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.c.fixed.metadata.json
 
 [STDERR]
 
@@ -1544,11 +1491,11 @@ Processing: CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.c:12:13: error: Common realloc mistake: 'data' nulled but not freed upon failure [memleakOnRealloc]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.c:12:13: error: Common realloc mistake: 'data' nulled but not freed upon failure [memleakOnRealloc]
             data = (wchar_t *)realloc(data, (130000)*sizeof(wchar_t));
             ^
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.c: OMITGOOD=1...
 
 
 === Reading source code ===
@@ -1564,8 +1511,8 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.tmp.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.tmp.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.tmp.c: OMITGOOD=1...
 
 [SUCCESS] No SA warnings remain
 
@@ -1575,8 +1522,8 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Saving fixed code ===
 Total iterations: 1
-Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.c.fixed.c
-Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/llm_only_fixes/CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.c.fixed.metadata.json
+Fixed code saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/llm_only_fixes/CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.c.fixed.c
+Metadata saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/llm_only_fixes/CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.c.fixed.metadata.json
 
 [STDERR]
 
@@ -1592,11 +1539,11 @@ Processing: CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-/Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.c:12:13: error: Common realloc mistake: 'data' nulled but not freed upon failure [memleakOnRealloc]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.c:12:13: error: Common realloc mistake: 'data' nulled but not freed upon failure [memleakOnRealloc]
             data = (wchar_t *)realloc(data, (130000)*sizeof(wchar_t));
             ^
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.c: OMITGOOD=1...
 
 
 === Reading source code ===
@@ -1612,8 +1559,8 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.tmp.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.tmp.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.tmp.c: OMITGOOD=1...
 
 [SUCCESS] No SA warnings remain
 
@@ -1623,8 +1570,8 @@ Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_
 
 === Saving fixed code ===
 Total iterations: 1
-Fixed code saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/no_few_shot_fixes/CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.c.fixed.c
-Metadata saved to: /Users/inna.amogolonova/Desktop/cse291p_2.0/data/results/no_few_shot_fixes/CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.c.fixed.metadata.json
+Fixed code saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/no_few_shot_fixes/CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.c.fixed.c
+Metadata saved to: /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/results/no_few_shot_fixes/CWE401_Memory_Leak__malloc_realloc_wchar_t_13_s01_OMITBAD.c.fixed.metadata.json
 
 [STDERR]
 
@@ -1640,8 +1587,8 @@ Processing: CWE401_Memory_Leak__strdup_char_51b_s02_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__strdup_char_51b_s02_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__strdup_char_51b_s02_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__strdup_char_51b_s02_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__strdup_char_51b_s02_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 
@@ -1659,8 +1606,8 @@ Processing: CWE401_Memory_Leak__strdup_char_51b_s02_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__strdup_char_51b_s02_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__strdup_char_51b_s02_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__strdup_char_51b_s02_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__strdup_char_51b_s02_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 
@@ -1678,8 +1625,8 @@ Processing: CWE401_Memory_Leak__strdup_char_51b_s02_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__strdup_char_51b_s02_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__strdup_char_51b_s02_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__strdup_char_51b_s02_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__strdup_char_51b_s02_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 
@@ -1697,8 +1644,8 @@ Processing: CWE401_Memory_Leak__strdup_wchar_t_17_s03_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__strdup_wchar_t_17_s03_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__strdup_wchar_t_17_s03_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__strdup_wchar_t_17_s03_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__strdup_wchar_t_17_s03_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 
@@ -1716,8 +1663,8 @@ Processing: CWE401_Memory_Leak__strdup_wchar_t_17_s03_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__strdup_wchar_t_17_s03_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__strdup_wchar_t_17_s03_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__strdup_wchar_t_17_s03_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__strdup_wchar_t_17_s03_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 
@@ -1735,8 +1682,8 @@ Processing: CWE401_Memory_Leak__strdup_wchar_t_17_s03_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__strdup_wchar_t_17_s03_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__strdup_wchar_t_17_s03_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__strdup_wchar_t_17_s03_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__strdup_wchar_t_17_s03_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 
@@ -1754,8 +1701,8 @@ Processing: CWE401_Memory_Leak__struct_twoIntsStruct_calloc_34_s03_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__struct_twoIntsStruct_calloc_34_s03_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__struct_twoIntsStruct_calloc_34_s03_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__struct_twoIntsStruct_calloc_34_s03_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__struct_twoIntsStruct_calloc_34_s03_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 
@@ -1773,8 +1720,8 @@ Processing: CWE401_Memory_Leak__struct_twoIntsStruct_calloc_34_s03_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__struct_twoIntsStruct_calloc_34_s03_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__struct_twoIntsStruct_calloc_34_s03_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__struct_twoIntsStruct_calloc_34_s03_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__struct_twoIntsStruct_calloc_34_s03_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 
@@ -1792,8 +1739,8 @@ Processing: CWE401_Memory_Leak__struct_twoIntsStruct_calloc_34_s03_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__struct_twoIntsStruct_calloc_34_s03_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__struct_twoIntsStruct_calloc_34_s03_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__struct_twoIntsStruct_calloc_34_s03_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__struct_twoIntsStruct_calloc_34_s03_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 
@@ -1811,8 +1758,8 @@ Processing: CWE401_Memory_Leak__struct_twoIntsStruct_malloc_13_s03_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__struct_twoIntsStruct_malloc_13_s03_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__struct_twoIntsStruct_malloc_13_s03_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__struct_twoIntsStruct_malloc_13_s03_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__struct_twoIntsStruct_malloc_13_s03_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 
@@ -1830,8 +1777,8 @@ Processing: CWE401_Memory_Leak__struct_twoIntsStruct_malloc_13_s03_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__struct_twoIntsStruct_malloc_13_s03_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__struct_twoIntsStruct_malloc_13_s03_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__struct_twoIntsStruct_malloc_13_s03_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__struct_twoIntsStruct_malloc_13_s03_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 
@@ -1849,8 +1796,8 @@ Processing: CWE401_Memory_Leak__struct_twoIntsStruct_malloc_13_s03_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__struct_twoIntsStruct_malloc_13_s03_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__struct_twoIntsStruct_malloc_13_s03_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__struct_twoIntsStruct_malloc_13_s03_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__struct_twoIntsStruct_malloc_13_s03_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 
@@ -1868,8 +1815,8 @@ Processing: CWE401_Memory_Leak__struct_twoIntsStruct_realloc_05_s03_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_05_s03_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_05_s03_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_05_s03_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_05_s03_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 
@@ -1887,8 +1834,8 @@ Processing: CWE401_Memory_Leak__struct_twoIntsStruct_realloc_05_s03_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_05_s03_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_05_s03_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_05_s03_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_05_s03_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 
@@ -1906,8 +1853,8 @@ Processing: CWE401_Memory_Leak__struct_twoIntsStruct_realloc_05_s03_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_05_s03_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_05_s03_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_05_s03_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__struct_twoIntsStruct_realloc_05_s03_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 
@@ -1925,8 +1872,8 @@ Processing: CWE401_Memory_Leak__twoIntsStruct_calloc_44_s03_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__twoIntsStruct_calloc_44_s03_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__twoIntsStruct_calloc_44_s03_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__twoIntsStruct_calloc_44_s03_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__twoIntsStruct_calloc_44_s03_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 
@@ -1944,8 +1891,8 @@ Processing: CWE401_Memory_Leak__twoIntsStruct_calloc_44_s03_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__twoIntsStruct_calloc_44_s03_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__twoIntsStruct_calloc_44_s03_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__twoIntsStruct_calloc_44_s03_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__twoIntsStruct_calloc_44_s03_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 
@@ -1963,8 +1910,8 @@ Processing: CWE401_Memory_Leak__twoIntsStruct_calloc_44_s03_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__twoIntsStruct_calloc_44_s03_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__twoIntsStruct_calloc_44_s03_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__twoIntsStruct_calloc_44_s03_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__twoIntsStruct_calloc_44_s03_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 
@@ -1982,8 +1929,8 @@ Processing: CWE401_Memory_Leak__twoIntsStruct_malloc_52c_s03_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__twoIntsStruct_malloc_52c_s03_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__twoIntsStruct_malloc_52c_s03_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__twoIntsStruct_malloc_52c_s03_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__twoIntsStruct_malloc_52c_s03_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 
@@ -2001,8 +1948,8 @@ Processing: CWE401_Memory_Leak__twoIntsStruct_malloc_52c_s03_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__twoIntsStruct_malloc_52c_s03_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__twoIntsStruct_malloc_52c_s03_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__twoIntsStruct_malloc_52c_s03_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__twoIntsStruct_malloc_52c_s03_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 
@@ -2020,8 +1967,8 @@ Processing: CWE401_Memory_Leak__twoIntsStruct_malloc_52c_s03_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__twoIntsStruct_malloc_52c_s03_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__twoIntsStruct_malloc_52c_s03_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__twoIntsStruct_malloc_52c_s03_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__twoIntsStruct_malloc_52c_s03_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 
@@ -2039,8 +1986,8 @@ Processing: CWE401_Memory_Leak__twoIntsStruct_realloc_67b_s03_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__twoIntsStruct_realloc_67b_s03_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__twoIntsStruct_realloc_67b_s03_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__twoIntsStruct_realloc_67b_s03_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__twoIntsStruct_realloc_67b_s03_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 
@@ -2058,8 +2005,8 @@ Processing: CWE401_Memory_Leak__twoIntsStruct_realloc_67b_s03_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__twoIntsStruct_realloc_67b_s03_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__twoIntsStruct_realloc_67b_s03_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__twoIntsStruct_realloc_67b_s03_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__twoIntsStruct_realloc_67b_s03_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 
@@ -2077,8 +2024,8 @@ Processing: CWE401_Memory_Leak__twoIntsStruct_realloc_67b_s03_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__twoIntsStruct_realloc_67b_s03_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__twoIntsStruct_realloc_67b_s03_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__twoIntsStruct_realloc_67b_s03_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__twoIntsStruct_realloc_67b_s03_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 
@@ -2096,8 +2043,8 @@ Processing: CWE401_Memory_Leak__wchar_t_realloc_61b_s03_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__wchar_t_realloc_61b_s03_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__wchar_t_realloc_61b_s03_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__wchar_t_realloc_61b_s03_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__wchar_t_realloc_61b_s03_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 
@@ -2115,8 +2062,8 @@ Processing: CWE401_Memory_Leak__wchar_t_realloc_61b_s03_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__wchar_t_realloc_61b_s03_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__wchar_t_realloc_61b_s03_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__wchar_t_realloc_61b_s03_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__wchar_t_realloc_61b_s03_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 
@@ -2134,8 +2081,8 @@ Processing: CWE401_Memory_Leak__wchar_t_realloc_61b_s03_OMITBAD.c
 
 === Running cppcheck on original file ===
 [DIAGNOSTICS]
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__wchar_t_realloc_61b_s03_OMITBAD.c ...
-Checking /Users/inna.amogolonova/Desktop/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__wchar_t_realloc_61b_s03_OMITBAD.c: OMITGOOD=1...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__wchar_t_realloc_61b_s03_OMITBAD.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE401_Memory_Leak/CWE401_Memory_Leak__wchar_t_realloc_61b_s03_OMITBAD.c: OMITGOOD=1...
 
 [INFO] No warnings found in original file. Nothing to fix.
 

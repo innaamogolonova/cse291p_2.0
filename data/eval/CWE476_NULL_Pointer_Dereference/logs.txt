@@ -1,5 +1,5 @@
 Detailed Logs for CWE476_NULL_Pointer_Dereference
-Generated: 2025-12-09T22:26:40.387928
+Generated: 2025-12-12T16:09:30.361510
 ============================================================
 
 
@@ -555,6 +555,24 @@ Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CW
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c ...
+Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c: OMITGOOD=1...
+
+[SUCCESS] No SA warnings remain
+
+=== Calling JUDGE LLM ===
+[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
+[INFO] JUDGE Warnings still present, continuing to next iteration...
+
+============================================================
+=== Iteration 3/5 ===
+============================================================
+
+=== Calling LLM to generate fix ===
+[SUCCESS] LLM generated a fix
+
+=== Running cppcheck on fixed code ===
+[DIAGNOSTICS AFTER FIX]
 /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c:9:26: error: Uninitialized variable: *dataPtr1 [uninitvar]
         int64_t * data = *dataPtr1;
                          ^
@@ -573,32 +591,6 @@ Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CW
 [INFO] SA Warnings still present, continuing to next iteration...
 
 ============================================================
-=== Iteration 3/5 ===
-============================================================
-
-=== Calling LLM to generate fix ===
-[SUCCESS] LLM generated a fix
-
-=== Running cppcheck on fixed code ===
-[DIAGNOSTICS AFTER FIX]
-/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c:10:26: error: Uninitialized variable: *dataPtr1 [uninitvar]
-        int64_t * data = *dataPtr1;
-                         ^
-/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c:15:26: error: Uninitialized variable: *dataPtr2 [uninitvar]
-        int64_t * data = *dataPtr2;
-                         ^
-/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c:8:27: note: Assignment 'dataPtr2=&data', assigned value is <Uninit>
-    int64_t * *dataPtr2 = &data;
-                          ^
-/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c:15:26: note: Uninitialized variable: *dataPtr2
-        int64_t * data = *dataPtr2;
-                         ^
-Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c ...
-Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c: OMITGOOD=1...
-
-[INFO] SA Warnings still present, continuing to next iteration...
-
-============================================================
 === Iteration 4/5 ===
 ============================================================
 
@@ -607,14 +599,22 @@ Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CW
 
 === Running cppcheck on fixed code ===
 [DIAGNOSTICS AFTER FIX]
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c:9:26: error: Uninitialized variable: *dataPtr1 [uninitvar]
+        int64_t * data = *dataPtr1;
+                         ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c:14:26: error: Uninitialized variable: *dataPtr2 [uninitvar]
+        int64_t * data = *dataPtr2;
+                         ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c:7:27: note: Assignment 'dataPtr2=&data', assigned value is <Uninit>
+    int64_t * *dataPtr2 = &data;
+                          ^
+/mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c:14:26: note: Uninitialized variable: *dataPtr2
+        int64_t * data = *dataPtr2;
+                         ^
 Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c ...
 Checking /mnt/c/Users/audre/Downloads/cse291p/cse291p_2.0/data/juliet/omitbad/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int64_t_32_OMITBAD.tmp.c: OMITGOOD=1...
 
-[SUCCESS] No SA warnings remain
-
-=== Calling JUDGE LLM ===
-[SUCCESS] JUDGE LLM gave a response NOT_EQUIVALENT
-[INFO] JUDGE Warnings still present, continuing to next iteration...
+[INFO] SA Warnings still present, continuing to next iteration...
 
 ============================================================
 === Iteration 5/5 ===
