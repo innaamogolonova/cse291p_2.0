@@ -1,6 +1,6 @@
-# cse291p_2.0
+# LLM Static Analysis Tool for Fixing Memory-Safety Violations of C/C++ Programs
 
-CSE291P project with Juliet Test Suite (https://github.com/arichardson/juliet-test-suite-c)
+LLM Static Analysis Tool for Fixing Memory-Safety Violations of C/C++ Programs with Juliet Test Suite (https://github.com/arichardson/juliet-test-suite-c)
 
 ## Tool Workflow:
 
